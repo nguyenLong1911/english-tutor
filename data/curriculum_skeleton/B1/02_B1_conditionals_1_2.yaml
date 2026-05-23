@@ -1,0 +1,41 @@
+topic_id: B1_conditionals_1_2
+title: "Câu điều kiện loại 1 và loại 2"
+cefr_level: B1
+skill_type: grammar
+
+prerequisites:
+  - A2_past_simple_regular
+  - A2_modal_can_could
+
+objectives:
+  - "Tạo câu điều kiện loại 1 (có thể xảy ra ở tương lai)"
+  - "Tạo câu điều kiện loại 2 (giả định không thật ở hiện tại)"
+  - "Phân biệt khi nào dùng loại 1 vs loại 2"
+
+common_errors:
+  - wrong: "If I will have time, I will call you"
+    correct: "If I have time, I will call you"
+    hint: "Sau 'if' trong loại 1 KHÔNG dùng 'will'. Dùng Present Simple"
+
+  - wrong: "If I was you, I would accept the offer"
+    correct: "If I were you, I would accept the offer"
+    hint: "Trong câu điều kiện loại 2, dùng 'were' cho mọi ngôi (kể cả I/he/she)"
+
+  - wrong: "If she had more money, she will buy a house"
+    correct: "If she had more money, she would buy a house"
+    hint: "Loại 2: If + Past Simple, ... + would + V. Không trộn 'will' vào"
+
+  - wrong: "If you study hard, you would pass the exam"
+    correct: "If you study hard, you will pass the exam"
+    hint: "Loại 1 (có thật, có thể xảy ra): mệnh đề chính dùng 'will', không dùng 'would'"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab: []
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

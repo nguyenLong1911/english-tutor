@@ -1,0 +1,42 @@
+topic_id: B1_finance_basics_vocab
+title: "Từ vựng tài chính cơ bản"
+cefr_level: B1
+skill_type: vocabulary
+
+prerequisites:
+  - A2_numbers_dates_money
+
+objectives:
+  - "Dùng được 10 từ cốt lõi về tài chính doanh nghiệp (revenue, profit, budget...)"
+  - "Hiểu báo cáo tài chính ngắn (P&L summary)"
+  - "Mô tả xu hướng tăng/giảm bằng từ vựng phù hợp"
+
+common_errors:
+  - wrong: "Our revenue is increased by 20%"
+    correct: "Our revenue increased by 20% / Our revenue has increased by 20%"
+    hint: "'increase' là động từ, không cần 'is' đi kèm khi không phải bị động"
+
+  - wrong: "The cost is more cheap than last year"
+    correct: "The cost is lower than last year"
+    hint: "Trong báo cáo tài chính, dùng 'lower/higher' thay vì 'cheaper/more expensive'"
+
+  - wrong: "We need to discuss about the budget"
+    correct: "We need to discuss the budget"
+    hint: "'discuss' là động từ ngoại động, KHÔNG đi với 'about'"
+
+  - wrong: "Profit is the money we win"
+    correct: "Profit is the money we earn / make"
+    hint: "Trong context kinh doanh, dùng 'earn/make money', không dùng 'win money'"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - revenue
+  - stakeholder
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

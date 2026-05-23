@@ -1,0 +1,43 @@
+topic_id: B1_future_forms
+title: "Diễn đạt tương lai: will, be going to, present continuous"
+cefr_level: B1
+skill_type: grammar
+
+prerequisites:
+  - A2_present_continuous
+  - A2_modal_can_could
+
+objectives:
+  - "Phân biệt 'will' (quyết định tức thì, dự đoán) vs 'be going to' (kế hoạch đã có)"
+  - "Dùng Present Continuous cho lịch hẹn cố định ở tương lai gần"
+  - "Chọn dạng phù hợp với ngữ cảnh công việc"
+
+common_errors:
+  - wrong: "I think it will rain tomorrow, I will take an umbrella"
+    correct: "I think it will rain tomorrow, so I'm going to take an umbrella"
+    hint: "Dự đoán: 'will'. Quyết định dựa trên dự đoán: 'be going to'"
+
+  - wrong: "I have a meeting with the client at 3 PM tomorrow, I will go"
+    correct: "I have a meeting with the client at 3 PM tomorrow, I'm going"
+    hint: "Lịch đã cố định, đã sắp xếp → dùng Present Continuous"
+
+  - wrong: "Look! That box will fall!"
+    correct: "Look! That box is going to fall!"
+    hint: "Có dấu hiệu rõ ràng ngay trước mắt → 'be going to'"
+
+  - wrong: "I'm going to call you back when I will arrive"
+    correct: "I'm going to call you back when I arrive"
+    hint: "Sau 'when/before/after/as soon as' dùng Present Simple, KHÔNG dùng will"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - meeting
+  - launch
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

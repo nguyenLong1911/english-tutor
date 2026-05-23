@@ -1,0 +1,41 @@
+topic_id: A2_present_continuous
+title: "Hiện tại tiếp diễn (Present Continuous)"
+cefr_level: A2
+skill_type: grammar
+
+prerequisites:
+  - A2_present_simple_be
+
+objectives:
+  - "Tạo câu Present Continuous với cấu trúc 'be + V-ing'"
+  - "Phân biệt khi nào dùng Present Continuous vs Present Simple"
+  - "Mô tả hành động đang xảy ra tại thời điểm nói"
+
+common_errors:
+  - wrong: "I am work now"
+    correct: "I am working now"
+    hint: "Sau 'am/is/are' phải có động từ thêm '-ing'"
+
+  - wrong: "She is studing English"
+    correct: "She is studying English"
+    hint: "'study' giữ nguyên 'y' khi thêm '-ing': studying"
+
+  - wrong: "They running in the park"
+    correct: "They are running in the park"
+    hint: "Thiếu 'are'. Cấu trúc: subject + am/is/are + V-ing"
+
+  - wrong: "I am knowing the answer"
+    correct: "I know the answer"
+    hint: "Động từ trạng thái (know, like, want, understand) không dùng dạng tiếp diễn"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - meeting
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

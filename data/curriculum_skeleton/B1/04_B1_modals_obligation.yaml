@@ -1,0 +1,40 @@
+topic_id: B1_modals_obligation
+title: "Modals chỉ nghĩa vụ: must, have to, should"
+cefr_level: B1
+skill_type: grammar
+
+prerequisites:
+  - A2_modal_can_could
+
+objectives:
+  - "Phân biệt 'must' (nghĩa vụ nội tại) vs 'have to' (nghĩa vụ từ bên ngoài)"
+  - "Dùng 'should' để khuyên nhủ"
+  - "Dùng 'mustn't' (cấm) vs 'don't have to' (không cần)"
+
+common_errors:
+  - wrong: "You mustn't bring your passport"
+    correct: "You don't have to bring your passport"
+    hint: "'mustn't' = CẤM (don't do it). 'don't have to' = không cần thiết (it's optional)"
+
+  - wrong: "She musts finish the report today"
+    correct: "She must finish the report today"
+    hint: "'must' không bao giờ thêm 's', không có dạng 'musts'"
+
+  - wrong: "I should to call my client"
+    correct: "I should call my client"
+    hint: "Sau 'should' dùng động từ nguyên mẫu, KHÔNG có 'to'"
+
+  - wrong: "You have not to come if you are sick"
+    correct: "You don't have to come if you are sick"
+    hint: "Phủ định của 'have to' dùng 'don't have to' (như động từ thường)"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.80
+
+recommended_vocab: []
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

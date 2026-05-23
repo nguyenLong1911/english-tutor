@@ -1,0 +1,45 @@
+topic_id: C1_crisis_communication_vocab
+title: "Từ vựng truyền thông khủng hoảng"
+cefr_level: C1
+skill_type: vocabulary
+
+prerequisites:
+  - B2_stakeholder_communication_vocab
+  - B2_negotiation_language_vocab
+
+objectives:
+  - "Dùng ngôn ngữ phù hợp khi phát ngôn trong tình huống khủng hoảng (recall, incident, remediation...)"
+  - "Phân biệt tone: empathetic vs defensive, và biết khi nào dùng tone nào"
+  - "Viết statement xử lý khủng hoảng (150-200 từ) theo cấu trúc: acknowledge — action — assurance"
+
+common_errors:
+  - wrong: "It was not our fault that the system crashed"
+    correct: "We acknowledge the disruption caused and are taking immediate steps to resolve it"
+    hint: "Trong crisis comms, tránh blame-shifting. Cấu trúc: acknowledge impact → action taken. Không dùng 'not our fault'"
+
+  - wrong: "We are sorry for the inconvenience"
+    correct: "We sincerely apologize for the disruption this has caused to your operations"
+    hint: "'Sorry for the inconvenience' là clichê thiếu chân thành. Đặt tên cụ thể impact, dùng 'sincerely apologize'"
+
+  - wrong: "The problem is fixed now"
+    correct: "The issue has been resolved and systems have been fully restored"
+    hint: "'Problem/fixed' quá casual cho statement chính thức. 'Issue has been resolved' và 'systems restored' là register phù hợp"
+
+  - wrong: "We will not let this happen again"
+    correct: "We have implemented preventive measures to mitigate the risk of recurrence"
+    hint: "Assurance cần cụ thể: 'preventive measures', 'mitigate risk of recurrence'. Cam kết vague ('will not let') thiếu credibility"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - feedback
+  - stakeholder
+  - campaign
+  - deploy
+
+exercise_types:
+  - fill_in_blank
+  - context_usage
+  - sentence_production

@@ -1,0 +1,46 @@
+topic_id: C1_complex_noun_phrases
+title: "Cụm danh từ phức tạp và Nominalization"
+cefr_level: C1
+skill_type: grammar
+
+prerequisites:
+  - B2_advanced_passives
+  - B2_inversion_emphasis
+
+objectives:
+  - "Rút gọn mệnh đề quan hệ thành participial phrase (the report submitted by the team)"
+  - "Chuyển đổi động từ thành danh từ (nominalization) để viết formal/academic"
+  - "Dùng appositive noun phrases để thêm thông tin mà không cần mệnh đề phụ"
+  - "Viết headline-style và bullet-point với ellipsis grammar đúng chuẩn"
+
+common_errors:
+  - wrong: "The decision which was made by the board was controversial"
+    correct: "The decision made by the board was controversial"
+    hint: "Mệnh đề quan hệ bị động có thể rút gọn: 'which was made' → 'made'. Tự nhiên và gọn hơn trong văn viết"
+
+  - wrong: "We need to analyze about the situation"
+    correct: "We need to analyze the situation"
+    hint: "'analyze' là transitive verb, không dùng 'about'. Nhiều động từ gốc Latin không cần giới từ: discuss, consider, approach"
+
+  - wrong: "The failing of the project was unexpected"
+    correct: "The failure of the project was unexpected"
+    hint: "Nominalization đúng: 'fail' → 'failure' (không phải 'failing'). Một số danh từ hóa dùng suffix riêng"
+
+  - wrong: "John, who is our senior developer, will lead the sprint"
+    correct: "John, our senior developer, will lead the sprint"
+    hint: "Appositive phrase gọn hơn mệnh đề quan hệ khi chỉ mô tả danh tính/chức vụ"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - deliverable
+  - stakeholder
+  - deploy
+  - revenue
+
+exercise_types:
+  - error_correction
+  - sentence_production
+  - context_usage

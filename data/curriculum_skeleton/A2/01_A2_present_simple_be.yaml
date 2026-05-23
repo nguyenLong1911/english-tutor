@@ -1,0 +1,40 @@
+topic_id: A2_present_simple_be
+title: "Present Simple with 'to be'"
+cefr_level: A2
+skill_type: grammar
+
+prerequisites: []
+
+objectives:
+  - "Chia đúng động từ 'to be' (am/is/are) theo chủ ngữ"
+  - "Phân biệt câu khẳng định, phủ định, nghi vấn với 'to be'"
+  - "Dùng 'to be' để giới thiệu bản thân và mô tả người/vật"
+
+common_errors:
+  - wrong: "She are a teacher"
+    correct: "She is a teacher"
+    hint: "Chủ ngữ số ít (he/she/it) đi với 'is', không phải 'are'"
+
+  - wrong: "I am no tired"
+    correct: "I am not tired"
+    hint: "Phủ định của 'to be' dùng 'not', không dùng 'no'"
+
+  - wrong: "You is from Vietnam?"
+    correct: "Are you from Vietnam?"
+    hint: "Câu hỏi với 'to be': đảo động từ lên trước chủ ngữ. 'You' đi với 'are'"
+
+  - wrong: "He is teacher"
+    correct: "He is a teacher"
+    hint: "Trước nghề nghiệp số ít cần mạo từ 'a/an'"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - meeting
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

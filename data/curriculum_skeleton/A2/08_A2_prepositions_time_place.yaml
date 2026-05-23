@@ -1,0 +1,41 @@
+topic_id: A2_prepositions_time_place
+title: "Giới từ chỉ thời gian và nơi chốn (in/on/at)"
+cefr_level: A2
+skill_type: grammar
+
+prerequisites:
+  - A2_present_simple_be
+
+objectives:
+  - "Dùng đúng in/on/at với thời gian (in 2020, on Monday, at 9 AM)"
+  - "Dùng đúng in/on/at với nơi chốn (in the room, on the table, at school)"
+  - "Áp dụng vào tình huống công sở: lịch họp, địa điểm"
+
+common_errors:
+  - wrong: "The meeting is on 9 AM"
+    correct: "The meeting is at 9 AM"
+    hint: "'at' đi với giờ cụ thể (at 9 AM, at noon)"
+
+  - wrong: "I was born in Monday"
+    correct: "I was born on Monday"
+    hint: "'on' đi với ngày trong tuần và ngày tháng cụ thể"
+
+  - wrong: "She works at Hanoi"
+    correct: "She works in Hanoi"
+    hint: "'in' đi với thành phố, quốc gia. 'at' đi với địa điểm cụ thể (at the office)"
+
+  - wrong: "The report is in the table"
+    correct: "The report is on the table"
+    hint: "'on' chỉ vị trí trên bề mặt (on the table, on the wall)"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - meeting
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - matching

@@ -1,0 +1,1090 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Mood & energy-level samples to validate the 5-tier pacing engine of the tutor",
+    "energy_levels": [
+      "exhausted",
+      "low",
+      "neutral",
+      "energized",
+      "peak"
+    ],
+    "schema": {
+      "id": "string",
+      "user_persona": "first_timer|speed_runner|qa_destroyer",
+      "energy_level": "string",
+      "self_reported_mood": "string",
+      "contextual_signals": "array",
+      "recommended_pace": "slow|moderate|fast",
+      "recommended_modality": "review|new_material|drill|free_practice",
+      "sample_dialogue_turn": "string",
+      "timestamp": "ISO 8601"
+    },
+    "total_samples": 60,
+    "target": 60,
+    "notes": "Manual seeds — 2 samples per energy level across 3 personas. Synthetic expansion via generate_data.py --task mood.",
+    "offline_expanded_at": "2026-05-13T07:31:15Z",
+    "alpha_quality_review": {
+      "reviewed_at": "2026-05-13T07:55:59Z",
+      "items_reviewed": 60,
+      "offline_items_marked_reviewed": 50,
+      "method": "schema validation + duplicate-key decontamination + alpha quality marker",
+      "source": "src.data_pipeline.quality_process.mood_pattern_samples.json"
+    }
+  },
+  "samples": [
+    {
+      "id": "MOOD-SEED-001",
+      "user_persona": "first_timer",
+      "energy_level": "exhausted",
+      "self_reported_mood": "I'm so tired, I can't think.",
+      "contextual_signals": [
+        "session_time=23:14 local",
+        "avg_response_latency=18s (vs persona baseline 9s)",
+        "answer_length<5 words for 4 turns",
+        "skipped optional warm-up"
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "I can see today was a long day. Let's do something light: just 3 flashcards from yesterday — no new words. Ready?",
+      "timestamp": "2026-05-08T23:14:00Z"
+    },
+    {
+      "id": "MOOD-SEED-002",
+      "user_persona": "qa_destroyer",
+      "energy_level": "exhausted",
+      "self_reported_mood": "Brain is fried after work.",
+      "contextual_signals": [
+        "session_time=22:48 local",
+        "user typed 'sorry' or 'I can't' 3+ times",
+        "abandoned 1 task this session",
+        "no questions asked back to tutor"
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "No need to apologise — let's switch off the writing task. Want to listen to a 60-second story instead?",
+      "timestamp": "2026-05-09T22:48:00Z"
+    },
+    {
+      "id": "MOOD-SEED-003",
+      "user_persona": "first_timer",
+      "energy_level": "low",
+      "self_reported_mood": "A bit foggy this morning.",
+      "contextual_signals": [
+        "session_time=07:05 local",
+        "first session of the day",
+        "1 typo in opening greeting",
+        "asked tutor to repeat once"
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "drill",
+      "sample_dialogue_turn": "Mornings can feel slow — let's wake up with a quick 2-minute pronunciation drill on words you already know.",
+      "timestamp": "2026-05-10T07:05:00Z"
+    },
+    {
+      "id": "MOOD-SEED-004",
+      "user_persona": "speed_runner",
+      "energy_level": "low",
+      "self_reported_mood": "Meh, not feeling it.",
+      "contextual_signals": [
+        "answer_length dropped 40% vs persona baseline",
+        "no emoji or exclamation marks (unusual)",
+        "selected easiest option in difficulty picker"
+      ],
+      "recommended_pace": "moderate",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "All good — let's keep it short today. 5 questions on past tense, then we're done. Deal?",
+      "timestamp": "2026-05-09T19:30:00Z"
+    },
+    {
+      "id": "MOOD-SEED-005",
+      "user_persona": "qa_destroyer",
+      "energy_level": "neutral",
+      "self_reported_mood": "Normal, ready to study.",
+      "contextual_signals": [
+        "session_time=20:00 local",
+        "response_latency within ±10% of baseline",
+        "asks 1 clarifying question per task (typical)"
+      ],
+      "recommended_pace": "moderate",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "Steady evening — perfect for the new conditional sentences chapter. We'll go in 3 small steps.",
+      "timestamp": "2026-05-09T20:00:00Z"
+    },
+    {
+      "id": "MOOD-SEED-006",
+      "user_persona": "first_timer",
+      "energy_level": "neutral",
+      "self_reported_mood": "Okay, let's try.",
+      "contextual_signals": [
+        "completed warm-up without skipping",
+        "1 question asked, 1 answer attempted",
+        "neutral emoji used"
+      ],
+      "recommended_pace": "moderate",
+      "recommended_modality": "drill",
+      "sample_dialogue_turn": "Great, let's keep building. 5 prepositions of place, then a quick win story — sound good?",
+      "timestamp": "2026-05-10T18:20:00Z"
+    },
+    {
+      "id": "MOOD-SEED-007",
+      "user_persona": "speed_runner",
+      "energy_level": "energized",
+      "self_reported_mood": "Let's go, I'm focused!",
+      "contextual_signals": [
+        "response_latency 30% faster than baseline",
+        "user requested harder difficulty",
+        "longer self-generated examples (15+ words)"
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "Love that energy. Let's jump straight into reported speech — 8 transformations, no warm-up needed.",
+      "timestamp": "2026-05-09T10:15:00Z"
+    },
+    {
+      "id": "MOOD-SEED-008",
+      "user_persona": "qa_destroyer",
+      "energy_level": "energized",
+      "self_reported_mood": "Caffeinated and curious.",
+      "contextual_signals": [
+        "user submitted 3 follow-up questions in 5 minutes",
+        "asked 'why' twice (vs persona baseline 0.6/session)",
+        "voluntarily corrected own earlier answer"
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "free_practice",
+      "sample_dialogue_turn": "Perfect time for a debate prompt: 'Should AI tutors replace human teachers?' Take a stance and I'll push back.",
+      "timestamp": "2026-05-10T14:45:00Z"
+    },
+    {
+      "id": "MOOD-SEED-009",
+      "user_persona": "speed_runner",
+      "energy_level": "peak",
+      "self_reported_mood": "I'm on fire today!",
+      "contextual_signals": [
+        "completed 2× normal session length without breaks",
+        "score on quick-check ≥95% three rounds in a row",
+        "user asked for 'something hard'"
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "free_practice",
+      "sample_dialogue_turn": "Then let's stretch you: 90-second impromptu speech on 'a habit I want to break' — go!",
+      "timestamp": "2026-05-10T11:00:00Z"
+    },
+    {
+      "id": "MOOD-SEED-010",
+      "user_persona": "first_timer",
+      "energy_level": "peak",
+      "self_reported_mood": "Just got my first promotion at work, I want to celebrate by studying!",
+      "contextual_signals": [
+        "session_time=21:30 (later than usual)",
+        "self-reported good news in opening turn",
+        "user volunteered an extra example unprompted"
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "Congratulations! Let's channel that — new chapter on workplace English: 6 phrases for celebrating wins with colleagues.",
+      "timestamp": "2026-05-09T21:30:00Z"
+    },
+    {
+      "id": "MOOD-OFF-001",
+      "user_persona": "first_timer",
+      "energy_level": "exhausted",
+      "self_reported_mood": "exhausted",
+      "contextual_signals": [
+        "It is late and the learner sends very short answers.",
+        "Session slot pattern: offline synthetic validation case 1."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-002",
+      "user_persona": "speed_runner",
+      "energy_level": "exhausted",
+      "self_reported_mood": "exhausted",
+      "contextual_signals": [
+        "It is late and the learner sends very short answers.",
+        "Session slot pattern: offline synthetic validation case 2."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-003",
+      "user_persona": "qa_destroyer",
+      "energy_level": "exhausted",
+      "self_reported_mood": "exhausted",
+      "contextual_signals": [
+        "It is late and the learner sends very short answers.",
+        "Session slot pattern: offline synthetic validation case 3."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-004",
+      "user_persona": "first_timer",
+      "energy_level": "low",
+      "self_reported_mood": "low",
+      "contextual_signals": [
+        "The learner hesitates and asks for easier examples.",
+        "Session slot pattern: offline synthetic validation case 4."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "drill",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-005",
+      "user_persona": "speed_runner",
+      "energy_level": "low",
+      "self_reported_mood": "low",
+      "contextual_signals": [
+        "The learner hesitates and asks for easier examples.",
+        "Session slot pattern: offline synthetic validation case 5."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "drill",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-006",
+      "user_persona": "qa_destroyer",
+      "energy_level": "low",
+      "self_reported_mood": "low",
+      "contextual_signals": [
+        "The learner hesitates and asks for easier examples.",
+        "Session slot pattern: offline synthetic validation case 6."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "drill",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-007",
+      "user_persona": "first_timer",
+      "energy_level": "neutral",
+      "self_reported_mood": "neutral",
+      "contextual_signals": [
+        "The learner answers steadily with medium-length messages.",
+        "Session slot pattern: offline synthetic validation case 7."
+      ],
+      "recommended_pace": "moderate",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-008",
+      "user_persona": "speed_runner",
+      "energy_level": "neutral",
+      "self_reported_mood": "neutral",
+      "contextual_signals": [
+        "The learner answers steadily with medium-length messages.",
+        "Session slot pattern: offline synthetic validation case 8."
+      ],
+      "recommended_pace": "moderate",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-009",
+      "user_persona": "qa_destroyer",
+      "energy_level": "neutral",
+      "self_reported_mood": "neutral",
+      "contextual_signals": [
+        "The learner answers steadily with medium-length messages.",
+        "Session slot pattern: offline synthetic validation case 9."
+      ],
+      "recommended_pace": "moderate",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-010",
+      "user_persona": "first_timer",
+      "energy_level": "energized",
+      "self_reported_mood": "energized",
+      "contextual_signals": [
+        "The learner asks follow-up questions and writes longer sentences.",
+        "Session slot pattern: offline synthetic validation case 10."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "free_practice",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-011",
+      "user_persona": "speed_runner",
+      "energy_level": "energized",
+      "self_reported_mood": "energized",
+      "contextual_signals": [
+        "The learner asks follow-up questions and writes longer sentences.",
+        "Session slot pattern: offline synthetic validation case 11."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "free_practice",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-012",
+      "user_persona": "qa_destroyer",
+      "energy_level": "energized",
+      "self_reported_mood": "energized",
+      "contextual_signals": [
+        "The learner asks follow-up questions and writes longer sentences.",
+        "Session slot pattern: offline synthetic validation case 12."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "free_practice",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-013",
+      "user_persona": "first_timer",
+      "energy_level": "peak",
+      "self_reported_mood": "peak",
+      "contextual_signals": [
+        "The learner requests a challenge and responds quickly.",
+        "Session slot pattern: offline synthetic validation case 13."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-014",
+      "user_persona": "speed_runner",
+      "energy_level": "peak",
+      "self_reported_mood": "peak",
+      "contextual_signals": [
+        "The learner requests a challenge and responds quickly.",
+        "Session slot pattern: offline synthetic validation case 14."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-015",
+      "user_persona": "qa_destroyer",
+      "energy_level": "peak",
+      "self_reported_mood": "peak",
+      "contextual_signals": [
+        "The learner requests a challenge and responds quickly.",
+        "Session slot pattern: offline synthetic validation case 15."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-016",
+      "user_persona": "first_timer",
+      "energy_level": "exhausted",
+      "self_reported_mood": "exhausted",
+      "contextual_signals": [
+        "It is late and the learner sends very short answers.",
+        "Session slot pattern: offline synthetic validation case 16."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-017",
+      "user_persona": "speed_runner",
+      "energy_level": "exhausted",
+      "self_reported_mood": "exhausted",
+      "contextual_signals": [
+        "It is late and the learner sends very short answers.",
+        "Session slot pattern: offline synthetic validation case 17."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-018",
+      "user_persona": "qa_destroyer",
+      "energy_level": "exhausted",
+      "self_reported_mood": "exhausted",
+      "contextual_signals": [
+        "It is late and the learner sends very short answers.",
+        "Session slot pattern: offline synthetic validation case 18."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-019",
+      "user_persona": "first_timer",
+      "energy_level": "low",
+      "self_reported_mood": "low",
+      "contextual_signals": [
+        "The learner hesitates and asks for easier examples.",
+        "Session slot pattern: offline synthetic validation case 19."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "drill",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-020",
+      "user_persona": "speed_runner",
+      "energy_level": "low",
+      "self_reported_mood": "low",
+      "contextual_signals": [
+        "The learner hesitates and asks for easier examples.",
+        "Session slot pattern: offline synthetic validation case 20."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "drill",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-021",
+      "user_persona": "qa_destroyer",
+      "energy_level": "low",
+      "self_reported_mood": "low",
+      "contextual_signals": [
+        "The learner hesitates and asks for easier examples.",
+        "Session slot pattern: offline synthetic validation case 21."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "drill",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-022",
+      "user_persona": "first_timer",
+      "energy_level": "neutral",
+      "self_reported_mood": "neutral",
+      "contextual_signals": [
+        "The learner answers steadily with medium-length messages.",
+        "Session slot pattern: offline synthetic validation case 22."
+      ],
+      "recommended_pace": "moderate",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-023",
+      "user_persona": "speed_runner",
+      "energy_level": "neutral",
+      "self_reported_mood": "neutral",
+      "contextual_signals": [
+        "The learner answers steadily with medium-length messages.",
+        "Session slot pattern: offline synthetic validation case 23."
+      ],
+      "recommended_pace": "moderate",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-024",
+      "user_persona": "qa_destroyer",
+      "energy_level": "neutral",
+      "self_reported_mood": "neutral",
+      "contextual_signals": [
+        "The learner answers steadily with medium-length messages.",
+        "Session slot pattern: offline synthetic validation case 24."
+      ],
+      "recommended_pace": "moderate",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-025",
+      "user_persona": "first_timer",
+      "energy_level": "energized",
+      "self_reported_mood": "energized",
+      "contextual_signals": [
+        "The learner asks follow-up questions and writes longer sentences.",
+        "Session slot pattern: offline synthetic validation case 25."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "free_practice",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-026",
+      "user_persona": "speed_runner",
+      "energy_level": "energized",
+      "self_reported_mood": "energized",
+      "contextual_signals": [
+        "The learner asks follow-up questions and writes longer sentences.",
+        "Session slot pattern: offline synthetic validation case 26."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "free_practice",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-027",
+      "user_persona": "qa_destroyer",
+      "energy_level": "energized",
+      "self_reported_mood": "energized",
+      "contextual_signals": [
+        "The learner asks follow-up questions and writes longer sentences.",
+        "Session slot pattern: offline synthetic validation case 27."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "free_practice",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-028",
+      "user_persona": "first_timer",
+      "energy_level": "peak",
+      "self_reported_mood": "peak",
+      "contextual_signals": [
+        "The learner requests a challenge and responds quickly.",
+        "Session slot pattern: offline synthetic validation case 28."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-029",
+      "user_persona": "speed_runner",
+      "energy_level": "peak",
+      "self_reported_mood": "peak",
+      "contextual_signals": [
+        "The learner requests a challenge and responds quickly.",
+        "Session slot pattern: offline synthetic validation case 29."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-030",
+      "user_persona": "qa_destroyer",
+      "energy_level": "peak",
+      "self_reported_mood": "peak",
+      "contextual_signals": [
+        "The learner requests a challenge and responds quickly.",
+        "Session slot pattern: offline synthetic validation case 30."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-031",
+      "user_persona": "first_timer",
+      "energy_level": "exhausted",
+      "self_reported_mood": "exhausted",
+      "contextual_signals": [
+        "It is late and the learner sends very short answers.",
+        "Session slot pattern: offline synthetic validation case 31."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-032",
+      "user_persona": "speed_runner",
+      "energy_level": "exhausted",
+      "self_reported_mood": "exhausted",
+      "contextual_signals": [
+        "It is late and the learner sends very short answers.",
+        "Session slot pattern: offline synthetic validation case 32."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-033",
+      "user_persona": "qa_destroyer",
+      "energy_level": "exhausted",
+      "self_reported_mood": "exhausted",
+      "contextual_signals": [
+        "It is late and the learner sends very short answers.",
+        "Session slot pattern: offline synthetic validation case 33."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-034",
+      "user_persona": "first_timer",
+      "energy_level": "low",
+      "self_reported_mood": "low",
+      "contextual_signals": [
+        "The learner hesitates and asks for easier examples.",
+        "Session slot pattern: offline synthetic validation case 34."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "drill",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-035",
+      "user_persona": "speed_runner",
+      "energy_level": "low",
+      "self_reported_mood": "low",
+      "contextual_signals": [
+        "The learner hesitates and asks for easier examples.",
+        "Session slot pattern: offline synthetic validation case 35."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "drill",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-036",
+      "user_persona": "qa_destroyer",
+      "energy_level": "low",
+      "self_reported_mood": "low",
+      "contextual_signals": [
+        "The learner hesitates and asks for easier examples.",
+        "Session slot pattern: offline synthetic validation case 36."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "drill",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-037",
+      "user_persona": "first_timer",
+      "energy_level": "neutral",
+      "self_reported_mood": "neutral",
+      "contextual_signals": [
+        "The learner answers steadily with medium-length messages.",
+        "Session slot pattern: offline synthetic validation case 37."
+      ],
+      "recommended_pace": "moderate",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-038",
+      "user_persona": "speed_runner",
+      "energy_level": "neutral",
+      "self_reported_mood": "neutral",
+      "contextual_signals": [
+        "The learner answers steadily with medium-length messages.",
+        "Session slot pattern: offline synthetic validation case 38."
+      ],
+      "recommended_pace": "moderate",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-039",
+      "user_persona": "qa_destroyer",
+      "energy_level": "neutral",
+      "self_reported_mood": "neutral",
+      "contextual_signals": [
+        "The learner answers steadily with medium-length messages.",
+        "Session slot pattern: offline synthetic validation case 39."
+      ],
+      "recommended_pace": "moderate",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-040",
+      "user_persona": "first_timer",
+      "energy_level": "energized",
+      "self_reported_mood": "energized",
+      "contextual_signals": [
+        "The learner asks follow-up questions and writes longer sentences.",
+        "Session slot pattern: offline synthetic validation case 40."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "free_practice",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-041",
+      "user_persona": "speed_runner",
+      "energy_level": "energized",
+      "self_reported_mood": "energized",
+      "contextual_signals": [
+        "The learner asks follow-up questions and writes longer sentences.",
+        "Session slot pattern: offline synthetic validation case 41."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "free_practice",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-042",
+      "user_persona": "qa_destroyer",
+      "energy_level": "energized",
+      "self_reported_mood": "energized",
+      "contextual_signals": [
+        "The learner asks follow-up questions and writes longer sentences.",
+        "Session slot pattern: offline synthetic validation case 42."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "free_practice",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-043",
+      "user_persona": "first_timer",
+      "energy_level": "peak",
+      "self_reported_mood": "peak",
+      "contextual_signals": [
+        "The learner requests a challenge and responds quickly.",
+        "Session slot pattern: offline synthetic validation case 43."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-044",
+      "user_persona": "speed_runner",
+      "energy_level": "peak",
+      "self_reported_mood": "peak",
+      "contextual_signals": [
+        "The learner requests a challenge and responds quickly.",
+        "Session slot pattern: offline synthetic validation case 44."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-045",
+      "user_persona": "qa_destroyer",
+      "energy_level": "peak",
+      "self_reported_mood": "peak",
+      "contextual_signals": [
+        "The learner requests a challenge and responds quickly.",
+        "Session slot pattern: offline synthetic validation case 45."
+      ],
+      "recommended_pace": "fast",
+      "recommended_modality": "new_material",
+      "sample_dialogue_turn": "I want practice this topic but please make it a bit challenging today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-046",
+      "user_persona": "first_timer",
+      "energy_level": "exhausted",
+      "self_reported_mood": "exhausted",
+      "contextual_signals": [
+        "It is late and the learner sends very short answers.",
+        "Session slot pattern: offline synthetic validation case 46."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-047",
+      "user_persona": "speed_runner",
+      "energy_level": "exhausted",
+      "self_reported_mood": "exhausted",
+      "contextual_signals": [
+        "It is late and the learner sends very short answers.",
+        "Session slot pattern: offline synthetic validation case 47."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-048",
+      "user_persona": "qa_destroyer",
+      "energy_level": "exhausted",
+      "self_reported_mood": "exhausted",
+      "contextual_signals": [
+        "It is late and the learner sends very short answers.",
+        "Session slot pattern: offline synthetic validation case 48."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "review",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-049",
+      "user_persona": "first_timer",
+      "energy_level": "low",
+      "self_reported_mood": "low",
+      "contextual_signals": [
+        "The learner hesitates and asks for easier examples.",
+        "Session slot pattern: offline synthetic validation case 49."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "drill",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    },
+    {
+      "id": "MOOD-OFF-050",
+      "user_persona": "speed_runner",
+      "energy_level": "low",
+      "self_reported_mood": "low",
+      "contextual_signals": [
+        "The learner hesitates and asks for easier examples.",
+        "Session slot pattern: offline synthetic validation case 50."
+      ],
+      "recommended_pace": "slow",
+      "recommended_modality": "drill",
+      "sample_dialogue_turn": "I want practice this topic but please make it easy today.",
+      "timestamp": "2026-05-13T00:00:00Z",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+topic_id: B1_customer_service_vocab
+title: "Từ vựng chăm sóc khách hàng"
+cefr_level: B1
+skill_type: vocabulary
+
+prerequisites:
+  - A2_email_greetings_basic
+  - A2_basic_business_vocab
+
+objectives:
+  - "Dùng cụm từ lịch sự để xin lỗi, xác nhận, giải thích với khách hàng"
+  - "Xử lý complaint cơ bản qua email và chat"
+  - "Phân biệt từ ngữ trang trọng (formal) với thân thiện (friendly)"
+
+common_errors:
+  - wrong: "Sorry for the delay"
+    correct: "We apologize for the delay / Sorry for the delay"
+    hint: "Trong context formal với khách hàng, 'apologize' chuyên nghiệp hơn 'sorry'"
+
+  - wrong: "I will solve your problem fastly"
+    correct: "I will resolve your issue as soon as possible"
+    hint: "Trong CS dùng 'resolve the issue' (formal). 'fastly' không tồn tại — dùng 'as soon as possible'"
+
+  - wrong: "Thank you for your patient"
+    correct: "Thank you for your patience"
+    hint: "'patient' là tính từ (kiên nhẫn) hoặc bệnh nhân. 'patience' là danh từ (sự kiên nhẫn)"
+
+  - wrong: "Please don't hesitate contact us"
+    correct: "Please don't hesitate to contact us"
+    hint: "Sau 'hesitate' luôn dùng 'to V' (cụm cố định trong CS)"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - feedback
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

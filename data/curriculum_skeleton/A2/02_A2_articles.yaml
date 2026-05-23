@@ -1,0 +1,36 @@
+topic_id: A2_articles
+title: "Mạo từ a / an / the"
+cefr_level: A2
+skill_type: grammar
+
+prerequisites:
+  - A2_present_simple_be
+
+objectives:
+  - "Phân biệt khi nào dùng 'a' và khi nào dùng 'an'"
+  - "Hiểu sự khác biệt giữa mạo từ xác định 'the' và bất định 'a/an'"
+  - "Dùng đúng mạo từ trong câu giao tiếp cơ bản"
+
+common_errors:
+  - wrong: "She is a engineer"
+    correct: "She is an engineer"
+    hint: "Trước từ bắt đầu bằng nguyên âm (a, e, i, o, u) dùng 'an'"
+
+  - wrong: "I want to buy the car"
+    correct: "I want to buy a car"
+    hint: "Khi nói chung chung lần đầu, dùng 'a'. 'The' dùng khi cả 2 đã biết về vật cụ thể"
+
+  - wrong: "He is teacher at school"
+    correct: "He is a teacher at the school"
+    hint: "Nghề nghiệp số ít cần 'a'. 'School' đã được nhắc/biết rõ thì dùng 'the'"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.80
+
+recommended_vocab: []
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - matching

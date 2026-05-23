@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-05-15T11:40:10+00:00",
+  "gold_model": "gemini-2.5-pro",
+  "sample_size": 100,
+  "unique_dataset_indexes": 100,
+  "ok_rows": 100,
+  "failed_rows": [],
+  "total_gold_spans": 847,
+  "dataset_index_min": 0,
+  "dataset_index_max": 99,
+  "gold_delta_sha256": "4ef1cab183bca60336f0c64d4e46768382c8b85cd364ab074bd90c89ffe74da1",
+  "dataset_snapshot_sha256": "b170e9f3bd2a6b226bceb83616883a6bb799b08252058dc59ad28d519f35d599"
+}

@@ -1,0 +1,45 @@
+topic_id: B1_project_management_vocab
+title: "Từ vựng quản lý dự án cơ bản"
+cefr_level: B1
+skill_type: vocabulary
+
+prerequisites:
+  - A2_meeting_basics
+  - A2_basic_business_vocab
+
+objectives:
+  - "Dùng được 12 từ cốt lõi về PM (deadline, milestone, scope, deliverable...)"
+  - "Báo cáo tiến độ dự án (on track, behind schedule, blocked)"
+  - "Thảo luận về task assignment và dependencies"
+
+common_errors:
+  - wrong: "We are behind of schedule"
+    correct: "We are behind schedule"
+    hint: "Cụm cố định: 'behind schedule' (không có 'of'). Tương tự: 'on schedule', 'ahead of schedule'"
+
+  - wrong: "The deadline of this task is Friday"
+    correct: "The deadline for this task is Friday"
+    hint: "Collocation chuẩn: 'deadline FOR something', không phải 'deadline OF'"
+
+  - wrong: "I'm responsible of this feature"
+    correct: "I'm responsible for this feature"
+    hint: "'responsible FOR' — luôn đi với 'for', không phải 'of'"
+
+  - wrong: "We achieved an important milestone last week"
+    correct: "We reached/hit an important milestone last week"
+    hint: "Collocation chuẩn: 'reach/hit a milestone'. 'achieve' đi với goal/target, không đi với milestone"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - deliverable
+  - stakeholder
+  - feedback
+  - meeting
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

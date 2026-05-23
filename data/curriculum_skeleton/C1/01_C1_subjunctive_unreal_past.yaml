@@ -1,0 +1,45 @@
+topic_id: C1_subjunctive_unreal_past
+title: "Subjunctive và Unreal Past"
+cefr_level: C1
+skill_type: grammar
+
+prerequisites:
+  - B2_conditionals_3_mixed
+  - B2_reported_speech_advanced
+
+objectives:
+  - "Phân biệt và dùng đúng subjunctive hiện tại (suggest that he go) và quá khứ (wish he had gone)"
+  - "Dùng cấu trúc 'It is essential/vital/necessary that + bare infinitive' trong văn viết formal"
+  - "Diễn đạt sự tiếc nuối và giả định xa thực tế bằng unreal past structures"
+  - "Áp dụng 'as if / as though + past subjunctive' để miêu tả hành vi/thái độ"
+
+common_errors:
+  - wrong: "I suggest that he goes to the meeting"
+    correct: "I suggest that he go to the meeting"
+    hint: "Sau 'suggest/recommend/insist/require that', dùng bare infinitive (subjunctive), không thêm -s cho ngôi thứ 3"
+
+  - wrong: "I wish I didn't make that mistake"
+    correct: "I wish I hadn't made that mistake"
+    hint: "Tiếc nuối về quá khứ dùng 'wish + past perfect'. 'didn't make' là unreal present, không phải quá khứ"
+
+  - wrong: "It is important that everyone attends the briefing"
+    correct: "It is important that everyone attend the briefing"
+    hint: "Sau 'It is important/necessary/essential that', dùng subjunctive (bare infinitive), không chia ngôi"
+
+  - wrong: "He acts as if he knows everything"
+    correct: "He acts as if he knew everything"
+    hint: "'as if + past subjunctive' diễn đạt điều không thực tế ở hiện tại. Không dùng present simple"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - feedback
+  - stakeholder
+  - deliver
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

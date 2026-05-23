@@ -1,0 +1,36 @@
+topic_id: A2_common_adjectives
+title: "Tính từ thông dụng & cặp đối lập"
+cefr_level: A2
+skill_type: vocabulary
+
+prerequisites:
+  - A2_present_simple_be
+
+objectives:
+  - "Hiểu và dùng được 20 tính từ phổ biến nhất (good/bad, big/small, easy/hard...)"
+  - "Mô tả người, vật, tình huống bằng tính từ"
+  - "Phân biệt các tính từ dễ nhầm (boring/bored, interesting/interested)"
+
+common_errors:
+  - wrong: "The meeting was very boring and I was very boring too"
+    correct: "The meeting was very boring and I was very bored too"
+    hint: "'-ing' mô tả tính chất của vật/sự việc; '-ed' mô tả cảm xúc của người"
+
+  - wrong: "She is a person very nice"
+    correct: "She is a very nice person"
+    hint: "Tính từ đứng TRƯỚC danh từ trong tiếng Anh: 'a nice person'"
+
+  - wrong: "The test was so much hard"
+    correct: "The test was very hard"
+    hint: "'so much' không đi với tính từ. Dùng 'very' hoặc 'really'"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.75
+
+recommended_vocab: []
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

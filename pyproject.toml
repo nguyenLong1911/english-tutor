@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "a20-data-pipeline"
+version = "0.1.0"
+description = "Standalone data pipeline for the A20 Agentic Language Tutor (Vietnamese-English ESL)"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "A20 Team" }]
+license = { text = "MIT" }
+dependencies = [
+    "openai>=1.50.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "tqdm>=4.66.0",
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+    "readability-lxml>=0.8.1",
+]
+
+[project.optional-dependencies]
+pii = ["presidio-analyzer>=2.2.0", "presidio-anonymizer>=2.2.0"]
+mem0 = ["mem0ai>=0.1.0"]
+hf = ["datasets>=2.20.0"]
+all = [
+    "presidio-analyzer>=2.2.0",
+    "presidio-anonymizer>=2.2.0",
+    "mem0ai>=0.1.0",
+    "datasets>=2.20.0",
+]
+
+[project.scripts]
+a20-pipeline = "data_pipeline.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["data_pipeline*"]

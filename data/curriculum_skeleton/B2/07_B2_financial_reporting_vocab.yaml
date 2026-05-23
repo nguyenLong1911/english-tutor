@@ -1,0 +1,46 @@
+topic_id: B2_financial_reporting_vocab
+title: "Từ vựng báo cáo tài chính"
+cefr_level: B2
+skill_type: vocabulary
+
+prerequisites:
+  - B1_finance_basics_vocab
+
+objectives:
+  - "Đọc hiểu báo cáo tài chính (P&L, balance sheet, cash flow) ở mức tổng quan"
+  - "Mô tả xu hướng và biến động bằng từ vựng chuyên ngành (surge, plummet, stabilize, fluctuate)"
+  - "Viết executive summary tài chính cho stakeholder"
+
+common_errors:
+  - wrong: "The revenue increased very much in Q3"
+    correct: "Revenue increased significantly / sharply in Q3"
+    hint: "'very much' không tự nhiên trong văn báo cáo. Dùng adverb chuyên ngành: significantly, sharply, substantially"
+
+  - wrong: "We have a profit of 2 million USD"
+    correct: "We posted a profit of 2 million USD / Our profit was 2 million USD"
+    hint: "Trong financial reporting: 'post a profit/loss' là collocation chuẩn cho công bố kết quả"
+
+  - wrong: "The costs are decreased by 15%"
+    correct: "Costs decreased by 15% / Costs have decreased by 15%"
+    hint: "'decrease' là động từ thường, không cần 'are' khi không phải bị động"
+
+  - wrong: "We expect the market to growth next year"
+    correct: "We expect the market to grow next year"
+    hint: "'grow' là động từ. 'growth' là danh từ. Sau 'to' dùng động từ nguyên thể"
+
+  - wrong: "The profit margin is high comparing to last year"
+    correct: "The profit margin is high compared to last year"
+    hint: "Cụm cố định: 'compared to/with' (V3, không phải V-ing)"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - revenue
+  - stakeholder
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

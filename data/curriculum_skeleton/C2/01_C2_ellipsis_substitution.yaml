@@ -1,0 +1,46 @@
+topic_id: C2_ellipsis_substitution
+title: "Ellipsis và Substitution trong văn bản nâng cao"
+cefr_level: C2
+skill_type: grammar
+
+prerequisites:
+  - C1_discourse_cohesion
+  - C1_complex_noun_phrases
+
+objectives:
+  - "Nhận diện và sử dụng ellipsis đúng chỗ để tránh lặp từ (She can play guitar and so can he)"
+  - "Dùng substitution với 'do so', 'one/ones', 'the same' để thay thế cụm từ phức tạp"
+  - "Kiểm soát tính tự nhiên trong văn nói và viết học thuật qua ellipsis ngầm"
+  - "Phân biệt ellipsis chấp nhận được và ellipsis gây mơ hồ ý nghĩa"
+
+common_errors:
+  - wrong: "She finished the proposal early, and he also finished the proposal early"
+    correct: "She finished the proposal early, and so did he"
+    hint: "Ellipsis với 'so + auxiliary + S' thay thế cả VP. Lặp nguyên cả VP là không tự nhiên ở C2"
+
+  - wrong: "I need a new laptop because my laptop is broken"
+    correct: "I need a new laptop because mine is broken"
+    hint: "Substitution với possessive pronoun: 'mine' thay cho 'my laptop'. Tránh lặp noun phrase"
+
+  - wrong: "We could cancel the project but I don't want to cancel it"
+    correct: "We could cancel the project but I don't want to"
+    hint: "Ellipsis sau 'want to' — bỏ hẳn VP phía sau khi context đã rõ. 'to' đứng độc lập là chuẩn"
+
+  - wrong: "The marketing team performed well, and the tech team also performed well too"
+    correct: "The marketing team performed well, and so did the tech team"
+    hint: "Không dùng 'also' và 'too' cùng lúc. 'So did + S' là cấu trúc ellipsis chuẩn thay cả predicate"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.85
+
+recommended_vocab:
+  - campaign
+  - deliverable
+  - deploy
+  - revenue
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

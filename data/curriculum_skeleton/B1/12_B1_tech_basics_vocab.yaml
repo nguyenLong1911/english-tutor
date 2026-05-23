@@ -1,0 +1,44 @@
+topic_id: B1_tech_basics_vocab
+title: "Từ vựng công nghệ cơ bản"
+cefr_level: B1
+skill_type: vocabulary
+
+prerequisites:
+  - A2_basic_business_vocab
+
+objectives:
+  - "Dùng được 10 từ cốt lõi về phát triển phần mềm (deploy, bug, feature, release...)"
+  - "Hiểu các thông báo kỹ thuật cơ bản (release notes, bug reports)"
+  - "Viết câu mô tả công việc kỹ thuật trong daily standup"
+
+common_errors:
+  - wrong: "We will deploy the system tonight"
+    correct: "We will deploy the system tonight"
+    hint: "Câu này đúng. Lưu ý: 'deploy' đi với system/code/update, không đi với 'feature' (dùng 'release feature')"
+
+  - wrong: "The software has many bugs problems"
+    correct: "The software has many bugs"
+    hint: "'bug' đã có nghĩa là vấn đề/lỗi rồi. Không cần thêm 'problems'"
+
+  - wrong: "I am developping a new feature"
+    correct: "I am developing a new feature"
+    hint: "'develop' chỉ có 1 chữ 'p' khi thêm '-ing' (develop → developing)"
+
+  - wrong: "Please give me the access of the server"
+    correct: "Please give me access to the server"
+    hint: "Collocation chuẩn: 'access TO something', không phải 'access OF'"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - deploy
+  - launch
+  - feedback
+  - deliverable
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

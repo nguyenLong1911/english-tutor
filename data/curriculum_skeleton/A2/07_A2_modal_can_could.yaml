@@ -1,0 +1,36 @@
+topic_id: A2_modal_can_could
+title: "Động từ khiếm khuyết: can / could"
+cefr_level: A2
+skill_type: grammar
+
+prerequisites:
+  - A2_present_simple_be
+
+objectives:
+  - "Dùng 'can' để diễn tả khả năng ở hiện tại"
+  - "Dùng 'could' để diễn tả khả năng ở quá khứ hoặc đề nghị lịch sự"
+  - "Tạo câu hỏi và phủ định với can/could"
+
+common_errors:
+  - wrong: "She can to swim"
+    correct: "She can swim"
+    hint: "Sau 'can/could' dùng động từ nguyên mẫu, KHÔNG có 'to'"
+
+  - wrong: "I can speaks English"
+    correct: "I can speak English"
+    hint: "Sau 'can' dùng động từ nguyên thể (không thêm 's')"
+
+  - wrong: "You can to help me?"
+    correct: "Could you help me?"
+    hint: "Câu hỏi đề nghị lịch sự: đảo 'could' lên đầu, không có 'to'"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.80
+
+recommended_vocab: []
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

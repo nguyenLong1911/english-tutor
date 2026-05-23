@@ -1,0 +1,38 @@
+topic_id: A2_basic_business_vocab
+title: "Từ vựng văn phòng cơ bản"
+cefr_level: A2
+skill_type: vocabulary
+
+prerequisites:
+  - A2_present_simple_be
+
+objectives:
+  - "Hiểu và dùng được 10 từ cốt lõi về môi trường công sở"
+  - "Giới thiệu công việc và vai trò của bản thân"
+  - "Tham gia hội thoại đơn giản về công việc hằng ngày"
+
+common_errors:
+  - wrong: "I work in a company of marketing"
+    correct: "I work for a marketing company"
+    hint: "Cấu trúc tự nhiên: 'work for + company name/type'"
+
+  - wrong: "My boss is very job"
+    correct: "My boss is very busy"
+    hint: "'job' là danh từ (công việc). 'busy' là tính từ (bận)"
+
+  - wrong: "I have a meeting with my coworker tomorrow morning at office"
+    correct: "I have a meeting with my coworker tomorrow morning at the office"
+    hint: "Trước 'office' (nơi cụ thể đã biết) cần mạo từ 'the'"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - meeting
+  - feedback
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

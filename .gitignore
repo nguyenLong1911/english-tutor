@@ -36,6 +36,19 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Environment variables
+.env
+*.env
+
+# Logs
+*.log
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
@@ -74,9 +87,10 @@ docs/_build/
 # PyBuilder
 .pybuilder/
 target/
+pytest_cache/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+.ipynb_checkpoints/
 
 # IPython
 profile_default/
@@ -167,6 +181,12 @@ venv.bak/
 # mkdocs documentation
 /site
 
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
 # mypy
 .mypy_cache/
 .dmypy.json
@@ -204,6 +224,7 @@ cython_debug/
 tempCodeRunnerFile.py
 
 # Ruff stuff:
+# Ruff / lint
 .ruff_cache/
 
 # PyPI configuration file
@@ -216,3 +237,52 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database
+*.sqlite3
+*.db
+
+# FastAPI / uvicorn
+*.pid
+
+# Data files (tuỳ project, nếu không muốn push)
+# data/
+# *.csv
+# *.parquet
+
+# Raw scraped artefacts (never committed – may include 3rd-party content)
+# data/raw/
+
+# Editable-install metadata
+*.egg-info/
+a20_data_pipeline.egg-info/
+
+# Models (ML)
+*.pkl
+*.joblib
+*.h5
+
+# Docker
+*.tar
+docker-compose.override.yml
+
+.ai-log/
+
+CLAUDE.md
+# Added by code-review-graph
+.code-review-graph/
+.claude
+.mcp.json
+.codex
+scripts/
+.playwright-mcp/
+app-sidebar-1280x720.png
+imgs/error.png
+llm_calls.jsonl
+data/observability/llm_calls.jsonl
+output/demo-video/
+outputs/tools/

@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-05-13T07:55:59Z",
+  "note": "Quality pass over existing processed data only; no scraping and no raw-data collection.",
+  "checks": {
+    "common_errors": {
+      "reviewed_at": "2026-05-13T07:55:59Z",
+      "reviewed_count": 465,
+      "last_run_reviewed_count": 0,
+      "remaining_needs_teacher_review": 0,
+      "recategorized": {},
+      "confidence_lifted": 0,
+      "method": "schema validation + deterministic curriculum quality gate after Gemini synthetic pass",
+      "source": "src.data_pipeline.quality_process.quality_review_errors"
+    },
+    "industry_vocab": {
+      "reviewed_at": "2026-05-13T07:55:59Z",
+      "industry_counts": {
+        "IT": 108,
+        "Marketing": 33,
+        "Sales": 106,
+        "Finance": 105,
+        "Education": 75,
+        "Healthcare": 100
+      },
+      "fields_filled": {},
+      "missing_required_fields": 0,
+      "required_fields_complete": true,
+      "source": "src.data_pipeline.quality_process.quality_review_industry"
+    },
+    "ielts_writing": {
+      "reviewed_at": "2026-05-13T07:55:59Z",
+      "samples_reviewed": 60,
+      "min_essay_words": 257,
+      "essay_expansion_passes": 0,
+      "placeholder_fixes": 0,
+      "source": "src.data_pipeline.quality_process.quality_review_ielts"
+    },
+    "pedagogical_prompts": {
+      "reviewed_at": "2026-05-13T07:55:59Z",
+      "items_reviewed": 80,
+      "offline_items_marked_reviewed": 72,
+      "method": "schema validation + duplicate-key decontamination + alpha quality marker",
+      "source": "src.data_pipeline.quality_process.pedagogical_prompts.json"
+    },
+    "mood_pattern": {
+      "reviewed_at": "2026-05-13T07:55:59Z",
+      "items_reviewed": 60,
+      "offline_items_marked_reviewed": 50,
+      "method": "schema validation + duplicate-key decontamination + alpha quality marker",
+      "source": "src.data_pipeline.quality_process.mood_pattern_samples.json"
+    },
+    "mem0_facts": {
+      "reviewed_at": "2026-05-13T07:55:59Z",
+      "facts_reviewed": 300,
+      "facts_per_persona": {
+        "user_001_first_timer": 100,
+        "user_002_speed_runner": 100,
+        "user_003_qa_destroyer": 100
+      },
+      "method": "PII-safe existing fact review + duplicate-key decontamination marker",
+      "source": "src.data_pipeline.quality_process.quality_review_mem0"
+    }
+  },
+  "llm_quality_certification": {
+    "overall_score": 0.95,
+    "ready_for_alpha": true,
+    "summary": "The aggregate A20 processed-data quality report indicates strong readiness for alpha. All critical quality gates have been met: 'needs_teacher_review' items are at zero, IELTS essay length requirements are satisfied (min 257 words), and all required industry fields are complete. Common errors have been fully reviewed, and pedagogical prompts, mood patterns, and mem0 facts have undergone schema validation and decontamination processes. The data appears robust for an alpha release.",
+    "remaining_risks": [
+      "Minor discrepancy between 'items_reviewed' and 'offline_items_marked_reviewed' for pedagogical prompts (8 items) and mood patterns (10 items). While the method states 'alpha quality marker', a small number of items were not explicitly marked offline.",
+      "Reliance on a 'deterministic curriculum quality gate after Gemini synthetic pass' for common errors, which assumes the robustness of the automated quality process."
+    ],
+    "recommended_next_step": "Proceed with the alpha release. Monitor the performance and user feedback closely, especially regarding the pedagogical prompts and mood patterns, to validate the 'alpha quality marker' assumption.",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "certified_at": "2026-05-13T07:56:23Z",
+    "caller": "data_pipeline.synth"
+  }
+}

@@ -1,0 +1,30 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Build context = repo root (see railway.json).
+# Paths below are relative to repo root.
+COPY src/backend/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY src/backend/app ./app
+COPY src/backend/alembic ./alembic
+COPY src/backend/alembic.ini .
+COPY src/backend/start.sh .
+COPY data/processed ./data/processed
+COPY data/curriculum_skeleton ./data/curriculum_skeleton
+
+RUN chmod +x start.sh
+
+ENV PROCESSED_DATA_DIR=/app/data/processed
+ENV CURRICULUM_ROOT=/app/data/curriculum_skeleton
+
+# Railway injects PORT dynamically. Default 8000 for local runs.
+EXPOSE 8000
+
+CMD ["./start.sh"]

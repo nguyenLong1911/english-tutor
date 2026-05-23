@@ -1,0 +1,47 @@
+topic_id: B2_technical_specs_vocab
+title: "Từ vựng tài liệu kỹ thuật và đặc tả"
+cefr_level: B2
+skill_type: vocabulary
+
+prerequisites:
+  - B1_tech_basics_vocab
+
+objectives:
+  - "Hiểu và viết technical specifications, API documentation cơ bản"
+  - "Dùng modal verbs đúng trong spec (must, should, may — theo chuẩn RFC 2119)"
+  - "Phân biệt từ kỹ thuật dễ nhầm (deploy/release/launch, bug/issue/incident)"
+
+common_errors:
+  - wrong: "The system shall to handle 1000 requests per second"
+    correct: "The system shall handle 1000 requests per second"
+    hint: "'shall' là modal — KHÔNG có 'to' đi sau. Trong tech spec, 'shall' = bắt buộc"
+
+  - wrong: "This feature is dependent of the database"
+    correct: "This feature is dependent on the database"
+    hint: "Cụm cố định: 'dependent ON', không phải 'dependent of'"
+
+  - wrong: "We deployed a bug to production"
+    correct: "We deployed a fix to production / We released a feature to production"
+    hint: "Bug là lỗi — không 'deploy bug'. Dùng 'deploy fix/feature/update'"
+
+  - wrong: "The API returns the data in JSON format with status code 200"
+    correct: "The API returns the data in JSON format with a status code of 200"
+    hint: "Trong văn kỹ thuật formal, 'a status code OF 200'. Mạo từ 'a' và 'of' giúp câu đầy đủ"
+
+  - wrong: "The error caused by the invalid input"
+    correct: "The error was caused by the invalid input"
+    hint: "Câu bị động cần đầy đủ 'was/were' + V3. Đừng quên trợ động từ"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - deploy
+  - launch
+  - deliverable
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

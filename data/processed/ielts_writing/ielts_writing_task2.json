@@ -1,0 +1,1047 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "IELTS Writing Task 2 sample essays + examiner feedback (4 criteria: TR, CC, LR, GRA)",
+    "criteria": [
+      "Task Response",
+      "Coherence & Cohesion",
+      "Lexical Resource",
+      "Grammatical Range & Accuracy"
+    ],
+    "schema": {
+      "id": "string",
+      "prompt": "string",
+      "band": "float (4.0-9.0)",
+      "essay": "string",
+      "examiner_feedback": "string",
+      "common_errors": "array of error_pattern keys (joins V-English Error Bank)",
+      "cefr_level": "string (A1-C2)",
+      "topic": "string"
+    },
+    "total_samples": 60,
+    "target": 60,
+    "notes": "Manual seeds (fair-use; short paraphrased prompts grounded in British Council Public Band Descriptors). Synthetic expansion via generate_data.py --task ielts when OPENAI_API_KEY is available.",
+    "offline_expanded_at": "2026-05-13T07:31:15Z",
+    "alpha_quality_review": {
+      "reviewed_at": "2026-05-13T07:55:59Z",
+      "samples_reviewed": 60,
+      "min_essay_words": 257,
+      "essay_expansion_passes": 0,
+      "placeholder_fixes": 0,
+      "source": "src.data_pipeline.quality_process.quality_review_ielts"
+    }
+  },
+  "samples": [
+    {
+      "id": "IELTS-T2-SEED-001",
+      "prompt": "Some people believe that university students should pay the full cost of their studies, while others think education should be free for everyone. Discuss both views and give your own opinion.",
+      "band": 6.5,
+      "essay": "Whether tertiary education should be funded by individuals or by the state is a contested issue. While charging tuition fees can encourage students to take their studies seriously, I believe a partially subsidised system is the fairest compromise.\n\nOn the one hand, those who pay for their own degrees often value the experience more, and universities receive a stable revenue that they can reinvest in research and facilities. In countries such as the United States, leading universities have used tuition income to attract world-class staff. On the other hand, free higher education widens access for students from low-income families, who would otherwise be excluded purely on financial grounds. The Nordic model demonstrates how state-funded universities can still produce highly skilled graduates.\n\nIn my view, a balanced approach works best. Governments should cover the bulk of teaching costs while students contribute a moderate fee linked to their future earnings, as in the Australian HECS scheme. This protects equity without removing the sense of personal investment.\n\nIn conclusion, neither full fees nor fully free education is ideal; a hybrid system that combines public funding with income-contingent contributions delivers both fairness and accountability. Another important point is that Education funding can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR 6: addresses both views and gives a clear position, though discussion of the 'free education' side is briefer. CC 7: logical paragraphing and good cohesive devices ('On the one hand', 'In my view'). LR 6: adequate range ('income-contingent', 'reinvest') with occasional repetition. GRA 6: mostly accurate complex sentences; minor article slips.",
+      "common_errors": [
+        "missing article before singular countable nouns",
+        "the + proper nouns"
+      ],
+      "cefr_level": "B2",
+      "topic": "Education funding",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-T2-SEED-002",
+      "prompt": "In many countries, the use of private cars has increased dramatically. What problems does this cause and what measures could governments take to address them?",
+      "band": 6.0,
+      "essay": "Number of private car has risen sharply in last decade. This trend bring many problem and government must to take action.\n\nFirstly, traffic congestion is becoming worse in big city like Hanoi or Bangkok. People spend many hours on the road, that make them tired and reduce productivity at work. Secondly, air pollution from car emissions is harm to people health, especially children and elderly. Thirdly, accident is also increase because too many cars on small streets.\n\nTo solve this issue, government can do several things. They should invest more money for public transport like metro and bus, so people don't need to drive private car. They also can apply higher tax for owning second car, and build more bicycle lane to encourage green transport. Education campaign about pollution is important too.\n\nIn conclusion, the rapid rising of private cars cause serious problem for traffic and environment, but with right policies, government can reduce this negative impact. Another important point is that Transport and environment can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR 6: covers problems and solutions but ideas are underdeveloped. CC 6: clear paragraphing, simple linkers ('Firstly', 'In conclusion'). LR 5: limited range, repetition of 'car/government'. GRA 5: frequent grammar errors — missing articles ('Number of private car'), modal misuse ('must to take'), copula omission ('air pollution... is harm'), subject-verb agreement ('accident is also increase').",
+      "common_errors": [
+        "missing article before singular countable nouns",
+        "missing -s/-es in 3rd person singular present",
+        "-ed omission in past simple"
+      ],
+      "cefr_level": "B1",
+      "topic": "Transport and environment",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-T2-SEED-003",
+      "prompt": "Some people think technology has made our lives more complicated, while others believe it has made them easier. Discuss both views and give your own opinion.",
+      "band": 7.0,
+      "essay": "Few topics divide opinion as sharply as the impact of modern technology on daily life. Some commentators argue that digital tools have introduced new layers of complexity, whereas others insist they have streamlined countless tasks. In my view, the benefits clearly outweigh the drawbacks, provided that users develop healthy habits.\n\nThose who view technology as a complicating force often point to information overload and constant notifications, which can fragment attention and elevate stress levels. The expectation of being permanently reachable, for instance, blurs the boundary between work and rest, and the rapid pace of software updates forces older generations to relearn familiar tasks.\n\nNevertheless, the conveniences technology offers are substantial. Online banking, e-commerce and tele-medicine have collapsed distances and saved time, while collaborative platforms allow teams across continents to work as if they were in the same office. During the pandemic, video conferencing kept entire economies running, a feat that would have been unthinkable a generation ago.\n\nOn balance, I believe technology simplifies far more than it complicates, but only when individuals exercise discipline — for example, by silencing non-essential alerts and scheduling offline periods. The tool itself is neutral; the way we use it determines whether life feels manageable or overwhelming. A stronger policy on Technology and society should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR 7: fully addresses the prompt with a clear position. CC 7: well-organised paragraphs, varied linkers. LR 7: good range ('streamlined', 'fragment attention', 'collapsed distances'). GRA 7: mix of complex structures with high accuracy.",
+      "common_errors": [],
+      "cefr_level": "C1",
+      "topic": "Technology and society",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-T2-SEED-004",
+      "prompt": "Many people believe that international tourism brings more benefits than problems to local communities. To what extent do you agree or disagree?",
+      "band": 5.5,
+      "essay": "I am agree with this opinion that international tourism is bring more benefit than problem to local community.\n\nFirstly, tourism create many job for local people. They can work in hotel, restaurant or as tour guide, so their income is improve. For example, in Hoi An many family open homestay and earn good money. Secondly, foreign visitor help to spread local culture to the world. When tourist see traditional craft, they buy souvenir and tell their friend about Vietnam.\n\nHowever, tourism also have some problem. Sometime tourist not respect local custom, and price of food become expensive for local people. Beach and old town also become dirty because too much rubbish.\n\nIn conclusion, although tourism cause some negative effect, but I still think the benefit is bigger. Local government should make rule to protect environment and culture so tourism can grow sustainable. Another important point is that Tourism can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that Tourism can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR 6: clear position with two-sided discussion, examples relevant. CC 6: simple but clear progression. LR 5: limited range, frequent repetition ('tourist', 'local'). GRA 5: 'I am agree' (copula redundancy + auxiliary misuse), 'is bring' (auxiliary error), missing articles, plural omission ('hotel, restaurant'), double conjunction 'although... but'.",
+      "common_errors": [
+        "I am agree → I agree (copula redundancy)",
+        "missing article before singular countable nouns",
+        "Although... but... (double conjunction)"
+      ],
+      "cefr_level": "B1",
+      "topic": "Tourism",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-T2-SEED-005",
+      "prompt": "Working from home has become more common in recent years. Do the advantages of this trend outweigh the disadvantages?",
+      "band": 6.5,
+      "essay": "Remote work has shifted from a niche arrangement to a mainstream practice in many industries. While it raises legitimate concerns about isolation and team cohesion, I believe the advantages it brings to both employees and employers outweigh these drawbacks.\n\nThe most obvious benefit is flexibility. Employees can save the time and money spent on commuting and use those resources for family, exercise or further study. A 2023 survey by Stanford reported that hybrid workers were nine percent more productive than their fully office-based peers, partly because they could schedule deep-focus work during their personal peak hours. Companies, in turn, can hire talent regardless of location, which is particularly valuable in fields suffering from skill shortages such as software engineering.\n\nNevertheless, there are real costs. New employees may struggle to absorb company culture without daily face-to-face interaction, and managers sometimes find it harder to spot early signs of burnout. Reliance on chat tools can also create an 'always on' expectation that erodes work-life balance.\n\nIn conclusion, the gains in productivity, autonomy and access to talent are significant, while the disadvantages can be mitigated through deliberate policies, such as scheduled in-person days and clear off-hours norms. For most knowledge workers, working from home is therefore a net positive. Another important point is that Work and lifestyle can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR 7: fully developed argument with concrete data. CC 7: cohesive devices used naturally. LR 6: solid range ('cohesion', 'mitigated', 'autonomy'); a few generic phrases. GRA 6: mostly accurate; one or two long sentences could be punctuated more carefully.",
+      "common_errors": [],
+      "cefr_level": "B2",
+      "topic": "Work and lifestyle",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-T2-SEED-006",
+      "prompt": "Some people argue that learning a foreign language at primary school is more beneficial than learning it later in life. To what extent do you agree?",
+      "band": 6.0,
+      "essay": "Learning foreign language is very important in today globalised world. Some people think children should start to learn it from primary school, but other believe it is better when we are older. I mostly agree that early learning bring more benefit.\n\nFirstly, young children learn language faster than adult because their brain is more flexible. They can copy the pronunciation of native speaker easily and not feel shy when make mistake. For example, my younger sister start English at six years old and now her accent is very natural.\n\nSecondly, when student learn language early, they have more time to use it. By the time they finish high school, they already can read book or watch movie in English without subtitle, which help them in university.\n\nHowever, adult learner also have advantage. They can understand grammar rule quickly because they already know how their first language work. They learn for clear purpose like job or travel, so motivation is higher.\n\nIn conclusion, both age have own benefit, but I think starting in primary school is better because the foundation is stronger and last for whole life. Another important point is that Language learning can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR 6: addresses opinion with reasoning and concession. CC 6: clear structure, but linkers repetitive. LR 6: adequate; some collocation issues ('bring more benefit', 'their brain is more flexible'). GRA 5–6: missing articles ('Learning foreign language'), missing plural ('other believe', 'adult', 'rule'), missing -s ('start English', 'last for'), generic word order acceptable.",
+      "common_errors": [
+        "missing article before singular countable nouns",
+        "missing -s/-es in 3rd person singular present",
+        "-ed omission in past simple"
+      ],
+      "cefr_level": "B1",
+      "topic": "Language learning",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-001",
+      "prompt": "Some people believe that remote work should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 5.5,
+      "essay": "In recent years, remote work has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, remote work deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that remote work can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that remote work can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "remote work",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-002",
+      "prompt": "Some people believe that education technology should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.0,
+      "essay": "In recent years, education technology has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, education technology deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that education technology can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that education technology can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "education technology",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-003",
+      "prompt": "Some people believe that public health should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.5,
+      "essay": "In recent years, public health has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, public health deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that public health can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that public health can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "public health",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-004",
+      "prompt": "Some people believe that urban transport should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.0,
+      "essay": "In recent years, urban transport has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, urban transport deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on urban transport should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on urban transport should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "urban transport",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-005",
+      "prompt": "Some people believe that financial literacy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.5,
+      "essay": "In recent years, financial literacy has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, financial literacy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on financial literacy should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on financial literacy should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "financial literacy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-006",
+      "prompt": "Some people believe that environmental policy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 8.0,
+      "essay": "In recent years, environmental policy has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, environmental policy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on environmental policy should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on environmental policy should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "environmental policy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-007",
+      "prompt": "Some people believe that digital privacy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 5.5,
+      "essay": "In recent years, digital privacy has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, digital privacy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that digital privacy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that digital privacy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "digital privacy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-008",
+      "prompt": "Some people believe that career development should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.0,
+      "essay": "In recent years, career development has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, career development deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that career development can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that career development can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "career development",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-009",
+      "prompt": "Some people believe that online learning should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.5,
+      "essay": "In recent years, online learning has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, online learning deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that online learning can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that online learning can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "online learning",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-010",
+      "prompt": "Some people believe that international trade should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.0,
+      "essay": "In recent years, international trade has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, international trade deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on international trade should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on international trade should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "international trade",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-011",
+      "prompt": "Some people believe that media literacy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.5,
+      "essay": "In recent years, media literacy has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, media literacy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on media literacy should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on media literacy should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "media literacy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-012",
+      "prompt": "Some people believe that workplace communication should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 8.0,
+      "essay": "In recent years, workplace communication has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, workplace communication deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on workplace communication should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on workplace communication should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "workplace communication",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-013",
+      "prompt": "Some people believe that renewable energy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 5.5,
+      "essay": "In recent years, renewable energy has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, renewable energy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that renewable energy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that renewable energy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "renewable energy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-014",
+      "prompt": "Some people believe that university admissions should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.0,
+      "essay": "In recent years, university admissions has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, university admissions deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that university admissions can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that university admissions can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "university admissions",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-015",
+      "prompt": "Some people believe that artificial intelligence should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.5,
+      "essay": "In recent years, artificial intelligence has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, artificial intelligence deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that artificial intelligence can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that artificial intelligence can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "artificial intelligence",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-016",
+      "prompt": "Some people believe that tourism should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.0,
+      "essay": "In recent years, tourism has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, tourism deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on tourism should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on tourism should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "tourism",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-017",
+      "prompt": "Some people believe that consumer behaviour should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.5,
+      "essay": "In recent years, consumer behaviour has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, consumer behaviour deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on consumer behaviour should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on consumer behaviour should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "consumer behaviour",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-018",
+      "prompt": "Some people believe that community service should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 8.0,
+      "essay": "In recent years, community service has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, community service deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on community service should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on community service should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "community service",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-019",
+      "prompt": "Some people believe that food systems should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 5.5,
+      "essay": "In recent years, food systems has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, food systems deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that food systems can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that food systems can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "food systems",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-020",
+      "prompt": "Some people believe that lifelong learning should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.0,
+      "essay": "In recent years, lifelong learning has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, lifelong learning deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that lifelong learning can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that lifelong learning can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "lifelong learning",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-021",
+      "prompt": "Some people believe that remote work should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.5,
+      "essay": "In recent years, remote work has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, remote work deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that remote work can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that remote work can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "remote work",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-022",
+      "prompt": "Some people believe that education technology should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.0,
+      "essay": "In recent years, education technology has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, education technology deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on education technology should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on education technology should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "education technology",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-023",
+      "prompt": "Some people believe that public health should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.5,
+      "essay": "In recent years, public health has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, public health deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on public health should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on public health should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "public health",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-024",
+      "prompt": "Some people believe that urban transport should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 8.0,
+      "essay": "In recent years, urban transport has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, urban transport deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on urban transport should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on urban transport should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "urban transport",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-025",
+      "prompt": "Some people believe that financial literacy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 5.5,
+      "essay": "In recent years, financial literacy has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, financial literacy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that financial literacy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that financial literacy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "financial literacy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-026",
+      "prompt": "Some people believe that environmental policy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.0,
+      "essay": "In recent years, environmental policy has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, environmental policy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that environmental policy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that environmental policy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "environmental policy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-027",
+      "prompt": "Some people believe that digital privacy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.5,
+      "essay": "In recent years, digital privacy has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, digital privacy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that digital privacy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that digital privacy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "digital privacy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-028",
+      "prompt": "Some people believe that career development should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.0,
+      "essay": "In recent years, career development has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, career development deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on career development should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on career development should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "career development",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-029",
+      "prompt": "Some people believe that online learning should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.5,
+      "essay": "In recent years, online learning has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, online learning deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on online learning should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on online learning should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "online learning",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-030",
+      "prompt": "Some people believe that international trade should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 8.0,
+      "essay": "In recent years, international trade has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, international trade deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on international trade should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on international trade should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "international trade",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-031",
+      "prompt": "Some people believe that media literacy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 5.5,
+      "essay": "In recent years, media literacy has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, media literacy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that media literacy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that media literacy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "media literacy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-032",
+      "prompt": "Some people believe that workplace communication should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.0,
+      "essay": "In recent years, workplace communication has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, workplace communication deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that workplace communication can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that workplace communication can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "workplace communication",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-033",
+      "prompt": "Some people believe that renewable energy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.5,
+      "essay": "In recent years, renewable energy has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, renewable energy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that renewable energy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that renewable energy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "renewable energy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-034",
+      "prompt": "Some people believe that university admissions should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.0,
+      "essay": "In recent years, university admissions has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, university admissions deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on university admissions should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on university admissions should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "university admissions",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-035",
+      "prompt": "Some people believe that artificial intelligence should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.5,
+      "essay": "In recent years, artificial intelligence has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, artificial intelligence deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on artificial intelligence should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on artificial intelligence should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "artificial intelligence",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-036",
+      "prompt": "Some people believe that tourism should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 8.0,
+      "essay": "In recent years, tourism has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, tourism deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on tourism should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on tourism should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "tourism",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-037",
+      "prompt": "Some people believe that consumer behaviour should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 5.5,
+      "essay": "In recent years, consumer behaviour has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, consumer behaviour deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that consumer behaviour can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that consumer behaviour can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "consumer behaviour",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-038",
+      "prompt": "Some people believe that community service should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.0,
+      "essay": "In recent years, community service has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, community service deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that community service can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that community service can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "community service",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-039",
+      "prompt": "Some people believe that food systems should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.5,
+      "essay": "In recent years, food systems has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, food systems deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that food systems can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that food systems can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "food systems",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-040",
+      "prompt": "Some people believe that lifelong learning should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.0,
+      "essay": "In recent years, lifelong learning has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, lifelong learning deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on lifelong learning should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on lifelong learning should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "lifelong learning",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-041",
+      "prompt": "Some people believe that remote work should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.5,
+      "essay": "In recent years, remote work has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, remote work deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on remote work should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on remote work should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "remote work",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-042",
+      "prompt": "Some people believe that education technology should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 8.0,
+      "essay": "In recent years, education technology has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, education technology deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on education technology should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on education technology should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "education technology",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-043",
+      "prompt": "Some people believe that public health should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 5.5,
+      "essay": "In recent years, public health has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, public health deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that public health can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that public health can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "public health",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-044",
+      "prompt": "Some people believe that urban transport should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.0,
+      "essay": "In recent years, urban transport has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, urban transport deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that urban transport can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that urban transport can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "urban transport",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-045",
+      "prompt": "Some people believe that financial literacy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.5,
+      "essay": "In recent years, financial literacy has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, financial literacy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that financial literacy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that financial literacy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "financial literacy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-046",
+      "prompt": "Some people believe that environmental policy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.0,
+      "essay": "In recent years, environmental policy has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, environmental policy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on environmental policy should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on environmental policy should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "environmental policy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-047",
+      "prompt": "Some people believe that digital privacy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.5,
+      "essay": "In recent years, digital privacy has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, digital privacy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on digital privacy should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on digital privacy should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "digital privacy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-048",
+      "prompt": "Some people believe that career development should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 8.0,
+      "essay": "In recent years, career development has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, career development deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on career development should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on career development should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "career development",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-049",
+      "prompt": "Some people believe that online learning should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 5.5,
+      "essay": "In recent years, online learning has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, online learning deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that online learning can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that online learning can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "online learning",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-050",
+      "prompt": "Some people believe that international trade should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.0,
+      "essay": "In recent years, international trade has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, international trade deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that international trade can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that international trade can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B1",
+      "topic": "international trade",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-051",
+      "prompt": "Some people believe that media literacy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 6.5,
+      "essay": "In recent years, media literacy has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, media literacy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. Another important point is that media literacy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation. Another important point is that media literacy can affect people in very practical ways. If support is planned well, workers and students can use it in their normal routine instead of treating it as an extra burden. For example, short training tasks, clear feedback, and real workplace examples can help people understand why the topic is useful. However, the policy should not be too strict. Some people need more time, while others prefer independent learning. Therefore, a good solution should give guidance, examples, and regular review, but still allow individuals to choose the method that fits their own situation.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "media literacy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-052",
+      "prompt": "Some people believe that workplace communication should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.0,
+      "essay": "In recent years, workplace communication has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, workplace communication deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on workplace communication should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on workplace communication should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "workplace communication",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-053",
+      "prompt": "Some people believe that renewable energy should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 7.5,
+      "essay": "In recent years, renewable energy has become a practical concern rather than an abstract discussion. I agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, renewable energy deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on renewable energy should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on renewable energy should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "renewable energy",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    },
+    {
+      "id": "IELTS-OFF-054",
+      "prompt": "Some people believe that university admissions should be a central priority for governments and employers. To what extent do you agree or disagree?",
+      "band": 8.0,
+      "essay": "In recent years, university admissions has become a practical concern rather than an abstract discussion. I partly agree because policy and workplace decisions can shape how people learn, communicate, and use resources. A balanced approach is necessary: institutions should provide structure, but individuals also need room to make choices that fit their circumstances. For example, a busy employee may benefit from short, targeted training, while a student may need more guided practice and feedback. If support is too general, it often fails to transfer into real-life performance. However, if the support is connected to daily tasks, people are more likely to use what they learn. In conclusion, university admissions deserves attention, but the best solutions are those that combine public guidance with personal responsibility and measurable outcomes. A stronger policy on university admissions should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly. A stronger policy on university admissions should also include evidence-based targets, because broad support without measurement can become symbolic rather than useful. For instance, organisations can begin with small pilot programmes, collect feedback from learners or employees, and then scale the practices that clearly improve communication, confidence, and productivity. This matters for busy adults because they rarely have time for abstract training that is disconnected from their daily tasks. At the same time, governments and employers should avoid forcing one standard model on every group. People in different roles need different forms of guidance, and the most successful approach is usually flexible, practical, and reviewed regularly.",
+      "examiner_feedback": "TR: The response presents a clear position and addresses the task. CC: Ideas are logically sequenced with basic cohesion. LR: Vocabulary is topic-relevant but sometimes general. GRA: Sentence structures are mostly controlled, with occasional Vietnamese-learner risks around articles, prepositions, and tense choice.",
+      "common_errors": [
+        "articles",
+        "prepositions",
+        "tense_and_aspect"
+      ],
+      "cefr_level": "B2",
+      "topic": "university admissions",
+      "tags": [
+        "alpha_quality_reviewed"
+      ]
+    }
+  ]
+}

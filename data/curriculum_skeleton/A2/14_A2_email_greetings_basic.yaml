@@ -1,0 +1,42 @@
+topic_id: A2_email_greetings_basic
+title: "Mở đầu và kết thúc email cơ bản"
+cefr_level: A2
+skill_type: vocabulary
+
+prerequisites:
+  - A2_basic_business_vocab
+
+objectives:
+  - "Dùng đúng các cụm chào hỏi đầu email (Dear/Hi/Hello)"
+  - "Dùng đúng các cụm kết thúc email (Best regards, Thanks)"
+  - "Phân biệt mức độ trang trọng (formal vs casual)"
+
+common_errors:
+  - wrong: "Dear Mr. John, ..."
+    correct: "Dear John, OR Dear Mr. Smith,"
+    hint: "Sau 'Mr./Ms.' dùng HỌ (last name), không dùng tên (first name)"
+
+  - wrong: "Hi all, How are you?"
+    correct: "Hi everyone, How are you?"
+    hint: "Trong email, 'Hi everyone' tự nhiên hơn 'Hi all' (mặc dù 'Hi all' cũng được dùng)"
+
+  - wrong: "Best regard, Linh"
+    correct: "Best regards, Linh"
+    hint: "Cụm cố định 'Best regards' (luôn có 's')"
+
+  - wrong: "I send to you the report"
+    correct: "I am sending you the report (attached)"
+    hint: "Trong email, dùng Present Continuous khi nói về việc đang làm ngay lúc gửi"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - meeting
+  - feedback
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

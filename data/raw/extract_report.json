@@ -1,0 +1,42 @@
+{
+  "jfleg_to_errors": {
+    "count": 991,
+    "stats": {
+      "word_choice_lexical": 612,
+      "tense_and_aspect": 197,
+      "prepositions": 66,
+      "articles": 101,
+      "modal_verbs": 15
+    },
+    "path": "data\\processed\\common_errors\\jfleg_auto_extracted.json"
+  },
+  "wiki_to_industry_vocab": {
+    "stats": {
+      "Education": {
+        "promoted": 69,
+        "raw_available": 70
+      },
+      "Finance": {
+        "promoted": 100,
+        "raw_available": 629
+      },
+      "Healthcare": {
+        "promoted": 100,
+        "raw_available": 233
+      },
+      "IT": {
+        "promoted": 100,
+        "raw_available": 178
+      },
+      "Marketing": {
+        "promoted": 26,
+        "raw_available": 26
+      },
+      "Sales": {
+        "promoted": 100,
+        "raw_available": 136
+      }
+    },
+    "out_path": "data\\processed\\industry_vocab\\wiki_auto_extracted.json"
+  }
+}

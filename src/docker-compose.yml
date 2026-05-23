@@ -1,0 +1,126 @@
+services:
+  backend:
+    build: ./backend
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/app:/app/app
+      - ./backend/alembic:/app/alembic
+      - ./backend/alembic.ini:/app/alembic.ini
+      - ./backend/tests:/app/tests
+      - ../data/processed:/app/data/processed:ro
+      - ../data/curriculum_skeleton:/app/data/curriculum_skeleton:ro
+      - ../data/observability:/app/data/observability
+    environment:
+      # ${VAR:-default} reads from .env (or shell) with a dev-friendly
+      # fallback so the stack still boots if .env is missing.
+      - USE_DOCKER_SERVICE_HOSTS=true
+      - DATABASE_URL=postgresql+psycopg://${POSTGRES_USER:-tutor}:${POSTGRES_PASSWORD:-tutorpass}@postgres:5432/${POSTGRES_DB:-tutordb}
+      - REDIS_URL=redis://redis:6379/0
+      - QDRANT_URL=http://qdrant:6333
+      - PROCESSED_DATA_DIR=/app/data/processed
+      - CURRICULUM_ROOT=/app/data/curriculum_skeleton
+      - MEMORY_HOTPATH_ENABLED=true
+      - MEMORY_WRITE_MODE=${MEMORY_WRITE_MODE:-queued}
+      - MEMORY_VERTEX_RPM_LIMIT=${MEMORY_VERTEX_RPM_LIMIT:-4}
+      - MEMORY_OUTBOX_MAX_RETRIES=${MEMORY_OUTBOX_MAX_RETRIES:-8}
+      - MEMORY_CIRCUIT_BREAKER_SECONDS=${MEMORY_CIRCUIT_BREAKER_SECONDS:-60}
+      - MEMORY_OUTBOX_FLUSH_BATCH=${MEMORY_OUTBOX_FLUSH_BATCH:-1}
+      - MEMORY_OPPORTUNISTIC_FLUSH_ENABLED=${MEMORY_OPPORTUNISTIC_FLUSH_ENABLED:-false}
+      - PRACTICE_HINTS_ENABLED=${PRACTICE_HINTS_ENABLED:-false}
+      - CHAT_LLM_PROVIDER=groq
+      - LOGLEVEL=DEBUG
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/ready', timeout=2).read()"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_PROXY_TARGET=http://backend:8000
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/index.html:/app/index.html
+      - ./frontend/vite.config.js:/app/vite.config.js
+      - ./frontend/tailwind.config.js:/app/tailwind.config.js
+      - ./frontend/postcss.config.js:/app/postcss.config.js
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-tutor}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-tutorpass}
+      POSTGRES_DB: ${POSTGRES_DB:-tutordb}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-tutor} -d ${POSTGRES_DB:-tutordb}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  qdrant:
+    image: qdrant/qdrant:v1.11.0
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrantdata:/qdrant/storage
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c '</dev/tcp/127.0.0.1/6333' || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Web UI for Postgres. Open http://localhost:5050 — login with the
+  # PGADMIN_DEFAULT_EMAIL / PGADMIN_DEFAULT_PASSWORD below. The "A20 dev
+  # (postgres)" server is pre-registered via servers.json; you'll only
+  # be asked for the postgres password (`tutorpass`) on first connect.
+  # This service is dev-only; do NOT enable in production.
+  pgadmin:
+    image: dpage/pgadmin4:8
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+      PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: "False"
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmindata:/var/lib/pgadmin
+      - ./pgadmin/servers.json:/pgadmin4/servers.json:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+  qdrantdata:
+  pgadmindata:

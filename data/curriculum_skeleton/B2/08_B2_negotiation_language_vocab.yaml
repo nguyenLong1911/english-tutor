@@ -1,0 +1,48 @@
+topic_id: B2_negotiation_language_vocab
+title: "Từ vựng đàm phán và thương lượng"
+cefr_level: B2
+skill_type: vocabulary
+
+prerequisites:
+  - B1_email_writing_vocab
+  - B2_stakeholder_communication_vocab
+
+objectives:
+  - "Dùng các cụm từ chuẩn để mở, tiến hành, kết thúc đàm phán"
+  - "Phân biệt các mức độ cam kết (we'd consider, we're open to, we'd require)"
+  - "Diễn đạt lập trường (firm/flexible) và đưa ra trade-off một cách chuyên nghiệp"
+
+common_errors:
+  - wrong: "I want you to lower the price"
+    correct: "Would you be willing to lower the price?"
+    hint: "Trong đàm phán, dùng câu hỏi lịch sự thay vì câu mệnh lệnh. 'Would you be willing to' rất phổ biến"
+
+  - wrong: "I'm agree with your proposal"
+    correct: "I agree with your proposal"
+    hint: "'agree' là động từ thường, KHÔNG đi với 'be'. Đừng nói 'I'm agree'"
+
+  - wrong: "We can to consider your offer"
+    correct: "We could consider your offer"
+    hint: "Sau modal 'can/could' KHÔNG có 'to'. 'could' lịch sự hơn 'can' trong đàm phán"
+
+  - wrong: "Let's compromise in the middle"
+    correct: "Let's meet in the middle / Let's find a compromise"
+    hint: "Cụm chuẩn: 'meet in the middle' (đồng ý điểm trung gian). 'compromise' là danh từ/động từ độc lập"
+
+  - wrong: "This is our final price, we cannot to negotiate"
+    correct: "This is our final offer; the price is non-negotiable"
+    hint: "'non-negotiable' là tính từ chuyên dụng cho điều khoản không thương lượng. Tránh 'cannot to'"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - negotiate
+  - stakeholder
+  - feedback
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

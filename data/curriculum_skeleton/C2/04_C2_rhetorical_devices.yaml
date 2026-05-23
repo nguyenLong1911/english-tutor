@@ -1,0 +1,46 @@
+topic_id: C2_rhetorical_devices
+title: "Rhetorical Devices trong thuyết trình và persuasive writing"
+cefr_level: C2
+skill_type: grammar
+
+prerequisites:
+  - C1_discourse_cohesion
+  - B2_inversion_emphasis
+
+objectives:
+  - "Dùng tricolon và parallel structure để tạo nhịp điệu thuyết phục trong presentation"
+  - "Áp dụng rhetorical questions, anaphora và chiasmus đúng ngữ cảnh"
+  - "Tạo emphasis bằng fronting, cleft sentences và syntactic repetition một cách có chủ đích"
+  - "Phân biệt khi nào rhetorical device làm tăng sức mạnh và khi nào làm giảm sự credibility"
+
+common_errors:
+  - wrong: "We need to improve quality, we need to reduce costs, and improve delivery time"
+    correct: "We need to improve quality, reduce costs, and accelerate delivery"
+    hint: "Parallel structure: tất cả 3 vế phải cùng dạng động từ nguyên thể. 'accelerate' đồng dạng với 'improve' và 'reduce'"
+
+  - wrong: "Is it possible that we can achieve this target? The answer is yes we can."
+    correct: "Can we achieve this target? We can — and we will."
+    hint: "Rhetorical question cần ngắn gọn, đanh thép. Câu trả lời dùng ellipsis + inversion tạo climax. Tránh giải thích quá rõ câu hỏi"
+
+  - wrong: "Our company has grown, and it has also become more profitable, and customer satisfaction has also improved"
+    correct: "We have grown. We have become more profitable. We have earned the trust of our customers."
+    hint: "Anaphora ('We have...') tạo rhythm mạnh hơn chuỗi 'and...and'. Câu ngắn, lặp đầu câu = công cụ thuyết phục hiệu quả"
+
+  - wrong: "Not only do we sell products, but we also provide services too"
+    correct: "Not only do we sell products; we build relationships"
+    hint: "'Not only... but also' đã là cấu trúc đầy đủ — không cần 'too'. Bỏ vế 2 nếu muốn dramatic impact từ implicit contrast"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.85
+
+recommended_vocab:
+  - campaign
+  - launch
+  - stakeholder
+  - revenue
+
+exercise_types:
+  - error_correction
+  - sentence_production
+  - context_usage

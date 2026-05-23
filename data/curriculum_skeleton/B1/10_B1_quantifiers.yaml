@@ -1,0 +1,43 @@
+topic_id: B1_quantifiers
+title: "Lượng từ: some/any, much/many, few/little"
+cefr_level: B1
+skill_type: grammar
+
+prerequisites:
+  - A2_present_simple_be
+
+objectives:
+  - "Phân biệt some (khẳng định) vs any (phủ định/nghi vấn)"
+  - "Dùng đúng much/many với danh từ đếm được/không đếm được"
+  - "Phân biệt few/a few, little/a little (mang nghĩa tích cực vs tiêu cực)"
+
+common_errors:
+  - wrong: "I don't have some time today"
+    correct: "I don't have any time today"
+    hint: "'some' dùng trong câu khẳng định. 'any' dùng trong phủ định và nghi vấn"
+
+  - wrong: "We have many information about the project"
+    correct: "We have a lot of information about the project"
+    hint: "'information' không đếm được → không dùng 'many'. Dùng 'much' hoặc 'a lot of'"
+
+  - wrong: "She has few friends, she is very happy"
+    correct: "She has a few friends, she is very happy"
+    hint: "'few' = ít (tiêu cực, gần như không có). 'a few' = một vài (tích cực)"
+
+  - wrong: "How much people came to the meeting?"
+    correct: "How many people came to the meeting?"
+    hint: "'people' đếm được → dùng 'how many'. 'how much' cho không đếm được"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - meeting
+  - feedback
+  - revenue
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - matching

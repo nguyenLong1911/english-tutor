@@ -1,0 +1,46 @@
+topic_id: C2_advanced_concession_contrast
+title: "Cấu trúc nhượng bộ và đối lập nâng cao"
+cefr_level: C2
+skill_type: grammar
+
+prerequisites:
+  - C1_discourse_cohesion
+  - C1_subjunctive_unreal_past
+
+objectives:
+  - "Dùng đúng 'however/nevertheless/nonetheless/even so/that said' theo tầng ngữ nghĩa"
+  - "Diễn đạt nhượng bộ với 'granted that / admittedly / while it is true that ... yet'"
+  - "Tạo câu đối lập phức tạp với 'whereas / whilst / by contrast / as opposed to'"
+  - "Phân biệt concession (thừa nhận điểm đối lập) và contrast (đơn thuần so sánh)"
+
+common_errors:
+  - wrong: "Although he is experienced, but he made a serious error"
+    correct: "Although he is experienced, he made a serious error"
+    hint: "'Although' và 'but' không dùng cùng nhau trong 1 câu. 'Although' đã đóng vai contrasting — bỏ 'but'"
+
+  - wrong: "In spite of he worked hard, the project failed"
+    correct: "In spite of his hard work, the project failed"
+    hint: "'In spite of' là giới từ — theo sau là noun phrase, không phải mệnh đề. Dùng 'Although he worked hard,...' nếu muốn mệnh đề"
+
+  - wrong: "Nevertheless, on the other hand, the budget is limited"
+    correct: "Nevertheless, the budget remains constrained"
+    hint: "'Nevertheless' và 'on the other hand' không dùng cùng lúc — trùng chức năng. Chọn một"
+
+  - wrong: "Despite of the challenges, we succeeded"
+    correct: "Despite the challenges, we succeeded"
+    hint: "'Despite' không đi với 'of'. Chỉ 'in spite of' mới có 'of'. Đây là lỗi rất phổ biến của người Việt"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.85
+
+recommended_vocab:
+  - stakeholder
+  - campaign
+  - negotiate
+  - revenue
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

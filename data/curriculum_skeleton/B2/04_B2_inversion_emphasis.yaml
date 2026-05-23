@@ -1,0 +1,48 @@
+topic_id: B2_inversion_emphasis
+title: "Đảo ngữ và câu nhấn mạnh"
+cefr_level: B2
+skill_type: grammar
+
+prerequisites:
+  - B1_present_perfect_vs_past_simple
+  - B1_conditionals_1_2
+
+objectives:
+  - "Dùng đảo ngữ với từ phủ định mở đầu (Never, Rarely, Not only, Hardly...)"
+  - "Tạo câu chẻ (cleft sentences) với 'It is... that' và 'What... is'"
+  - "Áp dụng inversion trong văn viết formal (báo cáo, presentation)"
+
+common_errors:
+  - wrong: "Never I have seen such a successful campaign"
+    correct: "Never have I seen such a successful campaign"
+    hint: "Sau 'Never' đầu câu phải đảo trợ động từ lên trước chủ ngữ: 'Never have I seen'"
+
+  - wrong: "Not only she is smart, but also she is hardworking"
+    correct: "Not only is she smart, but she is also hardworking"
+    hint: "Sau 'Not only' đầu câu: đảo 'is/are' lên trước chủ ngữ. 'also' đặt sau chủ ngữ ở mệnh đề 2"
+
+  - wrong: "Hardly I had finished when the boss called"
+    correct: "Hardly had I finished when the boss called"
+    hint: "Sau 'Hardly' phải đảo: 'had + S + V3'. Cấu trúc: Hardly had S + V3 when..."
+
+  - wrong: "It was the marketing team who launched the product"
+    correct: "It was the marketing team that/who launched the product"
+    hint: "Cấu trúc câu chẻ: 'It is/was + emphasized part + that/who + rest'. Đúng cả hai cách"
+
+  - wrong: "What I need is more time and resources"
+    correct: "What I need is more time and resources"
+    hint: "Câu này đúng. Cấu trúc câu chẻ với What: 'What + S + V + is/are + emphasized part'"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - launch
+  - campaign
+  - stakeholder
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

@@ -1,0 +1,46 @@
+topic_id: C1_advanced_modal_verbs
+title: "Modal Verbs nâng cao — suy luận, phê phán, nuối tiếc"
+cefr_level: C1
+skill_type: grammar
+
+prerequisites:
+  - B1_modals_obligation
+  - B2_conditionals_3_mixed
+
+objectives:
+  - "Dùng 'must/can't/could/might/should + have + V3' để suy luận và phê phán về quá khứ"
+  - "Phân biệt 'needn't have done' (làm rồi nhưng không cần) vs 'didn't need to do' (không làm)"
+  - "Diễn đạt nuối tiếc và phê phán với 'should/ought to/could have + V3'"
+  - "Dùng 'would rather + past subjunctive' và 'had better' đúng ngữ cảnh"
+
+common_errors:
+  - wrong: "She must forgot to send the report"
+    correct: "She must have forgotten to send the report"
+    hint: "Suy luận về quá khứ: 'must have + V3'. Không dùng 'must + bare infinitive' cho sự kiện đã qua"
+
+  - wrong: "You should finish the proposal yesterday"
+    correct: "You should have finished the proposal yesterday"
+    hint: "Phê phán/nuối tiếc về quá khứ: 'should have + V3', không dùng present với time marker quá khứ"
+
+  - wrong: "He needn't have to attend the meeting, so he didn't go"
+    correct: "He didn't need to attend the meeting, so he didn't go"
+    hint: "'needn't have done' = đã làm nhưng không cần. 'didn't need to do' = không làm vì không cần"
+
+  - wrong: "I would rather you will leave early"
+    correct: "I would rather you left early"
+    hint: "'would rather + S + past subjunctive'. Không dùng 'will/would' sau 'rather' khi có chủ ngữ khác"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - feedback
+  - deploy
+  - negotiate
+  - deliverable
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

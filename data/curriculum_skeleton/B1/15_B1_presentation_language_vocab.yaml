@@ -1,0 +1,44 @@
+topic_id: B1_presentation_language_vocab
+title: "Từ vựng thuyết trình cơ bản"
+cefr_level: B1
+skill_type: vocabulary
+
+prerequisites:
+  - A2_meeting_basics
+
+objectives:
+  - "Dùng các cụm từ chuẩn để mở đầu, chuyển ý, kết thúc bài thuyết trình"
+  - "Mô tả biểu đồ và xu hướng (rise, fall, peak, decline)"
+  - "Mời câu hỏi và phản hồi audience"
+
+common_errors:
+  - wrong: "Today I will talk about for our new product"
+    correct: "Today I will talk about our new product"
+    hint: "'talk about' đã đầy đủ rồi. KHÔNG thêm 'for' phía sau"
+
+  - wrong: "Now I pass to the next slide"
+    correct: "Now let's move on to the next slide"
+    hint: "Cụm thuyết trình chuẩn: 'move on to the next slide/topic'"
+
+  - wrong: "The graph show the revenue go up significantly"
+    correct: "The graph shows that revenue went up significantly"
+    hint: "Chủ ngữ số ít 'graph' → 'shows'. Dùng 'that' để dẫn mệnh đề"
+
+  - wrong: "If you have some questions, please ask"
+    correct: "If you have any questions, please ask"
+    hint: "Trong câu điều kiện, dùng 'any' thay vì 'some' khi không chắc có hay không"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - revenue
+  - feedback
+  - launch
+  - campaign
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

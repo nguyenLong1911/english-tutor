@@ -1,0 +1,38 @@
+topic_id: A2_past_simple_regular
+title: "Quá khứ đơn — Động từ có quy tắc"
+cefr_level: A2
+skill_type: grammar
+
+prerequisites:
+  - A2_present_simple_be
+
+objectives:
+  - "Thêm '-ed' đúng quy tắc cho động từ thường (work → worked, study → studied)"
+  - "Dùng 'did/didn't' để hỏi và phủ định ở quá khứ"
+  - "Kể lại 1 hoạt động đã hoàn thành trong quá khứ"
+
+common_errors:
+  - wrong: "I worked yesterday and I studyed at night"
+    correct: "I worked yesterday and I studied at night"
+    hint: "Động từ kết thúc bằng phụ âm + y → đổi y thành 'ied' (study → studied)"
+
+  - wrong: "She didn't worked here"
+    correct: "She didn't work here"
+    hint: "Sau 'didn't' dùng động từ nguyên mẫu, không thêm '-ed'"
+
+  - wrong: "Did you went to the meeting?"
+    correct: "Did you go to the meeting?"
+    hint: "Sau 'Did' dùng động từ nguyên mẫu, không dùng dạng quá khứ"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - launch
+  - meeting
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

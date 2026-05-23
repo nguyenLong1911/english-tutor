@@ -1,0 +1,44 @@
+topic_id: B1_present_perfect_vs_past_simple
+title: "Present Perfect vs Past Simple"
+cefr_level: B1
+skill_type: grammar
+
+prerequisites:
+  - A2_past_simple_regular
+  - A2_past_simple_irregular
+
+objectives:
+  - "Nhận biết time markers: since, for, ever, never, yet, already"
+  - "Phân biệt khi nào dùng Present Perfect vs Past Simple"
+  - "Tự viết được 3 câu Present Perfect về công việc/cuộc sống"
+
+common_errors:
+  - wrong: "I have seen him yesterday"
+    correct: "I saw him yesterday"
+    hint: "Time marker 'yesterday' chỉ rõ quá khứ đã xong — dùng Past Simple"
+
+  - wrong: "I work here since 2020"
+    correct: "I have worked here since 2020"
+    hint: "'Since' đi với Present Perfect khi hành động kéo dài đến hiện tại"
+
+  - wrong: "Did you ever been to Japan?"
+    correct: "Have you ever been to Japan?"
+    hint: "'Ever' (đã từng) đi với Present Perfect, không đi với Past Simple"
+
+  - wrong: "I have finished the report 2 hours ago"
+    correct: "I finished the report 2 hours ago"
+    hint: "'ago' (cách đây) chỉ thời điểm cụ thể trong quá khứ → Past Simple"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - launch
+  - meeting
+  - feedback
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

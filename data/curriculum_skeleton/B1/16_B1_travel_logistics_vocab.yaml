@@ -1,0 +1,42 @@
+topic_id: B1_travel_logistics_vocab
+title: "Từ vựng công tác và di chuyển"
+cefr_level: B1
+skill_type: vocabulary
+
+prerequisites:
+  - A2_basic_business_vocab
+  - A2_numbers_dates_money
+
+objectives:
+  - "Dùng được 12 từ về business trip (book, check-in, itinerary, accommodation...)"
+  - "Hỏi và đặt vé, khách sạn qua email"
+  - "Báo cáo lịch trình công tác cho cấp trên"
+
+common_errors:
+  - wrong: "I will book a flight for go to Singapore"
+    correct: "I will book a flight to Singapore"
+    hint: "Sau 'flight' dùng 'to + địa điểm', không cần 'for go to'"
+
+  - wrong: "I made a reservation in the hotel for 3 nights"
+    correct: "I made a reservation at the hotel for 3 nights"
+    hint: "'at the hotel' (địa điểm cụ thể). 'in the hotel' = bên trong khách sạn (vật lý)"
+
+  - wrong: "What time is the check-in?"
+    correct: "What time is check-in?"
+    hint: "'check-in' khi dùng như danh từ thông thường KHÔNG cần mạo từ 'the'"
+
+  - wrong: "The company will pay all the expensives"
+    correct: "The company will pay all the expenses"
+    hint: "'expensive' là tính từ. 'expenses' (số nhiều) là danh từ chỉ chi phí"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - meeting
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

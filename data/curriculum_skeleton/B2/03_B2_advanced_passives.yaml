@@ -1,0 +1,48 @@
+topic_id: B2_advanced_passives
+title: "Bị động nâng cao và bị động kép"
+cefr_level: B2
+skill_type: grammar
+
+prerequisites:
+  - B1_passive_voice
+
+objectives:
+  - "Dùng bị động với động từ tường thuật (It is said that... / He is believed to...)"
+  - "Bị động với 2 tân ngữ (give, tell, send, offer)"
+  - "Bị động với động từ khiếm khuyết (must be done, should have been done)"
+
+common_errors:
+  - wrong: "It is say that the company is expanding"
+    correct: "It is said that the company is expanding"
+    hint: "Sau 'is/are' dùng PHÂN TỪ 2: 'said'. Đây là cấu trúc bị động"
+
+  - wrong: "He is believing to be the best candidate"
+    correct: "He is believed to be the best candidate"
+    hint: "Cấu trúc bị động + to V: 'S + is/are + V3 + to V'. Dùng 'believed', không 'believing'"
+
+  - wrong: "The report should be finish by tomorrow"
+    correct: "The report should be finished by tomorrow"
+    hint: "Sau modal + 'be', dùng PHÂN TỪ 2 (V3): finished, không dùng nguyên thể"
+
+  - wrong: "I was given a bonus by the company"
+    correct: "I was given a bonus by the company"
+    hint: "Câu này đúng. Lưu ý: với động từ 2 tân ngữ (give/send), người nhận có thể làm chủ ngữ bị động"
+
+  - wrong: "The deadline must been moved"
+    correct: "The deadline must have been moved"
+    hint: "Bị động hoàn thành sau modal: 'modal + have + been + V3'. Đừng quên 'have'"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - launch
+  - deploy
+  - deliverable
+  - stakeholder
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

@@ -1,0 +1,47 @@
+{
+  "total_cases": 1,
+  "ok_cases": 1,
+  "failed_requests": 0,
+  "gold_failed": 0,
+  "span_precision": 1.0,
+  "span_recall": 0.25,
+  "span_f1": 0.4,
+  "average_error_detection_rate_per_sentence": 0.25,
+  "mean_sentence_span_recall": 0.25,
+  "mean_sentence_span_precision": 1.0,
+  "mean_sentence_span_f1": 0.4,
+  "matched_spans": 2,
+  "gold_spans": 8,
+  "system_spans": 2,
+  "sentence_full_match_rate": 0.0,
+  "latency_ms": {
+    "p50": 3773.0,
+    "p95": 3773.0
+  },
+  "top_missed_spans": [
+    {
+      "span": "considers",
+      "count": 1
+    },
+    {
+      "span": "uk exit",
+      "count": 1
+    },
+    {
+      "span": "you're",
+      "count": 1
+    },
+    {
+      "span": "you'd",
+      "count": 1
+    },
+    {
+      "span": "holding",
+      "count": 1
+    },
+    {
+      "span": "then dumping",
+      "count": 1
+    }
+  ]
+}

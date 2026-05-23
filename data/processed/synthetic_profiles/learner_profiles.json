@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Evidently-style learner profiles seeding synthetic dialogue generation (data_instruction.md §'Thiết kế Kịch bản Đối thoại ESL'). Each profile pins persona × CEFR × L1-transfer focus × scenario so LLM emits realistic Vietnamese-English ESL errors.",
+    "schema": "data_pipeline.schemas.LearnerProfile",
+    "total_profiles": 12,
+    "coverage": {
+      "personas": ["first_timer", "speed_runner", "qa_destroyer"],
+      "cefr": ["A1", "A2", "B1", "B2", "C1"],
+      "l1_focus": [
+        "tense_and_aspect", "copula_be_omission", "copula_be_redundancy",
+        "adverb_misplacement", "double_conjunction", "article_omission",
+        "subject_verb_agreement", "word_order_svo", "word_choice_lexical"
+      ]
+    },
+    "usage": "Load via data_pipeline.synthetic.SyntheticPipeline.sample_seeds(profiles, k) before each LLM expansion call."
+  },
+  "profiles": [
+    {
+      "profile_id": "LP-001",
+      "persona": "first_timer",
+      "cefr_level": "A1",
+      "occupation": "high school student in Hanoi",
+      "l1_transfer_focus": ["copula_be_omission", "tense_and_aspect"],
+      "register_preference": "informal",
+      "mood": "neutral",
+      "scenario": "describing what I did yesterday after school",
+      "target_skill": "speaking",
+      "notes": "Tends to drop 'be' before adjectives ('I tired') and use base verb for past ('Yesterday I go')."
+    },
+    {
+      "profile_id": "LP-002",
+      "persona": "first_timer",
+      "cefr_level": "A2",
+      "occupation": "first-year university student",
+      "l1_transfer_focus": ["article_omission", "subject_verb_agreement"],
+      "register_preference": "informal",
+      "mood": "low",
+      "scenario": "introducing my family to a new classmate",
+      "target_skill": "speaking",
+      "notes": "Skips 'a/an/the' before singular countable nouns; misses -s on 3rd-person singular."
+    },
+    {
+      "profile_id": "LP-003",
+      "persona": "first_timer",
+      "cefr_level": "A2",
+      "occupation": "barista at a chain café",
+      "l1_transfer_focus": ["word_order_svo", "word_choice_lexical"],
+      "register_preference": "semi-formal",
+      "mood": "energized",
+      "scenario": "taking an English-speaking customer's order",
+      "target_skill": "speaking",
+      "notes": "Places adjective after noun ('coffee hot') under Vietnamese SVO influence; confuses 'borrow/lend'."
+    },
+    {
+      "profile_id": "LP-004",
+      "persona": "speed_runner",
+      "cefr_level": "B1",
+      "occupation": "junior software engineer",
+      "l1_transfer_focus": ["copula_be_redundancy", "tense_and_aspect"],
+      "register_preference": "semi-formal",
+      "mood": "energized",
+      "scenario": "stand-up status update at work",
+      "target_skill": "speaking",
+      "notes": "'I am study English every day' (redundant be); mixes simple past and present perfect."
+    },
+    {
+      "profile_id": "LP-005",
+      "persona": "speed_runner",
+      "cefr_level": "B1",
+      "occupation": "marketing junior at an e-commerce startup",
+      "l1_transfer_focus": ["double_conjunction", "adverb_misplacement"],
+      "register_preference": "semi-formal",
+      "mood": "neutral",
+      "scenario": "writing a Slack message to summarise a campaign result",
+      "target_skill": "writing",
+      "notes": "'Although ... but ...' pattern; 'I studied always my report' (adverb after verb)."
+    },
+    {
+      "profile_id": "LP-006",
+      "persona": "speed_runner",
+      "cefr_level": "B2",
+      "occupation": "sales account manager",
+      "l1_transfer_focus": ["word_choice_lexical", "article_omission"],
+      "register_preference": "formal",
+      "mood": "peak",
+      "scenario": "pitching a quarterly proposal to an English-speaking client",
+      "target_skill": "speaking",
+      "notes": "False friends ('actually' = 'currently' from VN 'thực ra'); occasional missing articles in long noun phrases."
+    },
+    {
+      "profile_id": "LP-007",
+      "persona": "qa_destroyer",
+      "cefr_level": "B2",
+      "occupation": "senior QA engineer",
+      "l1_transfer_focus": ["subject_verb_agreement", "tense_and_aspect"],
+      "register_preference": "formal",
+      "mood": "energized",
+      "scenario": "filing a detailed bug report in English",
+      "target_skill": "writing",
+      "notes": "Edge cases: collective noun agreement ('the team are/is'), past perfect vs simple past ordering."
+    },
+    {
+      "profile_id": "LP-008",
+      "persona": "qa_destroyer",
+      "cefr_level": "C1",
+      "occupation": "test architect",
+      "l1_transfer_focus": ["adverb_misplacement", "word_choice_lexical"],
+      "register_preference": "formal",
+      "mood": "neutral",
+      "scenario": "reviewing a junior's English documentation and leaving comments",
+      "target_skill": "writing",
+      "notes": "Subtle adverb position ('I have always been doing' vs 'I always have been doing'); register-shifting verbs."
+    },
+    {
+      "profile_id": "LP-009",
+      "persona": "first_timer",
+      "cefr_level": "A2",
+      "occupation": "primary-school English teacher in a rural province",
+      "l1_transfer_focus": ["copula_be_omission", "article_omission"],
+      "register_preference": "semi-formal",
+      "mood": "low",
+      "scenario": "explaining a lesson to a parent over the phone",
+      "target_skill": "speaking",
+      "notes": "Strong VN syntactic transfer in spoken sentences; pauses often."
+    },
+    {
+      "profile_id": "LP-010",
+      "persona": "speed_runner",
+      "cefr_level": "B2",
+      "occupation": "freelance content writer",
+      "l1_transfer_focus": ["double_conjunction", "word_order_svo"],
+      "register_preference": "informal",
+      "mood": "exhausted",
+      "scenario": "writing a quick blog intro at 11pm",
+      "target_skill": "writing",
+      "notes": "Tired-state errors increase: drops articles, mixes adjective order."
+    },
+    {
+      "profile_id": "LP-011",
+      "persona": "qa_destroyer",
+      "cefr_level": "C1",
+      "occupation": "engineering manager",
+      "l1_transfer_focus": ["word_choice_lexical", "tense_and_aspect"],
+      "register_preference": "formal",
+      "mood": "peak",
+      "scenario": "delivering a technical talk at a public meetup",
+      "target_skill": "speaking",
+      "notes": "Mostly accurate but occasional false friends and present perfect overuse."
+    },
+    {
+      "profile_id": "LP-012",
+      "persona": "first_timer",
+      "cefr_level": "A1",
+      "occupation": "retiree learning English to talk to grandchildren abroad",
+      "l1_transfer_focus": ["copula_be_omission", "subject_verb_agreement"],
+      "register_preference": "informal",
+      "mood": "energized",
+      "scenario": "video call greeting at the start of a weekly chat",
+      "target_skill": "speaking",
+      "notes": "Very limited vocab; relies on memorised greetings; high motivation, low accuracy."
+    }
+  ]
+}

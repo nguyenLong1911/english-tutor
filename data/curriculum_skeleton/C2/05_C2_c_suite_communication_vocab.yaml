@@ -1,0 +1,45 @@
+topic_id: C2_c_suite_communication_vocab
+title: "Từ vựng giao tiếp cấp lãnh đạo (C-suite)"
+cefr_level: C2
+skill_type: vocabulary
+
+prerequisites:
+  - C1_strategic_planning_vocab
+  - C1_crisis_communication_vocab
+
+objectives:
+  - "Dùng từ vựng C-suite trong board meeting, investor briefing và earnings call"
+  - "Phân biệt các sắc thái: divest vs exit, restructure vs downsize, pivot vs discontinue"
+  - "Viết board memo hoặc CEO message (150-200 từ) với tone authority và strategic clarity"
+
+common_errors:
+  - wrong: "We are thinking about changing our business direction"
+    correct: "We are evaluating a strategic pivot / realigning our business focus"
+    hint: "'Thinking about changing' quá vague cho C-suite communication. 'Evaluating a strategic pivot' là ngôn ngữ board-level"
+
+  - wrong: "The company made less profit than expected"
+    correct: "The company fell short of projected earnings / reported a miss on earnings guidance"
+    hint: "Earnings call language: 'miss on guidance', 'fell short of projections'. 'Made less profit' là informal"
+
+  - wrong: "We decided to fire 200 employees to save money"
+    correct: "We announced a workforce reduction of 200 positions to optimize operational costs"
+    hint: "C-suite dùng: 'workforce reduction', 'optimize costs', 'right-size'. 'Fire to save money' gây PR damage và thiếu strategic framing"
+
+  - wrong: "We are going to sell our manufacturing division"
+    correct: "We are divesting our manufacturing division / We plan to divest the manufacturing segment"
+    hint: "'Divest' = bán bộ phận/tài sản chiến lược. 'Exit' = rút khỏi thị trường. 'Sell' vẫn đúng nhưng thiếu precision ở C-suite level"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - stakeholder
+  - revenue
+  - negotiate
+  - deliverable
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

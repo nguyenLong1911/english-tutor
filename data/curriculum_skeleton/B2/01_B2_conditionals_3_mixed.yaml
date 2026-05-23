@@ -1,0 +1,45 @@
+topic_id: B2_conditionals_3_mixed
+title: "Câu điều kiện loại 3 và điều kiện hỗn hợp"
+cefr_level: B2
+skill_type: grammar
+
+prerequisites:
+  - B1_conditionals_1_2
+  - B1_present_perfect_vs_past_simple
+
+objectives:
+  - "Tạo câu điều kiện loại 3 (giả định không thật trong quá khứ)"
+  - "Dùng điều kiện hỗn hợp (mixed conditional) khi nguyên nhân và hệ quả ở các thời khác nhau"
+  - "Diễn đạt sự hối tiếc, suy đoán quá khứ trong context công việc"
+
+common_errors:
+  - wrong: "If I would have known, I would have told you"
+    correct: "If I had known, I would have told you"
+    hint: "Loại 3: If + had + V3 (KHÔNG có 'would' trong mệnh đề If)"
+
+  - wrong: "If we launched the campaign earlier, we would have more revenue now"
+    correct: "If we had launched the campaign earlier, we would have more revenue now"
+    hint: "Mixed conditional: nguyên nhân ở quá khứ → If + had + V3, hệ quả hiện tại → would + V"
+
+  - wrong: "If she didn't miss the meeting, she would know the plan"
+    correct: "If she hadn't missed the meeting, she would know the plan"
+    hint: "Hành động ở quá khứ thực sự đã xảy ra → dùng past perfect (had/hadn't + V3)"
+
+  - wrong: "I wouldn't have made the mistake if I would be more careful"
+    correct: "I wouldn't have made the mistake if I had been more careful"
+    hint: "Mệnh đề If trong loại 3 dùng 'had + V3', không bao giờ có 'would'"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - launch
+  - campaign
+  - revenue
+  - stakeholder
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

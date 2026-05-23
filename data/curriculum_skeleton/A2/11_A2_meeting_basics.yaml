@@ -1,0 +1,42 @@
+topic_id: A2_meeting_basics
+title: "Từ vựng cuộc họp cơ bản"
+cefr_level: A2
+skill_type: vocabulary
+
+prerequisites:
+  - A2_basic_business_vocab
+
+objectives:
+  - "Dùng được 10 cụm từ cơ bản trong cuộc họp (start/end/agenda/minutes...)"
+  - "Hiểu thông báo lịch họp đơn giản"
+  - "Phát biểu ngắn trong meeting (chào, đồng ý, không đồng ý)"
+
+common_errors:
+  - wrong: "Let's start the meeting on time"
+    correct: "Let's start the meeting on time"
+    hint: "Câu này đúng. Lưu ý: 'on time' = đúng giờ; 'in time' = kịp giờ"
+
+  - wrong: "I want to assist the meeting tomorrow"
+    correct: "I want to attend the meeting tomorrow"
+    hint: "'attend' = tham dự. 'assist' = giúp đỡ (false friend với tiếng Pháp/Tây Ban Nha)"
+
+  - wrong: "The meeting will be do at 10 AM"
+    correct: "The meeting will be held at 10 AM"
+    hint: "Collocation chuẩn: 'hold a meeting' → bị động: 'be held'"
+
+  - wrong: "Can you give me the meeting notes?"
+    correct: "Can you send me the meeting minutes?"
+    hint: "Trong context văn phòng, biên bản họp gọi là 'minutes', không phải 'notes'"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - meeting
+  - feedback
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

@@ -1,0 +1,43 @@
+topic_id: B1_email_writing_vocab
+title: "Từ vựng viết email công sở"
+cefr_level: B1
+skill_type: vocabulary
+
+prerequisites:
+  - A2_email_greetings_basic
+
+objectives:
+  - "Dùng các cụm từ chuẩn để mở email, theo dõi, đính kèm, kết thúc"
+  - "Viết email yêu cầu, xác nhận, follow-up đơn giản (80-120 từ)"
+  - "Phân biệt mức độ trang trọng tùy đối tượng nhận"
+
+common_errors:
+  - wrong: "I am writing for ask about the meeting"
+    correct: "I am writing to ask about the meeting"
+    hint: "'I am writing TO + V' — luôn dùng 'to' (infinitive of purpose), không dùng 'for'"
+
+  - wrong: "I attach the file at this email"
+    correct: "I have attached the file to this email"
+    hint: "Cụm chuẩn: 'attached TO this email' (không phải 'at'). Thường dùng Present Perfect"
+
+  - wrong: "Please reply me as soon as possible"
+    correct: "Please reply to me as soon as possible"
+    hint: "'reply' là nội động từ → cần 'to': 'reply to me/the email'"
+
+  - wrong: "I want to follow up the meeting"
+    correct: "I want to follow up on the meeting"
+    hint: "Phrasal verb chuẩn: 'follow up ON something', đừng quên 'on'"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - meeting
+  - feedback
+  - deliverable
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

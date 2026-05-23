@@ -1,0 +1,37 @@
+topic_id: A2_daily_routines
+title: "Từ vựng sinh hoạt hằng ngày"
+cefr_level: A2
+skill_type: vocabulary
+
+prerequisites:
+  - A2_present_simple_be
+  - A2_prepositions_time_place
+
+objectives:
+  - "Mô tả thói quen hằng ngày với 12 cụm từ thông dụng"
+  - "Dùng trạng từ tần suất (always, usually, often, sometimes, never)"
+  - "Kể lại một ngày làm việc của mình"
+
+common_errors:
+  - wrong: "I usually wake up at 6 AM and after I eat breakfast"
+    correct: "I usually wake up at 6 AM and then I eat breakfast"
+    hint: "Khi nối hai hành động liên tiếp, dùng 'then', không phải 'after'"
+
+  - wrong: "She always is late"
+    correct: "She is always late"
+    hint: "Trạng từ tần suất đứng SAU 'to be' (is/are/was)"
+
+  - wrong: "I take a shower in the night"
+    correct: "I take a shower at night"
+    hint: "Cụm cố định: 'at night' (không phải 'in the night')"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.75
+
+recommended_vocab: []
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - sentence_production

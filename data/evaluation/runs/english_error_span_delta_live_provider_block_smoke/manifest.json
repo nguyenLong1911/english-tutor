@@ -1,0 +1,20 @@
+{
+  "run_id": "english_error_span_delta_live_provider_block_smoke",
+  "started_at": "2026-05-15T13:40:04+00:00",
+  "backend_url": "http://localhost:8000",
+  "suite": "english_error_span_delta",
+  "dataset": "D:\\porjects\\A20-App-134\\data\\raw\\huggingface\\reddit_multigec\\reddit_multi_gec_english.csv",
+  "gold_delta": "D:\\porjects\\A20-App-134\\data\\evaluation\\error_eval\\gold_delta.jsonl",
+  "dataset_sha256": "4ef1cab183bca60336f0c64d4e46768382c8b85cd364ab074bd90c89ffe74da1",
+  "sample_size": 1,
+  "gold_model": "gemini-2.5-pro",
+  "system_output_format": "json_array_of_incorrect_spans",
+  "data_run_dir": "D:\\porjects\\A20-App-134\\data\\evaluation\\runs\\english_error_span_delta_live_provider_block_smoke",
+  "docs_run_dir": "D:\\porjects\\A20-App-134\\docs\\evaluation\\runs\\english_error_span_delta_live_provider_block_smoke",
+  "requires_live_provider": [
+    "gemini",
+    "groq"
+  ],
+  "ended_at": "2026-05-15T13:40:06+00:00",
+  "blocked_reason": "Live LLM preflight failed: HTTP 503 {\"error\":\"Request failed\",\"detail\":\"Evaluation requires a live LLM provider, got mock\",\"trace_id\":\"english_error_span_delta_live_provider_block_smoke.preflight_live_llm\"}"
+}

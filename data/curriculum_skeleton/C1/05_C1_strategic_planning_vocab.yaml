@@ -1,0 +1,45 @@
+topic_id: C1_strategic_planning_vocab
+title: "Từ vựng hoạch định chiến lược"
+cefr_level: C1
+skill_type: vocabulary
+
+prerequisites:
+  - B2_stakeholder_communication_vocab
+  - B2_financial_reporting_vocab
+
+objectives:
+  - "Dùng được 10 từ cốt lõi về strategic planning: roadmap, pivot, scalability, benchmark, KPI..."
+  - "Mô tả quy trình lập kế hoạch chiến lược trong báo cáo và thuyết trình"
+  - "Viết được executive summary chiến lược ngắn (80-120 từ) với từ vựng đúng chuẩn C1"
+
+common_errors:
+  - wrong: "We need to make a strategy"
+    correct: "We need to develop / formulate a strategy"
+    hint: "Collocation chuẩn: 'develop/formulate/craft a strategy'. 'Make' quá đơn giản cho văn phong C1"
+
+  - wrong: "The KPI is not reached"
+    correct: "The KPI was not met / We fell short of the KPI"
+    hint: "KPI đi với 'meet' (đạt), 'miss' (không đạt), 'exceed' (vượt). Không dùng 'reach' như target vật lý"
+
+  - wrong: "We should benchmark to our competitors"
+    correct: "We should benchmark against our competitors"
+    hint: "Cụm giới từ chuẩn: 'benchmark against', không phải 'benchmark to'"
+
+  - wrong: "The business model is not scalable enough to grow"
+    correct: "The business model lacks scalability"
+    hint: "Nominalization nâng cấp văn phong: 'lacks scalability' tự nhiên hơn 'is not scalable enough' trong formal writing"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - campaign
+  - revenue
+  - stakeholder
+  - deliverable
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

@@ -1,0 +1,103 @@
+{
+  "total_cases": 100,
+  "ok_cases": 100,
+  "failed_requests": 0,
+  "gold_failed": 0,
+  "span_precision": 0.0,
+  "span_recall": 0.0,
+  "span_f1": 0.0,
+  "average_error_detection_rate_per_sentence": 0.0,
+  "mean_sentence_span_recall": 0.0,
+  "mean_sentence_span_precision": 0.0,
+  "mean_sentence_span_f1": 0.0,
+  "matched_spans": 0,
+  "gold_spans": 847,
+  "system_spans": 0,
+  "sentence_full_match_rate": 0.0,
+  "latency_ms": {
+    "p50": 1652.0,
+    "p95": 2563.0
+  },
+  "top_missed_spans": [
+    {
+      "span": "and",
+      "count": 10
+    },
+    {
+      "span": "with",
+      "count": 6
+    },
+    {
+      "span": "people",
+      "count": 5
+    },
+    {
+      "span": "you'd",
+      "count": 4
+    },
+    {
+      "span": "maybe",
+      "count": 4
+    },
+    {
+      "span": "just",
+      "count": 4
+    },
+    {
+      "span": "but",
+      "count": 4
+    },
+    {
+      "span": "was",
+      "count": 4
+    },
+    {
+      "span": "groupexposed",
+      "count": 3
+    },
+    {
+      "span": "slams",
+      "count": 3
+    },
+    {
+      "span": "get",
+      "count": 3
+    },
+    {
+      "span": "over",
+      "count": 3
+    },
+    {
+      "span": "it's",
+      "count": 3
+    },
+    {
+      "span": "so",
+      "count": 3
+    },
+    {
+      "span": "is",
+      "count": 3
+    },
+    {
+      "span": "yeah",
+      "count": 3
+    },
+    {
+      "span": "then",
+      "count": 3
+    },
+    {
+      "span": "you're",
+      "count": 2
+    },
+    {
+      "span": "says",
+      "count": 2
+    },
+    {
+      "span": "your",
+      "count": 2
+    }
+  ]
+}

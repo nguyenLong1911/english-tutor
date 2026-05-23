@@ -1,0 +1,46 @@
+topic_id: C2_cross_cultural_pragmatics_vocab
+title: "Từ vựng giao tiếp liên văn hóa và Pragmatics"
+cefr_level: C2
+skill_type: vocabulary
+
+prerequisites:
+  - C1_crisis_communication_vocab
+  - C1_academic_writing_vocab
+
+objectives:
+  - "Hiểu và dùng ngôn ngữ phù hợp trong bối cảnh high-context vs low-context cultures"
+  - "Nhận biết và tránh các biểu đạt gây cultural misunderstanding trong email quốc tế"
+  - "Dùng từ vựng pragmatic awareness: face-saving, indirect refusal, softeners..."
+  - "Viết email từ chối hoặc phê phán theo chuẩn diplomatic English"
+
+common_errors:
+  - wrong: "Your proposal is not acceptable"
+    correct: "While we appreciate your proposal, we have some concerns we'd like to discuss further"
+    hint: "Direct rejection gây mất face. Diplomatic refusal: acknowledge → express concern → open dialogue. Không bao giờ dùng 'not acceptable' trong email B2B"
+
+  - wrong: "I disagree with your idea completely"
+    correct: "I see your point, though I'd like to offer a different perspective"
+    hint: "'Completely disagree' quá confrontational trong hầu hết business culture. Face-saving: acknowledge trước, counter sau"
+
+  - wrong: "That's not how we do things here"
+    correct: "Our standard practice is X — happy to walk you through our process"
+    hint: "Câu nói 'not how we do things' nghe dismissive với đối tác quốc tế. Đưa ra alternative + offer help = high-context diplomatic style"
+
+  - wrong: "Please send me the report ASAP"
+    correct: "Could you please share the report at your earliest convenience? We're aiming for [date]."
+    hint: "'ASAP' có thể bị hiểu là aggressive trong một số culture. Đặt deadline cụ thể + polite framing thể hiện respect cho người nhận"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - feedback
+  - negotiate
+  - stakeholder
+  - campaign
+
+exercise_types:
+  - fill_in_blank
+  - context_usage
+  - sentence_production

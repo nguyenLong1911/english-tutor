@@ -1,0 +1,7 @@
+.git
+.ai-log
+**/node_modules
+**/__pycache__
+**/.venv
+**/venv
+**/.env

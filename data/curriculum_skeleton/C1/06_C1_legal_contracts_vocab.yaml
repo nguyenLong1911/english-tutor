@@ -1,0 +1,44 @@
+topic_id: C1_legal_contracts_vocab
+title: "Từ vựng hợp đồng và pháp lý cơ bản"
+cefr_level: C1
+skill_type: vocabulary
+
+prerequisites:
+  - B2_negotiation_language_vocab
+  - B2_stakeholder_communication_vocab
+
+objectives:
+  - "Đọc hiểu các điều khoản hợp đồng thương mại cơ bản (clause, liability, indemnify, jurisdiction...)"
+  - "Phân biệt các dạng ràng buộc pháp lý: shall (bắt buộc), may (cho phép), must not (cấm)"
+  - "Viết email trao đổi hợp đồng với ngôn ngữ chuyên nghiệp, tránh ambiguity"
+
+common_errors:
+  - wrong: "The contract should be terminated if the conditions are not met"
+    correct: "The contract shall be terminated if the conditions are not met"
+    hint: "Trong hợp đồng, 'shall' = nghĩa vụ bắt buộc. 'Should' = khuyến nghị, không có giá trị ràng buộc pháp lý"
+
+  - wrong: "Both parties are responsible of the damages"
+    correct: "Both parties are liable for the damages"
+    hint: "Trong văn phong pháp lý: 'liable for' (chịu trách nhiệm pháp lý). 'responsible of' là sai cả ngữ pháp lẫn register"
+
+  - wrong: "We want to void the contract"
+    correct: "We wish to terminate / nullify the contract"
+    hint: "'Void' (vô hiệu hóa) và 'terminate' (chấm dứt) là hai hành động khác nhau. 'Want' không đủ formal trong email hợp đồng"
+
+  - wrong: "The penalty for breaking the contract is very high"
+    correct: "The penalty clause stipulates a significant financial remedy for breach of contract"
+    hint: "Ngôn ngữ hợp đồng cần dùng: 'stipulate' (quy định), 'breach' (vi phạm), 'remedy' (biện pháp khắc phục)"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - negotiate
+  - stakeholder
+  - deliverable
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

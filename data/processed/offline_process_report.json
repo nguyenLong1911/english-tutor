@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-05-13T07:31:15Z",
+  "report": {
+    "industry_cleanup": {
+      "industry_context_library.json:IT": 108,
+      "industry_context_library.json:Marketing": 33,
+      "industry_context_library.json:Sales": 106,
+      "industry_context_library.json:dropped": 1,
+      "industry_context_library.json:Finance": 105,
+      "industry_context_library.json:Education": 75,
+      "industry_context_library.json:Healthcare": 100,
+      "wiki_auto_extracted.json:Education": 69,
+      "wiki_auto_extracted.json:dropped": 1,
+      "wiki_auto_extracted.json:Finance": 99,
+      "wiki_auto_extracted.json:Healthcare": 100,
+      "wiki_auto_extracted.json:IT": 100,
+      "wiki_auto_extracted.json:Marketing": 26,
+      "wiki_auto_extracted.json:Sales": 100
+    },
+    "jfleg_promotion": {
+      "last_run_promoted": 1,
+      "cumulative_promoted": 465,
+      "cumulative_categories": {
+        "tense_and_aspect": 130,
+        "prepositions": 26,
+        "articles": 19,
+        "modal_verbs": 7,
+        "word_choice_lexical": 283
+      },
+      "total_errors": 501,
+      "target_total": 500
+    },
+    "ielts": {
+      "samples": 60
+    },
+    "pedagogical": {
+      "prompts": 80
+    },
+    "mood": {
+      "samples": 60
+    },
+    "mem0": {
+      "user_001_first_timer": 100,
+      "user_002_speed_runner": 100,
+      "user_003_qa_destroyer": 100
+    }
+  }
+}

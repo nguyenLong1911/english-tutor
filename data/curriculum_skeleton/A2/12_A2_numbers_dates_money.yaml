@@ -1,0 +1,41 @@
+topic_id: A2_numbers_dates_money
+title: "Số đếm, ngày tháng, tiền tệ"
+cefr_level: A2
+skill_type: vocabulary
+
+prerequisites:
+  - A2_present_simple_be
+
+objectives:
+  - "Đọc đúng số lớn (hundred, thousand, million)"
+  - "Viết và đọc ngày tháng theo chuẩn Anh-Mỹ"
+  - "Diễn tả giá tiền và số liệu trong báo cáo"
+
+common_errors:
+  - wrong: "It costs ten dollar"
+    correct: "It costs ten dollars"
+    hint: "Số lượng từ 2 trở lên, danh từ phải ở dạng số nhiều (dollars)"
+
+  - wrong: "I was born in 12/05/1995"
+    correct: "I was born on May 12, 1995"
+    hint: "Trong tiếng Anh trang trọng: tháng-ngày-năm. Đi với 'on' khi nói ngày cụ thể"
+
+  - wrong: "Two hundreds people came"
+    correct: "Two hundred people came"
+    hint: "'hundred/thousand/million' KHÔNG thêm 's' khi đi sau số đếm cụ thể"
+
+  - wrong: "The revenue is five million of dollars"
+    correct: "The revenue is five million dollars"
+    hint: "Không cần 'of' giữa 'million' và 'dollars'"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - revenue
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

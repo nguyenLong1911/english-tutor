@@ -1,0 +1,722 @@
+{
+  "industry": "IT",
+  "source_pages": [
+    "Glossary of computer science"
+  ],
+  "fetched_at": "2026-05-12T11:32:57Z",
+  "license": "CC BY-SA 4.0 (Wikipedia)",
+  "terms": [
+    {
+      "term": "abstract data type (ADT)",
+      "definition_en": "A mathematical model for {{gli|data type|data types"
+    },
+    {
+      "term": "abstract method",
+      "definition_en": "One with only a signature and no implementation body. It is often used to specify that a subclass must provide an implementation of the method. Abstract methods are used to specify {{gli|interface|interfaces"
+    },
+    {
+      "term": "agent architecture",
+      "definition_en": "A blueprint for {{gli|software agent|software agents"
+    },
+    {
+      "term": "agent-based model (ABM)",
+      "definition_en": "A class of {{gli|computational model|computational models"
+    },
+    {
+      "term": "aggregate function",
+      "definition_en": "In database management, a {{gli|subroutine|function"
+    },
+    {
+      "term": "agile software development",
+      "definition_en": "An approach to software development under which requirements and solutions evolve through the collaborative effort of self-organizing and cross-functional teams and their customer(s)/end user(s).<ref name=\"Collier 2011\">{{cite book |title= Agile Analytics: A Value-Driven Approach to Business Intelligence and Data Warehousing |last=Collier|first=Ken W. |year=2011 |publisher= Pearson Education |isbn=9780321669544 | pages= 121 ff|quote=What is a self-organizing team?"
+    },
+    {
+      "term": "algorithm",
+      "definition_en": "An unambiguous specification of how to solve a class of problems. Algorithms can perform calculation, data processing, and automated reasoning tasks. They are ubiquitous in computing technologies."
+    },
+    {
+      "term": "algorithm design",
+      "definition_en": "A method or mathematical process for problem-solving and for engineering {{gli|algorithm|algorithms"
+    },
+    {
+      "term": "algorithmic efficiency",
+      "definition_en": "A property of an {{gli|algorithm"
+    },
+    {
+      "term": "American Standard Code for Information Interchange (ASCII)",
+      "definition_en": "A character encoding standard for electronic communications. ASCII codes represent text in computers, telecommunications equipment, and other devices. Most modern character-encoding schemes are based on ASCII, although they support many additional characters."
+    },
+    {
+      "term": "application programming interface (API)",
+      "definition_en": "A set of {{gli|subroutine"
+    },
+    {
+      "term": "ASCII",
+      "definition_en": "See {{gli|American Standard Code for Information Interchange"
+    },
+    {
+      "term": "associative array",
+      "definition_en": "An associative array, map, symbol table, or dictionary is an abstract data type composed of a collection of (key, value) pairs, such that each possible key appears at most once in the collection. Operations associated with this data type allow:<ref name=\"gt\">{{citation|contribution=9.1 The Map Abstract Data Type|title=Data Structures & Algorithms in Java|last1=Goodrich|first1=Michael T.|author1-link=Michael T. Goodrich|last2=Tamassia|first2=Roberto|author2-link=Roberto Tamassia|publisher=Wiley|edition=4th|year=2006|pages=368–371"
+    },
+    {
+      "term": "automata theory",
+      "definition_en": "The study of abstract machines and automata, as well as the computational problems that can be solved using them. It is a theory in {{gli|theoretical computer science"
+    },
+    {
+      "term": "automated reasoning",
+      "definition_en": "An area of {{gli|computer science"
+    },
+    {
+      "term": "Bayesian programming",
+      "definition_en": "A formalism and a methodology for having a technique to specify probabilistic models and solve problems when less than the necessary information is available."
+    },
+    {
+      "term": "best, worst and average case",
+      "definition_en": "Expressions of what the {{gli|resource"
+    },
+    {
+      "term": "big data",
+      "definition_en": "A term used to refer to data sets that are too large or complex for traditional data-processing {{gli|application software"
+    },
+    {
+      "term": "big O notation",
+      "definition_en": "A mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. It is a member of a family of notations invented by Paul Bachmann,<ref name=Bachmann>{{cite book |first=Paul |last=Bachmann |author-link=Paul Bachmann |title=Analytische Zahlentheorie |trans-title=Analytic Number Theory |language=de |volume=2 |location=Leipzig |publisher=Teubner |date=1894 |url=https://archive.org/stream/dieanalytischeza00bachuoft#page/402/mode/2up"
+    },
+    {
+      "term": "binary number",
+      "definition_en": "In mathematics and digital electronics, a number expressed in the base-2 numeral system or binary numeral system, which uses only two symbols: typically 0 (zero) and 1 (one)."
+    },
+    {
+      "term": "binary tree",
+      "definition_en": "A tree {{gli|data structure"
+    },
+    {
+      "term": "bioinformatics",
+      "definition_en": "An interdisciplinary field that combines biology, {{gli|computer science"
+    },
+    {
+      "term": "bit",
+      "definition_en": "A basic unit of information used in {{gli|computing"
+    },
+    {
+      "term": "Boolean data type",
+      "definition_en": "A data type that has one of two possible values (usually denoted true and false), intended to represent the two truth values of logic and Boolean algebra. It is named after George Boole, who first defined an algebraic system of logic in the mid-19th century. The Boolean data type is primarily associated with conditional statements, which allow different actions by changing control flow depending on whether a programmer-specified Boolean condition evaluates to true or false.{{Sfn|Nicholls|1975|pp=[https://archive.org/details/structuredesigno0000nich/page/158/mode/2up?q=Boole 159]–161, [https://archive.org/details/structuredesigno0000nich/page/318/mode/2up?q=%22logical+operators%22 318]–320, [https://archive.org/details/structuredesigno0000nich/page/322/mode/2up?q=%22conditional+expression%22 322]–325"
+    },
+    {
+      "term": "Boolean expression",
+      "definition_en": "An {{gli|expression"
+    },
+    {
+      "term": "Boolean algebra",
+      "definition_en": "In mathematics and mathematical logic, the branch of algebra in which the values of the variables are the truth values true and false, usually denoted 1 and 0, respectively. Contrary to elementary algebra, where the values of the variables are numbers and the prime operations are addition and multiplication, the main operations of Boolean algebra are the conjunction and (denoted as ∧), the disjunction or (denoted as ∨), and the negation not (denoted as ¬).{{Sfn|Pohl|Shaw|1981|pp=[https://archive.org/details/natureofcomputat0000pohl/page/101/mode/2up?q=%22Boolean+Algebra%22 101]–105"
+    },
+    {
+      "term": "byte",
+      "definition_en": "A unit of digital information that most commonly consists of eight {{gli|bit|bits"
+    },
+    {
+      "term": "booting",
+      "definition_en": "The procedures implemented in starting up a computer or computer appliance until it can be used. It can be initiated by hardware such as a button press or by a software command. After the power is switched on, the computer is relatively dumb and can read only part of its storage called {{gli|read-only memory"
+    },
+    {
+      "term": "central processing unit (CPU)",
+      "definition_en": "The electronic circuitry within a {{gli|computer"
+    },
+    {
+      "term": "CI/CD",
+      "definition_en": "See: {{gli|continuous integration (CI)"
+    },
+    {
+      "term": "cleanroom software engineering",
+      "definition_en": "A software development process intended to produce software with a certifiable level of reliability. The cleanroom process was originally developed by Harlan Mills and several of his colleagues including Alan Hevner at IBM.<ref>{{cite journal|last=Mills|first=H.|author-link=Harlan Mills |author2=M. Dyer |author3=R. Linger|title=Cleanroom Software Engineering|journal=IEEE Software|volume=4|issue=5|date=September 1987|pages=19&ndash;25|doi=10.1109/MS.1987.231413|bibcode=1987ISoft...4e..19M |citeseerx=10.1.1.467.2435|s2cid=383170"
+    },
+    {
+      "term": "cloud computing",
+      "definition_en": "Shared pools of configurable computer system resources and higher-level services that can be rapidly provisioned with minimal management effort, often over the Internet. Cloud computing relies on sharing of resources to achieve coherence and economies of scale, similar to a public utility."
+    },
+    {
+      "term": "code library",
+      "definition_en": "A collection of non-volatile resources used by {{gli|computer program|computer programs"
+    },
+    {
+      "term": "coding theory",
+      "definition_en": "The study of the properties of codes and their respective fitness for specific applications. Codes are used for {{gli|data compression"
+    },
+    {
+      "term": "cognitive science",
+      "definition_en": "The interdisciplinary, scientific study of the mind and its processes. It examines the nature, the tasks, and the functions of cognition (in a broad sense). Cognitive scientists study intelligence and behavior, with a focus on how nervous systems represent, process, and transform information. Mental faculties of concern to cognitive scientists include language, perception, memory, attention, reasoning, and emotion; to understand these faculties, cognitive scientists borrow from fields such as linguistics, psychology, artificial intelligence, philosophy, neuroscience, and anthropology."
+    },
+    {
+      "term": "comma-separated values (CSV)",
+      "definition_en": "A delimited text file that uses a comma to separate values. A CSV file stores tabular data (numbers and text) in plain text. Each line of the file is a data {{gli|record"
+    },
+    {
+      "term": "compiler",
+      "definition_en": "A {{gli|computer program"
+    },
+    {
+      "term": "computability theory",
+      "definition_en": "also known as recursion theory, is a branch of mathematical logic, of {{gli|computer science"
+    },
+    {
+      "term": "computation",
+      "definition_en": "Any type of calculation<ref>{{cite web|title=Computation: Definition and Synonyms from Answers.com|url=http://www.answers.com:80/topic/computation|website=Answers.com|access-date=26 April 2017|archive-url=https://web.archive.org/web/20090222005439/http://www.answers.com/topic/computation|archive-date=22 February 2009|url-status=dead"
+    },
+    {
+      "term": "computational biology",
+      "definition_en": "Involves the development and application of data-analytical and theoretical methods, mathematical modelling and computational simulation techniques to the study of biological, ecological, behavioural, and social systems. The field is broadly defined and includes foundations in biology, applied mathematics, statistics, biochemistry, chemistry, biophysics, molecular biology, genetics, genomics, computer science, and evolution. Computational biology is different from biological computing, which is a subfield of computer science and computer engineering using bioengineering and biology to build computers."
+    },
+    {
+      "term": "computational chemistry",
+      "definition_en": "A branch of chemistry that uses computer simulation to assist in solving chemical problems. It uses methods of theoretical chemistry, incorporated into efficient {{gli|computer program|computer programs"
+    },
+    {
+      "term": "computational complexity theory",
+      "definition_en": "A subfield of {{gli|computational science"
+    },
+    {
+      "term": "computational model",
+      "definition_en": "A mathematical model in {{gli|computational science"
+    },
+    {
+      "term": "computational physics",
+      "definition_en": "Is the study and implementation of numerical analysis to solve problems in physics for which a quantitative theory already exists.<ref>Thijssen, Jos (2007). Computational Physics. Cambridge University Press. {{ISBN|978-0521833462"
+    },
+    {
+      "term": "computational steering",
+      "definition_en": "Is the practice of manually intervening with an otherwise autonomous computational process, to change its outcome."
+    },
+    {
+      "term": "computer",
+      "definition_en": "A device that can be instructed to carry out sequences of arithmetic or logical operations automatically via {{gli|computer programming"
+    },
+    {
+      "term": "computer architecture",
+      "definition_en": "A set of rules and methods that describe the functionality, organization, and implementation of {{gli|computer"
+    },
+    {
+      "term": "computer ethics",
+      "definition_en": "A part of practical philosophy concerned with how computing professionals should make decisions regarding professional and social conduct.<ref name=BynumVeryShort>{{cite web |url=http://www.southernct.edu/organizations/rccs/resources/research/introduction/bynum_shrt_hist.html#maner|title=A Very Short History of Computer Ethics |last= Bynum |first=Terrell Ward |publisher=Southern Connecticut Wein University|access-date=2011-01-05|url-status=dead|archive-url=https://web.archive.org/web/20080418122849/http://www.southernct.edu/organizations/rccs/resources/research/introduction/bynum_shrt_hist.html|archive-date=2008-04-18"
+    },
+    {
+      "term": "computer graphics",
+      "definition_en": "Pictures and films created using computers. Usually, the term refers to computer-generated image data created with the help of specialized graphical hardware and software. It is a vast and recently developed area of computer science."
+    },
+    {
+      "term": "computer program",
+      "definition_en": "Is a collection of instructions<ref name=\"aup-ch4-p132\">{{cite book | last = Rochkind | first = Marc J. | title = Advanced Unix Programming, Second Edition | publisher = Addison-Wesley | year = 2004 | page = 1.1.2"
+    },
+    {
+      "term": "computer programming",
+      "definition_en": "The process of designing and building an {{gli|executable"
+    },
+    {
+      "term": "computer science",
+      "definition_en": "The theory, experimentation, and engineering that form the basis for the design and use of {{gli|computer|computers"
+    },
+    {
+      "term": "computer scientist",
+      "definition_en": "A person who has acquired the knowledge of {{gli|computer science"
+    },
+    {
+      "term": "computer vision",
+      "definition_en": "An interdisciplinary scientific field that deals with how computers can be made to gain high-level understanding from digital images or videos. From the perspective of engineering, it seeks to automate tasks that the human visual system can do.<ref>Dana H. Ballard; Christopher M. Brown (1982). Computer Vision. Prentice Hall. {{ISBN|0-13-165316-4"
+    },
+    {
+      "term": "computing",
+      "definition_en": "Is any goal-oriented activity requiring, benefiting from, or creating computing machinery. It includes study of algorithmic processes and development of both hardware and software. It has scientific, engineering, mathematical, technological and social aspects. Major computing fields include computer engineering, computer science, cybersecurity, data science, information systems, information technology and software engineering.<ref>{{Cite web|title=Computing Curricula 2020 CC2020 Paradigms for Global Computing Education|url=https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf"
+    },
+    {
+      "term": "concatenation",
+      "definition_en": "Literally, \"a chaining together\" or the process of joining together things. In formal language theory and computer programming, string concatenation is the operation of joining character strings end-to-end. For example, the concatenation of \"snow\" and \"ball\" is \"snowball\".<ref>{{cite book|last=Schwartzman|first=Steven|date=1994|title=The Words of Mathematics: An Etymological Dictionary of Mathematical Terms Used in English|url=https://books.google.com/books?id=iuoZSkSOBQsC&pg=PA51|publisher=Mathematical Association of America|isbn=0-88385-511-9|access-date=2025-11-11"
+    },
+    {
+      "term": "continuous delivery (CD)",
+      "definition_en": "Producing software in short cycles with high speed and frequency so that reliable software can be released at any time, with a simple and repeatable deployment process when deciding to deploy."
+    },
+    {
+      "term": "continuous deployment (CD)",
+      "definition_en": "Automatic rollout of new software functionality."
+    },
+    {
+      "term": "continuous integration (CI)",
+      "definition_en": "The practice of integrating source code changes frequently and ensuring that an integrated codebase is in a workable state."
+    },
+    {
+      "term": "cryptography",
+      "definition_en": "Or cryptology, is the practice and study of techniques for secure communication in the presence of third parties called adversaries.<ref name=\"rivest90\">{{cite book|first=Ronald L.|last=Rivest|author-link=Ron Rivest|editor=J. Van Leeuwen|title=Handbook of Theoretical Computer Science|chapter=Cryptography|volume=1|publisher=Elsevier|year=1990"
+    },
+    {
+      "term": "cyberspace",
+      "definition_en": "Widespread, interconnected digital technology."
+    },
+    {
+      "term": "database",
+      "definition_en": "An organized collection of data, generally stored and accessed electronically from a computer system. Where databases are more complex, they are often developed using formal design and modeling techniques."
+    },
+    {
+      "term": "data mining",
+      "definition_en": "Is a process of discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems.<ref name=\"acm\" /> Data mining is an interdisciplinary subfield of computer science and statistics with an overall goal to extract information (with intelligent methods) from a data set and transform the information into a comprehensible structure for further use.<ref name=\"acm\">{{cite web |url=http://www.kdd.org/curriculum/index.html |title=Data Mining Curriculum |publisher=ACM SIGKDD |date=2006-04-30 |access-date=2014-01-27"
+    },
+    {
+      "term": "data science",
+      "definition_en": "An interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from data in various forms, both structured and unstructured,<ref>{{Cite journal | last1 = Dhar | first1 = V. | title = Data science and prediction | doi = 10.1145/2500499 | journal = Communications of the ACM | volume = 56 | issue = 12 | pages = 64–73 | year = 2013 | s2cid = 6107147 | url = http://cacm.acm.org/magazines/2013/12/169933-data-science-and-prediction/fulltext"
+    },
+    {
+      "term": "data structure",
+      "definition_en": "A data organization, management, and storage format that enables efficient access and modification.<ref>{{Introduction to Algorithms|edition=3"
+    },
+    {
+      "term": "debugging",
+      "definition_en": "The process of finding and resolving defects or problems within a {{gli|computer program"
+    },
+    {
+      "term": "digital data",
+      "definition_en": "In information theory and information systems, the discrete, discontinuous representation of information or works. Numbers and letters are commonly used representations."
+    },
+    {
+      "term": "disk storage",
+      "definition_en": "(Also sometimes called drive storage) is a general category of storage mechanisms where data is recorded by various electronic, magnetic, optical, or mechanical changes to a surface layer of one or more rotating disks. A disk drive is a device implementing such a storage mechanism. Notable types are the hard disk drive (HDD) containing a non-removable disk, the floppy disk drive (FDD) and its removable floppy disk, and various optical disc drives (ODD) and associated optical disc media."
+    },
+    {
+      "term": "distributed computing",
+      "definition_en": "A field of {{gli|computer science"
+    },
+    {
+      "term": "divide and conquer algorithm",
+      "definition_en": "An algorithm design paradigm based on multi-branched {{gli|recursion"
+    },
+    {
+      "term": "DNS",
+      "definition_en": "See {{gli|Domain Name System"
+    },
+    {
+      "term": "double-precision floating-point format",
+      "definition_en": "A computer number format. It represents a wide dynamic range of numerical values by using a floating {{gli|radix"
+    },
+    {
+      "term": "download",
+      "definition_en": "In computer networks, to receive data from a remote system, typically a server<ref name=\"main\">{{cite web|url=http://searchnetworking.techtarget.com/definition/downloading|title=What is downloading? - Definition from WhatIs.com|work=SearchNetworkNexting|access-date=2019-03-04|archive-url=https://web.archive.org/web/20190905142601/https://searchnetworking.techtarget.com/definition/downloading|archive-date=2019-09-05|url-status=dead"
+    },
+    {
+      "term": "edge device",
+      "definition_en": "A device which provides an entry point into enterprise or service provider core networks. Examples include routers, routing switches, integrated access devices (IADs), multiplexers, and a variety of metropolitan area network (MAN) and wide area network (WAN) access devices. Edge devices also provide connections into carrier and service provider networks. An edge device that connects a local area network to a high speed switch or backbone (such as an ATM switch) may be called an edge concentrator."
+    },
+    {
+      "term": "emulator",
+      "definition_en": "Hardware or software that enables one computer system (called the host) to behave like another computer system."
+    },
+    {
+      "term": "encryption",
+      "definition_en": "In cryptography, encryption is the process of encoding information. This process converts the original representation of the information, known as plaintext, into an alternative form known as ciphertext. Ideally, only authorized parties can decipher a ciphertext back to plaintext and access the original information. Encryption does not itself prevent interference but denies the intelligible content to a would-be interceptor. For technical reasons, an encryption scheme usually uses a pseudo-random encryption key generated by an algorithm. It is possible to decrypt the message without possessing the key, but, for a well-designed encryption scheme, considerable computational resources and skills are required. An authorized recipient can easily decrypt the message with the key provided by the originator to recipients but not to unauthorized users. Historically, various forms of encryption have been used to aid in cryptography. Early encryption techniques were often utilized in military messaging. Since then, new techniques have emerged and become commonplace in all areas of modern computing.<ref name=\":1\">{{Cite journal|last=Kessler|first=Gary|date=November 17, 2006|title=An Overview of Cryptography|url=https://www.garykessler.net/library/crypto.html|journal=Princeton University"
+    },
+    {
+      "term": "event-driven programming",
+      "definition_en": "A {{gli|programming paradigm"
+    },
+    {
+      "term": "evolutionary computing",
+      "definition_en": "A family of {{gli|algorithm|algorithms"
+    },
+    {
+      "term": "exception handling",
+      "definition_en": "The process of responding to the occurrence, during {{gli|computation"
+    },
+    {
+      "term": "Existence detection",
+      "definition_en": "An existence check before reading a file can catch and/or prevent a fatal error."
+    },
+    {
+      "term": "fault-tolerant computer system",
+      "definition_en": "A system designed around the concept of fault tolerance. In essence, they must be able to continue working to a level of satisfaction in the presence of errors or breakdowns."
+    },
+    {
+      "term": "feasibility study",
+      "definition_en": "An investigation which aims to objectively and rationally uncover the strengths and weaknesses of an existing business or proposed venture, opportunities and threats present in the natural environment, the resources required to carry through, and ultimately the prospects for success. In its simplest terms, the two criteria to judge feasibility are cost required and value to be attained."
+    },
+    {
+      "term": "filename extension",
+      "definition_en": "An identifier specified as a suffix to the name of a computer file. The extension indicates a characteristic of the file contents or its intended use."
+    },
+    {
+      "term": "filter (software)",
+      "definition_en": "A {{gli|computer program"
+    },
+    {
+      "term": "floating-point arithmetic",
+      "definition_en": "In computing, floating-point arithmetic (FP) is arithmetic using formulaic representation of real numbers as an approximation to support a trade-off between range and precision. For this reason, floating-point computation is often found in systems which include very small and very large real numbers, which require fast processing times. A number is, in general, represented approximately to a fixed number of significant digits (the significand) and scaled using an exponent in some fixed base; the base for the scaling is normally two, ten, or sixteen. A number that can be represented exactly is of the following form: : <math>\\text{significand} \\times \\text{base}^\\text{exponent},</math> where significand is an integer, base is an integer greater than or equal to two, and exponent is also an integer. For example: : <math>1.2345 = \\underbrace{12345}_\\text{significand} \\times \\underbrace{10}_\\text{base}\\!\\!\\!\\!\\!\\!^{\\overbrace{-4}^\\text{exponent"
+    },
+    {
+      "term": "formal methods",
+      "definition_en": "A set of mathematically based techniques for the specification, development, and verification of {{gli|software"
+    },
+    {
+      "term": "formal verification",
+      "definition_en": "The act of proving or disproving the {{gli|correctness"
+    },
+    {
+      "term": "functional programming",
+      "definition_en": "A {{gli|programming paradigm"
+    },
+    {
+      "term": "game theory",
+      "definition_en": "The study of mathematical models of strategic interaction between rational decision-makers. It has applications in all fields of social science, as well as in logic and {{gli|computer science"
+    },
+    {
+      "term": "garbage in, garbage out (GIGO)",
+      "definition_en": "A term used to describe the concept that flawed or nonsense input data produces nonsense output or \"garbage\". It can also refer to the unforgiving nature of {{gli|coding|programming"
+    },
+    {
+      "term": "Graphics Interchange Format",
+      "definition_en": "}} {{term|gigabyte"
+    },
+    {
+      "term": "global variable",
+      "definition_en": "In {{gli|computer programming"
+    },
+    {
+      "term": "graph theory",
+      "definition_en": "In mathematics, the study of graphs, which are mathematical structures used to model pairwise relations between objects. A graph in this context is made up of vertices (also called nodes or points) which are connected by edges (also called links or lines). A distinction is made between undirected graphs, where edges link two vertices symmetrically, and directed graphs, where edges link two vertices asymmetrically."
+    },
+    {
+      "term": "hash function",
+      "definition_en": "Any function that can be used to map data of arbitrary size to data of a fixed size. The values returned by a hash function are called hash values, hash codes, digests, or simply hashes. Hash functions are often used in combination with a hash table, a common data structure used in computer software for rapid data lookup. Hash functions accelerate table or database lookup by detecting duplicated records in a large file."
+    },
+    {
+      "term": "hash table",
+      "definition_en": "In {{gli|computing"
+    },
+    {
+      "term": "heapsort",
+      "definition_en": "A comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort: like that algorithm, it divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region. The improvement consists of the use of a heap data structure rather than a linear-time search to find the maximum.<ref>{{cite book |first=Steven |last=Skiena |chapter=Sorting and Searching |date=2012 |author-link=Steven Skiena |title=The Algorithm Design Manual |url=https://archive.org/details/algorithmdesignm00skie_772 |url-access=limited |publisher=Springer |page=[https://archive.org/details/algorithmdesignm00skie_772/page/n120 109] |isbn=978-1-84800-069-8 |quote=[H]eapsort is nothing but an implementation of selection sort using the right data structure.|doi=10.1007/978-1-84800-070-4_4"
+    },
+    {
+      "term": "human-computer interaction (HCI)",
+      "definition_en": "Researches the design and use of computer technology, focused on the interfaces between people (users) and computers. Researchers in the field of HCI both observe the ways in which humans interact with computers and design technologies that let humans interact with computers in novel ways. As a field of research, human–computer interaction is situated at the intersection of {{gli|computer science"
+    },
+    {
+      "term": "image processing",
+      "definition_en": "}} {{term|imperative programming"
+    },
+    {
+      "term": "incremental build model",
+      "definition_en": "A method of software development where the product is designed, implemented and tested incrementally (a little more is added each time) until the product is finished. It involves both development and maintenance. The product is defined as finished when it satisfies all of its requirements. This model combines the elements of the {{gli|waterfall model"
+    },
+    {
+      "term": "information space analysis",
+      "definition_en": "A deterministic method, enhanced by {{gli|artificial intelligence|machine intelligence"
+    },
+    {
+      "term": "information visualization",
+      "definition_en": "}} {{term|inheritance"
+    },
+    {
+      "term": "insertion sort",
+      "definition_en": "A simple sorting algorithm that builds the final sorted array (or list) one item at a time."
+    },
+    {
+      "term": "integration testing",
+      "definition_en": "(sometimes called integration and testing, abbreviated I&T) is the phase in software testing in which individual software modules are combined and tested as a group. Integration testing is conducted to evaluate the compliance of a system or component with specified functional requirements.<ref>{{Cite book|title=ISO/IEC/IEEE International Standard - Systems and software engineering|publisher=ISO/IEC/IEEE 24765:2010(E)|year=2010|pages=vol., no., pp.1–418, 15 Dec. 2010"
+    },
+    {
+      "term": "intelligent agent",
+      "definition_en": "In artificial intelligence, an intelligent agent (IA) refers to an autonomous entity which acts, directing its activity towards achieving goals (i.e. it is an agent), upon an environment using observation through sensors and consequent actuators (i.e. it is intelligent).<ref>{{Cite journal|last1=Anderson|first1=Michael|last2=Anderson|first2=Susan Leigh|date=2007-12-15|title=Machine Ethics: Creating an Ethical Intelligent Agent|url=https://ojs.aaai.org/index.php/aimagazine/article/view/2065|journal=AI Magazine|language=en|volume=28|issue=4|pages=15|doi=10.1609/aimag.v28i4.2065|s2cid=17033332 |issn=2371-9621"
+    },
+    {
+      "term": "internal documentation",
+      "definition_en": "Computer {{gli|software"
+    },
+    {
+      "term": "internet",
+      "definition_en": "The global system of interconnected computer networks that use the Internet protocol suite (TCP/IP) to link devices worldwide. It is a network of networks that consists of private, public, academic, business, and government networks of local to global scope, linked by a broad array of electronic, wireless, and optical networking technologies."
+    },
+    {
+      "term": "iteration",
+      "definition_en": "Is the repetition of a process in order to generate an outcome. The sequence will approach some end point or end value. Each repetition of the process is a single iteration, and the outcome of each iteration is then the starting point of the next iteration. In mathematics and computer science, iteration (along with the related technique of recursion) is a standard element of algorithms."
+    },
+    {
+      "term": "library (computing)",
+      "definition_en": "A collection of non-volatile resources used by {{gli|computer program|computer programs"
+    },
+    {
+      "term": "linked list",
+      "definition_en": "A linear collection of data elements, whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence."
+    },
+    {
+      "term": "logic error",
+      "definition_en": "In {{gli|computer programming"
+    },
+    {
+      "term": "logic programming",
+      "definition_en": "A type of {{gli|programming paradigm"
+    },
+    {
+      "term": "mathematical logic",
+      "definition_en": "A subfield of mathematics exploring the applications of formal logic to mathematics. It bears close connections to metamathematics, the foundations of mathematics, and theoretical computer science. The unifying themes in mathematical logic include the study of the expressive power of formal systems and the deductive power of formal proof systems."
+    },
+    {
+      "term": "natural language processing (NLP)",
+      "definition_en": "A subfield of linguistics, {{gli|computer science"
+    },
+    {
+      "term": "number theory",
+      "definition_en": "A branch of pure mathematics devoted primarily to the study of the integers and integer-valued functions."
+    },
+    {
+      "term": "numerical analysis",
+      "definition_en": "The study of {{gli|algorithm|algorithms"
+    },
+    {
+      "term": "numerical method",
+      "definition_en": "In numerical analysis, a numerical method is a mathematical tool designed to solve numerical problems. The implementation of a numerical method with an appropriate convergence check in a programming language is called a numerical algorithm."
+    },
+    {
+      "term": "optical fiber",
+      "definition_en": "A flexible, transparent fiber made by drawing glass (silica) or plastic to a diameter slightly thicker than that of a human hair.<ref>{{cite web|title=Optical Fiber|url=http://www.thefoa.org/tech/ref/basic/fiber.html|website=www.thefoa.org |publisher=The Fiber Optic Association |access-date=17 April 2015"
+    },
+    {
+      "term": "pair programming",
+      "definition_en": "An agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator,<ref>{{cite conference |last1=Williams |first1=Laurie|author1-link=Laurie Williams (software engineer) |title=Integrating pair programming into a software development process |pages=27–36 |doi=10.1109/CSEE.2001.913816 |conference=14th Conference on Software Engineering Education and Training |date=February 19–20, 2001 |location=Charlotte |isbn=0-7695-1059-0 |quote=One of the programmers, the driver, has control of the keyboard/mouse and actively implements the program. The other programmer, the observer, continuously observes the work of the driver to identify tactical (syntactic, spelling, etc.) defects, and also thinks strategically about the direction of the work."
+    },
+    {
+      "term": "parallel computing",
+      "definition_en": "A type of {{gli|computation"
+    },
+    {
+      "term": "peripheral",
+      "definition_en": "Any auxiliary or ancillary device connected to or integrated within a computer system and used to send information to or retrieve information from the computer. An input device sends data or instructions to the computer; an output device provides output from the computer to the user; and an input/output device performs both functions."
+    },
+    {
+      "term": "postcondition",
+      "definition_en": "In {{gli|computer programming"
+    },
+    {
+      "term": "precondition",
+      "definition_en": "In {{gli|computer programming"
+    },
+    {
+      "term": "primary storage",
+      "definition_en": "(Also known as main memory, internal memory or prime memory), often referred to simply as memory, is the only one directly accessible to the CPU. The CPU continuously reads instructions stored there and executes them as required. Any data actively operated on is also stored there in uniform manner."
+    },
+    {
+      "term": "primitive data type",
+      "definition_en": "}} {{term|priority queue"
+    },
+    {
+      "term": "procedural programming",
+      "definition_en": "}} {{term|Procedural generation"
+    },
+    {
+      "term": "program lifecycle phase",
+      "definition_en": "Program lifecycle phases are the stages a {{gli|computer program"
+    },
+    {
+      "term": "programming language",
+      "definition_en": "A formal language, which comprises a set of instructions that produce various kinds of output. Programming languages are used in {{gli|computer programming"
+    },
+    {
+      "term": "programming language implementation",
+      "definition_en": "Is a system for executing computer programs. There are two general approaches to programming language implementation: interpretation and compilation.<ref name=\"RantaBook\">{{cite book |last1=Ranta |first1=Aarne |title=Implementing Programming Languages |date=9 May 2012 |publisher=College Publications |isbn=9781848900646 |pages=16–18 |url=http://www.cse.chalmers.se/edu/year/2012/course/DAT150/lectures/plt-book.pdf#page=16 |access-date=22 March 2020"
+    },
+    {
+      "term": "programming language theory",
+      "definition_en": "(PLT) is a branch of computer science that deals with the design, implementation, analysis, characterization, and classification of programming languages and of their individual features. It falls within the discipline of computer science, both depending on and affecting mathematics, software engineering, linguistics and even cognitive science. It has become a well-recognized branch of computer science, and an active research area, with results published in numerous journals dedicated to PLT, as well as in general computer science and engineering publications."
+    },
+    {
+      "term": "Prolog",
+      "definition_en": "Is a logic programming language associated with artificial intelligence and computational linguistics.<ref name=Clocksin2003>{{Cite book | last1 = Clocksin | first1 = William F. | last2 = Mellish | first2 = Christopher S. | title = Programming in Prolog | year = 2003 | publisher = Springer-Verlag | location = Berlin; New York | isbn = 978-3-540-00678-7"
+    },
+    {
+      "term": "quantum computing",
+      "definition_en": "The use of quantum-mechanical phenomena such as superposition and entanglement to perform {{gli|computation"
+    },
+    {
+      "term": "R programming language",
+      "definition_en": "R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing.{{refn | R language and environment * {{Cite web |url=https://cran.r-project.org/doc/FAQ/R-FAQ.html#What-is-R_003f |title=R FAQ| at=2.1 What is R? |date=2017-10-04 |first=Kurt |last=Hornik |website=The Comprehensive R Archive Network |access-date=2018-08-06"
+    },
+    {
+      "term": "recursion",
+      "definition_en": "Occurs when a thing is defined in terms of itself or of its type. Recursion is used in a variety of disciplines ranging from linguistics to logic. The most common application of recursion is in mathematics and {{gli|computer science"
+    },
+    {
+      "term": "reference counting",
+      "definition_en": "A programming technique of storing the number of {{gli|reference|references"
+    },
+    {
+      "term": "regression testing",
+      "definition_en": "(rarely non-regression testing<ref>{{cite book |last1=Pezzè |first1=Mauro |last2=Young |first2=Michal |title=Software testing and analysis: process, principles, and techniques |date=2008 |publisher=Wiley |isbn=978-81-265-1773-2 |url=https://books.google.com/books?id=7x10CgAAQBAJ |quote=Testing activities that focus on regression problems are called (non) regression testing. Usually \"non\" is omitted"
+    },
+    {
+      "term": "relational database",
+      "definition_en": "Is a digital database based on the relational model of data, as proposed by E. F. Codd in 1970. A software system used to maintain relational databases is a relational database management system (RDBMS). Many relational database systems have an option of using the SQL (Structured Query Language) for querying and maintaining the database.<ref>{{cite web |last=Ambler |first=Scott |title=Relational Databases 101: Looking at the Whole Picture |date=21 March 2023 |url=http://www.agiledata.org/essays/relationalDatabases.html"
+    },
+    {
+      "term": "reliability engineering",
+      "definition_en": "A sub-discipline of systems engineering that emphasizes dependability in the lifecycle management of a product. Reliability describes the ability of a system or component to function under stated conditions for a specified period of time.<ref>Institute of Electrical and Electronics Engineers (1990) IEEE Standard Computer Dictionary: A Compilation of IEEE Standard Computer Glossaries. New York, NY {{ISBN|1-55937-079-3"
+    },
+    {
+      "term": "requirements analysis",
+      "definition_en": "In systems engineering and software engineering, requirements analysis focuses on the tasks that determine the needs or conditions to meet the new or altered product or project, taking account of the possibly conflicting requirements of the various stakeholders, analyzing, documenting, validating and managing software or system requirements.<ref>{{cite book|isbn=9780471972082|title=Requirements Engineering: Processes and Techniques|url=https://archive.org/details/requirementsengi1998koto|url-access=registration|last1=Kotonya|first1=Gerald|last2=Sommerville|first2=Ian|year=1998|location=Chichester, UK|publisher=John Wiley and Sons"
+    },
+    {
+      "term": "robotics",
+      "definition_en": "An interdisciplinary branch of engineering and science that includes mechanical engineering, electronic engineering, information engineering, {{gli|computer science"
+    },
+    {
+      "term": "routing table",
+      "definition_en": "In computer networking a routing table, or routing information base (RIB), is a data table stored in a router or a network host that lists the routes to particular network destinations, and in some cases, metrics (distances) associated with those routes. The routing table contains information about the topology of the network immediately around it."
+    },
+    {
+      "term": "run time error",
+      "definition_en": "A runtime error is detected after or during the execution (running state) of a program, whereas a compile-time error is detected by the compiler before the program is ever executed. Type checking, register allocation, code generation, and code optimization are typically done at compile time, but may be done at runtime depending on the particular language and compiler. Many other runtime errors exist and are handled differently by different programming languages, such as division by zero errors, domain errors, array subscript out of bounds errors, arithmetic underflow errors, several types of underflow and overflow errors, and many other runtime errors generally considered as software bugs which may or may not be caught and handled by any particular computer language."
+    },
+    {
+      "term": "search algorithm",
+      "definition_en": "Any {{gli|algorithm"
+    },
+    {
+      "term": "secondary storage",
+      "definition_en": "Also known as external memory or auxiliary storage, differs from primary storage in that it is not directly accessible by the CPU. The computer usually uses its input/output channels to access secondary storage and transfer the desired data to primary storage. Secondary storage is non-volatile (retaining data when power is shut off). Modern computer systems typically have two orders of magnitude more secondary storage than primary storage because secondary storage is less expensive."
+    },
+    {
+      "term": "selection sort",
+      "definition_en": "Is an in-place comparison sorting algorithm. It has an O(n<sup>2</sup>) time complexity, which makes it inefficient on large lists, and generally performs worse than the similar insertion sort. Selection sort is noted for its simplicity and has performance advantages over more complicated algorithms in certain situations, particularly where auxiliary memory is limited."
+    },
+    {
+      "term": "sequence",
+      "definition_en": "In mathematics, a sequence is an enumerated collection of objects in which repetitions are allowed and order does matter. Like a set, it contains members (also called elements, or terms). The number of elements (possibly infinite) is called the length of the sequence. Unlike a set, the same elements can appear multiple times at different positions in a sequence, and order does matter. Formally, a sequence can be defined as a function whose domain is either the set of the natural numbers (for infinite sequences) or the set of the first n natural numbers (for a sequence of finite length n). The position of an element in a sequence is its rank or index; it is the natural number for which the element is the image. The first element has index 0 or 1, depending on the context or a specific convention. When a symbol is used to denote a sequence, the nth element of the sequence is denoted by this symbol with n as subscript; for example, the nth element of the Fibonacci sequence F is generally denoted F<sub>n</sub>. For example, (M, A, R, Y) is a sequence of letters with the letter 'M' first and 'Y' last. This sequence differs from (A, R, M, Y). Also, the sequence (1, 1, 2, 3, 5, 8), which contains the number 1 at two different positions, is a valid sequence. Sequences can be finite, as in these examples, or infinite, such as the sequence of all even positive integers (2, 4, 6, ...). In computing and computer science, finite sequences are sometimes called strings, words or lists, the different names commonly corresponding to different ways to represent them in computer memory; infinite sequences are called streams. The empty sequence&nbsp;(&nbsp;) is included in most notions of sequence, but may be excluded depending on the context."
+    },
+    {
+      "term": "serializability",
+      "definition_en": "In concurrency control of databases,<ref name=Bernstein87>Philip A. Bernstein, Vassos Hadzilacos, Nathan Goodman (1987): [http://research.microsoft.com/en-us/people/philbe/ccontrol.aspx Concurrency Control and Recovery in Database Systems] (free PDF download), Addison Wesley Publishing Company, {{ISBN|0-201-10715-5"
+    },
+    {
+      "term": "serialization",
+      "definition_en": "Is the process of translating data structures or object state into a format that can be stored (for example, in a file or memory buffer) or transmitted (for example, across a network connection link) and reconstructed later (possibly in a different computer environment).<ref>{{ cite web | author = Marshall Cline | url = http://www.parashift.com/c++-faq-lite/serialize-overview.html | title = C++ FAQ: \"What's this \"serialization\" thing all about?\" | archive-url = https://web.archive.org/web/20150405013606/http://isocpp.org/wiki/faq/serialization | archive-date = 2015-04-05 | quote = It lets you take an object or group of objects, put them on a disk or send them through a wire or wireless transport mechanism, then later, perhaps on another computer, reverse the process, resurrecting the original object(s). The basic mechanisms are to flatten object(s) into a one-dimensional stream of bits, and to turn that stream of bits back into the original object(s)."
+    },
+    {
+      "term": "service level agreement",
+      "definition_en": "(SLA), is a commitment between a service provider and a client. Particular aspects of the service&nbsp;– quality, availability, responsibilities&nbsp;– are agreed between the service provider and the service user.<ref name=\"KearneyServ11\">{{cite book |url=https://books.google.com/books?id=z306GUfFL5gC |chapter=The SLA Model |title=Service Level Agreements for Cloud Computing |author1=Kearney, K.T. |author2=Torelli, F. |editor1=Wieder, P. |editor2=Butler, J.M. |editor3=Theilmann, W. |editor4=Yahyapour, R. |publisher=Springer Science+Business Media, LLC |pages=43–68 |year=2011 |isbn=9781461416142"
+    },
+    {
+      "term": "singleton",
+      "definition_en": "Pertains to an element that appears exactly once. In object-oriented programming, a singleton class has exactly one instance. In mathematics, a singleton is a set having exactly one element. In linguistics, a hapax legomenon is a term that appears exactly once in some corpus. In programming, a singleton variable, occurring only once, might be a dummy argument or a mistake that can be detected by a linter. Contrast {{gli|unique"
+    },
+    {
+      "term": "software",
+      "definition_en": "Computer software, or simply software, is a collection of data or computer instructions that tell the computer how to work. This is in contrast to physical hardware, from which the system is built and actually performs the work. In computer science and software engineering, computer software is all information processed by computer systems, programs and data. Computer software includes computer programs, libraries and related non-executable data, such as online documentation or digital media. Computer hardware and software require each other and neither can be realistically used on its own."
+    },
+    {
+      "term": "software agent",
+      "definition_en": "Is a computer program that acts for a user or other program in a relationship of agency, which derives from the Latin agere (to do): an agreement to act on one's behalf. Such \"action on behalf of\" implies the authority to decide which, if any, action is appropriate.<ref>{{cite journal | last1 = Nwana | first1 = H.&nbsp;S. | year = 1996 | title = Software Agents: An Overview | volume = 21 | number = 3 | pages = 205–244 | journal = Knowledge Engineering Review | doi=10.1017/s026988890000789x | citeseerx = 10.1.1.50.660 | s2cid = 7839197"
+    },
+    {
+      "term": "software construction",
+      "definition_en": "Is a software engineering discipline. It is the detailed creation of working meaningful software through a combination of coding, verification, unit testing, integration testing, and debugging. It is linked to all the other software engineering disciplines, most strongly to software design and software testing.<ref name=\"SWEBOK\">SWEBOK {{Cite book | editor = Pierre Bourque | editor2 = Robert Dupuis | editor3 = Alain Abran | editor4 = James W. Moore | title = Guide to the Software Engineering Body of Knowledge | publisher = IEEE Computer Society | year = 2004 | chapter = Chapter 4: Software Construction | pages = 4–1–4–5 | isbn = 0-7695-2330-7 | url = http://www.computer.org/portal/web/swebok/html/ch4#Ref2 | access-date = 2020-06-21 | archive-date = 2014-07-14 | archive-url = https://web.archive.org/web/20140714183208/http://www.computer.org/portal/web/swebok/html/ch4#Ref2 | url-status = dead"
+    },
+    {
+      "term": "software deployment",
+      "definition_en": "defn=Is all of the activities that make a software system available for use."
+    },
+    {
+      "term": "software design",
+      "definition_en": "defn=Is the process by which an agent creates a specification of a software artifact, intended to accomplish goals, using a set of primitive components and subject to constraints.<ref>Ralph, P. and Wand, Y. (2009). A proposal for a formal definition of the design concept. In Lyytinen, K., Loucopoulos, P., Mylopoulos, J., and Robinson, W., editors, Design Requirements Workshop (LNBIP 14), pp. 103–136. Springer-Verlag, p. 109 {{doi|10.1007/978-3-540-92966-6_6"
+    },
+    {
+      "term": "software development",
+      "definition_en": "defn=Is the process of conceiving, specifying, designing, programming, documenting, testing, and bug fixing involved in creating and maintaining applications, frameworks, or other software components. Software development is a process of writing and maintaining the source code, but in a broader sense, it includes all that is involved between the conception of the desired software through to the final manifestation of the software, sometimes in a planned and structured process.<ref>{{cite web |url=http://www.bestpricecomputers.co.uk/glossary/application-development.htm |title=Application Development (AppDev) Defined and Explained |publisher=Bestpricecomputers.co.uk |date=2007-08-13 |access-date=2012-08-05 |archive-date=2019-08-15 |archive-url=https://web.archive.org/web/20190815163309/http://www.bestpricecomputers.co.uk/glossary/application-development.htm |url-status=dead"
+    },
+    {
+      "term": "software development process",
+      "definition_en": "In software engineering, a software development process is the process of dividing software development work into distinct phases to improve design, product management, and project management. It is also known as a software development life cycle (SDLC). The methodology may include the pre-definition of specific deliverables and artifacts that are created and completed by a project team to develop or maintain an application. Most modern development processes can be vaguely described as agile. Other methodologies include waterfall, prototyping, iterative and incremental development, spiral development, rapid application development, and extreme programming."
+    },
+    {
+      "term": "software engineering",
+      "definition_en": "Is the systematic application of engineering approaches to the development of software.<ref name=\"BoDu04\">{{harvnb |Abran |Moore |Bourque| Dupuis |2004 |pp=1–1"
+    },
+    {
+      "term": "software maintenance",
+      "definition_en": "In software engineering is the modification of a software product after delivery to correct faults, to improve performance or other attributes.<ref name=\"iso14764\">{{cite web|url=http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=39064 |title=ISO/IEC 14764:2006 Software Engineering — Software Life Cycle Processes — Maintenance |publisher=Iso.org |date=2011-12-17 |access-date=2013-12-02"
+    },
+    {
+      "term": "software prototyping",
+      "definition_en": "Is the activity of creating prototypes of software applications, i.e., incomplete versions of the software program being developed. It is an activity that can occur in software development and is comparable to prototyping as known from other fields, such as mechanical engineering or manufacturing. A prototype typically simulates only a few aspects of, and may be completely different from, the final product."
+    },
+    {
+      "term": "software requirements specification",
+      "definition_en": "(SRS), is a description of a software system to be developed. The software requirements specification lays out functional and non-functional requirements, and it may include a set of use cases that describe user interactions that the software must provide to the user for perfect interaction."
+    },
+    {
+      "term": "software testing",
+      "definition_en": "Is an investigation conducted to provide stakeholders with information about the quality of the software product or service under test.<ref name=\"Kaner 1\">{{cite conference | url = http://www.kaner.com/pdfs/ETatQAI.pdf | title = Exploratory Testing |author-link=Cem Kaner | last = Kaner | first = Cem |conference=Quality Assurance Institute Worldwide Annual Software Testing Conference | location = Orlando, FL | date = November 17, 2006 | access-date = November 22, 2014"
+    },
+    {
+      "term": "sorting algorithm",
+      "definition_en": "Is an algorithm that puts elements of a list in a certain order. The most frequently used orders are numerical order and lexicographical order. Efficient sorting is important for optimizing the efficiency of other algorithms (such as search and merge algorithms) that require input data to be in sorted lists. Sorting is also often useful for canonicalizing data and for producing human-readable output. More formally, the output of any sorting algorithm must satisfy two conditions: # The output is in nondecreasing order (each element is no smaller than the previous element according to the desired total order); # The output is a permutation (a reordering, yet retaining all of the original elements) of the input. Further, the input data is often stored in an array, which allows random access, rather than a list, which only allows sequential access; though many algorithms can be applied to either type of data after suitable modification."
+    },
+    {
+      "term": "source code",
+      "definition_en": "In computing, source code is any collection of code, with or without comments, written using a human-readable programming language, usually as plain text. The source code of a program is specially designed to facilitate the work of computer programmers, who specify the actions to be performed by a computer mostly by writing source code. The source code is often transformed by an assembler or compiler into binary machine code that can be executed by the computer. The machine code might then be stored for execution at a later time. Alternatively, source code may be interpreted and thus immediately executed."
+    },
+    {
+      "term": "spiral model",
+      "definition_en": "Is a risk-driven software development process model. Based on the unique risk patterns of a given project, the spiral model guides a team to adopt elements of one or more process models, such as incremental, waterfall, or evolutionary prototyping."
+    },
+    {
+      "term": "structured storage",
+      "definition_en": "A NoSQL (originally referring to \"non-SQL\" or \"non-relational\")<ref>{{cite web |url=http://nosql-database.org/ |title=NOSQL Databases |quote=NoSQL DEFINITION: Next Generation Databases mostly addressing some of the points : being non-relational, distributed, open-source and horizontally scalab |archive-url=https://web.archive.org/web/20181226094304/http://nosql-database.org/ |archive-date=2018-12-26 |url-status=dead"
+    },
+    {
+      "term": "subroutine",
+      "definition_en": "In computer programming, a subroutine is a sequence of program instructions that performs a specific task, packaged as a unit. This unit can then be used in programs wherever that particular task should be performed. {{anchor|SUBROUTINE_DEFINITION"
+    },
+    {
+      "term": "symbolic computation",
+      "definition_en": "In mathematics and computer science,<ref>{{Cite web |title=ACM Association in computer algebra |url=https://www.sigsam.org/cca/"
+    },
+    {
+      "term": "syntax error",
+      "definition_en": "Is an error in the syntax of a sequence of characters or tokens that is intended to be written in compile-time. A program will not compile until all syntax errors are corrected. For interpreted languages, however, a syntax error may be detected during program execution, and an interpreter's error messages might not differentiate syntax errors from errors of other kinds. There is some disagreement as to just what errors are \"syntax errors\". For example, some would say that the use of an uninitialized variable's value in Java code is a syntax error, but many others would disagree and would classify this as a (static) semantic error."
+    },
+    {
+      "term": "system console",
+      "definition_en": "The system console, computer console, root console, operator's console, or simply console is the text entry and display device for system administration messages, particularly those from the BIOS or boot loader, the kernel, from the init system and from the system logger. It is a physical device consisting of a keyboard and a screen, and traditionally is a text terminal, but may also be a graphical terminal. System consoles are generalized to computer terminals, which are abstracted respectively by virtual consoles and terminal emulators. Today communication with system consoles is generally done abstractly, via the standard streams (stdin, stdout, and stderr), but there may be system-specific interfaces, for example those used by the system kernel."
+    },
+    {
+      "term": "technical documentation",
+      "definition_en": "In engineering, any type of documentation that describes handling, functionality, and architecture of a technical product or a product under development or use.<ref>[http://www.tetras.sk/en/stranka/what-is-technical-documentation What is Technical Documentation?] {{Webarchive|url=http://web.archive.org/web/20130515040003/http://www.tetras.sk/en/stranka/what-is-technical-documentation |date=2013-04-18"
+    },
+    {
+      "term": "third-generation programming language",
+      "definition_en": "A third-generation programming language (3GL) is a high-level computer programming language that tends to be more machine-independent and programmer-friendly than the machine code of the first-generation and assembly languages of the second-generation, while having a less specific focus to the fourth and fifth generations. Examples of common and historical third-generation programming languages are ALGOL, BASIC, C, COBOL, Fortran, Java, and Pascal."
+    },
+    {
+      "term": "top-down and bottom-up design",
+      "definition_en": "}} {{term|tree"
+    },
+    {
+      "term": "type theory",
+      "definition_en": "In mathematics, logic, and computer science, a type theory is any of a class of formal systems, some of which can serve as alternatives to set theory as a foundation for all mathematics. In type theory, every \"term\" has a \"type\" and operations are restricted to terms of a certain type."
+    },
+    {
+      "term": "upload",
+      "definition_en": "In computer networks, to send data to a remote system such as a server or another client so that the remote system can store a copy.<ref>{{Cite web|url=https://techterms.com/definition/upload|title=Upload Definition|website=techterms.com|language=en|access-date=2017-03-30"
+    },
+    {
+      "term": "unique",
+      "definition_en": "An element that is different from other elements. Database records are kept separate using unique keys. A set guarantees that all its elements are unique. The existence of a unique element is modeled using uniqueness quantification. Finding unique elements in a sequence or list requires data deduplication. Contrast {{gli|singleton"
+    },
+    {
+      "term": "user agent",
+      "definition_en": "Software (a {{gli|software agent"
+    },
+    {
+      "term": "waterfall model",
+      "definition_en": "A breakdown of project activities into linear sequential phases, where each phase depends on the deliverables of the previous one and corresponds to a specialisation of tasks. The approach is typical for certain areas of engineering design. In software development, it tends to be among the less iterative and flexible approaches, as progress flows in largely one direction (\"downwards\" like a waterfall) through the phases of conception, initiation, analysis, design, construction, testing, deployment and maintenance."
+    },
+    {
+      "term": "Wi-Fi",
+      "definition_en": "A family of wireless networking technologies, based on the IEEE 802.11 family of standards, which are commonly used for local area networking of devices and Internet access. Wi{{nbh"
+    }
+  ]
+}

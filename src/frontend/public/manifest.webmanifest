@@ -1,0 +1,17 @@
+{
+  "name": "A20 Tutor",
+  "short_name": "A20 Tutor",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "description": "Agentic language tutor with dashboard, review, and settings.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

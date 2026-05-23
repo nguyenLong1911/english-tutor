@@ -1,0 +1,46 @@
+topic_id: C2_advanced_hedging_stance_vocab
+title: "Hedging, Stance và Epistemic Language nâng cao"
+cefr_level: C2
+skill_type: vocabulary
+
+prerequisites:
+  - C1_academic_writing_vocab
+  - C1_discourse_cohesion
+
+objectives:
+  - "Dùng epistemic modality để bày tỏ mức độ chắc chắn chính xác (certainly, presumably, allegedly, supposedly)"
+  - "Phân biệt và dùng đúng stance markers: evaluative (remarkably, disappointingly) vs hedging (apparently, seemingly)"
+  - "Kiểm soát commitment level trong academic và legal writing để tránh overstatement"
+  - "Viết executive opinion piece (200-250 từ) với stance language phù hợp, credible"
+
+common_errors:
+  - wrong: "This proves that remote work increases productivity"
+    correct: "This evidence strongly suggests / is consistent with the view that remote work may enhance productivity"
+    hint: "'Proves' là quá tuyệt đối trong academic/professional context. Hedging: 'strongly suggests', 'is consistent with the view that', 'may enhance'"
+
+  - wrong: "Apparently, the team finished ahead of schedule"
+    correct: "The team reportedly finished ahead of schedule"
+    hint: "'Apparently' = dựa trên dấu hiệu/vẻ bề ngoài. 'Reportedly' = thông tin từ nguồn khác. Hai từ này khác nhau về epistemic source"
+
+  - wrong: "It is obvious that the new policy will fail"
+    correct: "There are grounds to question the viability of the new policy"
+    hint: "'It is obvious' = authoritative overstatement, không phù hợp stance C2. Hedged alternative thể hiện analytical thinking mà không mất credibility"
+
+  - wrong: "Surprisingly, the results were very good"
+    correct: "Notably, the results exceeded initial projections by a significant margin"
+    hint: "'Surprisingly' = evaluative stance của tác giả, thường quá subjective trong formal writing. 'Notably' + facts cụ thể = credible stance"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - feedback
+  - revenue
+  - campaign
+  - stakeholder
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - context_usage

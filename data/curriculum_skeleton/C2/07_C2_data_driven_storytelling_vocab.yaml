@@ -1,0 +1,46 @@
+topic_id: C2_data_driven_storytelling_vocab
+title: "Từ vựng trình bày dữ liệu và Data Storytelling"
+cefr_level: C2
+skill_type: vocabulary
+
+prerequisites:
+  - C1_strategic_planning_vocab
+  - B2_financial_reporting_vocab
+
+objectives:
+  - "Mô tả insight từ data bằng ngôn ngữ chính xác, không overstate (correlate, imply, causation)"
+  - "Dùng từ vựng data visualization: trend, outlier, variance, cohort, baseline, benchmark"
+  - "Xây dựng narrative từ data theo cấu trúc: context → complication → resolution"
+  - "Tránh data fallacies trong ngôn ngữ: cherry-picking, misleading framing, false causation"
+
+common_errors:
+  - wrong: "The data shows that more users = more revenue"
+    correct: "The data suggests a correlation between user growth and revenue; however, causation has not been established"
+    hint: "Correlation ≠ causation. Trong data storytelling: 'suggests a correlation' + caveat về causation là chuẩn mực chuyên nghiệp"
+
+  - wrong: "Sales went up by 50% — our strategy worked!"
+    correct: "Sales increased 50% YoY; we attribute this in part to the Q2 campaign, though other factors may also have contributed"
+    hint: "Overstating attribution: dùng 'attribute in part to' và 'other factors may have contributed' để tránh false causation"
+
+  - wrong: "As you can see from the chart, it's going up"
+    correct: "The chart illustrates a consistent upward trend in Q3, with a 12% month-over-month increase"
+    hint: "Data presentation cần số liệu cụ thể. 'It's going up' vô nghĩa nếu không có magnitude. Luôn kèm % hoặc timeframe"
+
+  - wrong: "Only 5% of users complained, so the product is fine"
+    correct: "While only 5% of users submitted formal complaints, this may represent a larger proportion of dissatisfied users given typical response rates"
+    hint: "Data framing: 'only 5%' là misleading selection bias. Thêm caveat về sample/response rate để tránh cherry-picking"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - revenue
+  - campaign
+  - feedback
+  - A/B test
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - context_usage

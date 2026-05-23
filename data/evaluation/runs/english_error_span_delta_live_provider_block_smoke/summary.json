@@ -1,0 +1,8 @@
+{
+  "total_cases": 1,
+  "ok_cases": 0,
+  "failed_requests": 0,
+  "gold_failed": 0,
+  "decision": "blocked",
+  "blocker": "Live LLM preflight failed: HTTP 503 {\"error\":\"Request failed\",\"detail\":\"Evaluation requires a live LLM provider, got mock\",\"trace_id\":\"english_error_span_delta_live_provider_block_smoke.preflight_live_llm\"}"
+}

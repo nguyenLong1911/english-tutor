@@ -1,0 +1,71 @@
+name: Deploy to GCP VM
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: src/backend
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install backend dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run smoke tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          pytest tests/test_config_urls.py -v
+          pytest tests/test_auth_security.py -v
+
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    needs: test
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Start ssh-agent and add key
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.GCP_VM_SSH_KEY }}
+
+      - name: Add VM host to known_hosts
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          ssh-keyscan -p "${{ secrets.GCP_VM_PORT }}" -H "${{ secrets.GCP_VM_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Run deploy script on VM
+        shell: bash
+        run: |
+          set -euo pipefail
+          ssh -p "${{ secrets.GCP_VM_PORT }}" \
+            "${{ secrets.GCP_VM_USER }}@${{ secrets.GCP_VM_HOST }}" \
+            "bash '${{ secrets.GCP_VM_DEPLOY_SCRIPT }}'"

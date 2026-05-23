@@ -1,0 +1,49 @@
+topic_id: B2_stakeholder_communication_vocab
+title: "Từ vựng giao tiếp với stakeholder"
+cefr_level: B2
+skill_type: vocabulary
+
+prerequisites:
+  - B1_email_writing_vocab
+  - B1_project_management_vocab
+
+objectives:
+  - "Dùng được 15 cụm từ formal để báo cáo, đề xuất, đàm phán với stakeholder cấp cao"
+  - "Diễn đạt ý kiến trái chiều một cách lịch sự và thuyết phục"
+  - "Viết status update và escalation email chuyên nghiệp"
+
+common_errors:
+  - wrong: "I want to align with you about the strategy"
+    correct: "I'd like to align with you on the strategy"
+    hint: "Cụm chuẩn: 'align ON something' (không phải 'about'). 'I'd like' formal hơn 'I want'"
+
+  - wrong: "We need to manage the expectations of stakeholders"
+    correct: "We need to manage stakeholder expectations"
+    hint: "Trong văn formal, 'stakeholder expectations' (compound noun) gọn hơn 'expectations of stakeholders'"
+
+  - wrong: "I disagree with you completely"
+    correct: "I see your point, but I have a different perspective"
+    hint: "Trong giao tiếp với stakeholder, dùng cách diễn đạt mềm mại để giữ relationship"
+
+  - wrong: "I want to escalate this problem to my boss"
+    correct: "I'd like to escalate this issue to senior management"
+    hint: "'issue' formal hơn 'problem'. 'senior management' formal hơn 'my boss'"
+
+  - wrong: "We must to address the concerns of clients"
+    correct: "We must address the client concerns"
+    hint: "'must' không có 'to'. Trong context business, 'address concerns' là collocation chuẩn"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - stakeholder
+  - feedback
+  - deliverable
+  - negotiate
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage

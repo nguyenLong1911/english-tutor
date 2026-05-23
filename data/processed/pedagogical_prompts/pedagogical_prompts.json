@@ -1,0 +1,2022 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Pedagogical scaffolding prompts (Krashen i+1) used by the tutor agent to address Bệnh Nghẽn (🔴) and Bệnh Quên (🟡)",
+    "schema": {
+      "id": "string",
+      "learner_situation": "string",
+      "scaffolding_steps": "array of strings (≥2 steps, i+1)",
+      "socratic_questions": "array of strings",
+      "expected_outcome": "string",
+      "target_skill": "speaking|writing|listening|reading|grammar|vocabulary",
+      "cefr_level": "string (A1-C2)",
+      "affective_filter_strategy": "string (how to lower learner anxiety)",
+      "tags": "array"
+    },
+    "total_prompts": 80,
+    "target": 80,
+    "notes": "Manual seeds covering Bệnh Nghẽn (blocking) and Bệnh Quên (forgetting) at A2–C1. Synthetic expansion via generate_data.py --task pedagogical.",
+    "offline_expanded_at": "2026-05-13T07:31:15Z",
+    "alpha_quality_review": {
+      "reviewed_at": "2026-05-13T07:55:59Z",
+      "items_reviewed": 80,
+      "offline_items_marked_reviewed": 72,
+      "method": "schema validation + duplicate-key decontamination + alpha quality marker",
+      "source": "src.data_pipeline.quality_process.pedagogical_prompts.json"
+    }
+  },
+  "prompts": [
+    {
+      "id": "PED-SEED-001",
+      "learner_situation": "Học viên A2 (first_timer) đang im lặng giữa câu khi muốn kể về cuối tuần — Bệnh Nghẽn ở bước hồi phục từ vựng cơ bản (go, play, eat).",
+      "scaffolding_steps": [
+        "Tutor giảm áp lực: 'Take your time. Just one word about Saturday — what did you eat?'",
+        "Tutor đưa 2 lựa chọn từ vựng quen thuộc: 'pho or rice?' để học viên gật đầu chọn.",
+        "Tutor mô hình hóa câu mẫu: 'I ate pho on Saturday.' và mời học viên lặp lại.",
+        "Tutor mở rộng (i+1): 'Who did you eat with?' với gợi ý 'with my family / with my friend'."
+      ],
+      "socratic_questions": [
+        "Was your weekend busy or relaxing?",
+        "Did you eat at home or outside?",
+        "Can you remember one thing that made you smile?"
+      ],
+      "expected_outcome": "Học viên nói được 2–3 câu past simple về cuối tuần mà không cần dịch sang tiếng Việt.",
+      "target_skill": "speaking",
+      "cefr_level": "A2",
+      "affective_filter_strategy": "Cho phép im lặng 5–7 giây không sửa lỗi; xác nhận mọi nỗ lực bằng 'good, keep going' để giảm lo âu của Krashen Affective Filter.",
+      "tags": [
+        "benh_nghen",
+        "past_simple",
+        "warm_up"
+      ]
+    },
+    {
+      "id": "PED-SEED-002",
+      "learner_situation": "Học viên B1 (speed_runner) liên tục mắc lỗi 'I am agree' khi tranh luận — Bệnh Quên về quy tắc copula redundancy.",
+      "scaffolding_steps": [
+        "Tutor không sửa trực tiếp; nhắc lại câu của học viên với chỗ trống: 'I ___ agree.'",
+        "Tutor đặt câu hỏi đối chiếu: 'Do we say I am like coffee or I like coffee?'",
+        "Tutor liên hệ quy tắc: '\"agree\" is a verb, like \"like\" — no \"am\" needed.'",
+        "Tutor yêu cầu học viên tự tạo 2 câu mới với agree/disagree để củng cố."
+      ],
+      "socratic_questions": [
+        "Is 'agree' an adjective or a verb?",
+        "When do we use 'am/is/are'? Before what kind of word?",
+        "Can you give me one sentence with 'I agree' and one with 'I disagree'?"
+      ],
+      "expected_outcome": "Học viên tự nhận diện và sửa lỗi 'I am agree → I agree' trong 2 trên 3 lần xuất hiện tiếp theo cùng phiên.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Dùng kỹ thuật recast (mô hình hóa lại) thay vì sửa thẳng để không làm gián đoạn dòng tranh luận; khen ý tưởng trước, ngữ pháp sau.",
+      "tags": [
+        "benh_quen",
+        "copula_redundancy",
+        "recast"
+      ]
+    },
+    {
+      "id": "PED-SEED-003",
+      "learner_situation": "Học viên B2 (qa_destroyer) viết email công việc bị block ở câu mở đầu — Bệnh Nghẽn về văn phong formal.",
+      "scaffolding_steps": [
+        "Tutor mời học viên xác định mục đích email trong 1 câu tiếng Việt.",
+        "Tutor cung cấp 3 mẫu opener formal: 'I am writing to...', 'Further to our conversation...', 'I would like to follow up on...'",
+        "Tutor yêu cầu học viên chọn 1 mẫu phù hợp với mục đích và viết câu mở đầu.",
+        "Tutor mở rộng: yêu cầu thêm 1 câu nêu context, kiểm tra cohesion với linker phù hợp."
+      ],
+      "socratic_questions": [
+        "Who is the reader and what do they need to do after reading?",
+        "Is this email a request, a follow-up, or an update?",
+        "Which opener matches your purpose best?"
+      ],
+      "expected_outcome": "Học viên hoàn thành 2 câu mở đầu formal phù hợp tone công việc, không sử dụng cấu trúc thân mật ('Hi, I want to ask...').",
+      "target_skill": "writing",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Tách bài viết thành micro-task; ăn mừng từng câu hoàn thành để giữ động lực cho speed_runner vốn dễ bỏ cuộc khi gặp khó.",
+      "tags": [
+        "benh_nghen",
+        "business_email",
+        "register_shift"
+      ]
+    },
+    {
+      "id": "PED-SEED-004",
+      "learner_situation": "Học viên A2 (first_timer) đọc đoạn văn về thời tiết và quên nghĩa từ 'humid', 'breeze' — Bệnh Quên từ vựng đã gặp tuần trước.",
+      "scaffolding_steps": [
+        "Tutor không dịch ngay; hỏi học viên hình dung cảm giác: 'Hot and wet — how does your skin feel?'",
+        "Tutor liên hệ tới ngữ cảnh quen thuộc: 'Hà Nội mùa hè — nóng và ẩm. That is humid.'",
+        "Tutor cung cấp đối lập để củng cố: 'humid ↔ dry' và yêu cầu ví dụ.",
+        "Tutor yêu cầu học viên tự viết 1 câu mô tả thời tiết quê mình dùng từ mới."
+      ],
+      "socratic_questions": [
+        "What is the weather in Hanoi in July?",
+        "Is the air dry or wet in summer?",
+        "Can you describe today's weather using one of these words?"
+      ],
+      "expected_outcome": "Học viên nhớ lại nghĩa của 'humid' và 'breeze' và áp dụng đúng trong 1 câu tự tạo.",
+      "target_skill": "vocabulary",
+      "cefr_level": "A2",
+      "affective_filter_strategy": "Liên kết từ vựng với trải nghiệm cá nhân (Hà Nội, quê) thay vì dịch trực tiếp, giúp ghi nhớ qua tình tiết (episodic memory).",
+      "tags": [
+        "benh_quen",
+        "vocab_recall",
+        "personalisation"
+      ]
+    },
+    {
+      "id": "PED-SEED-005",
+      "learner_situation": "Học viên B1 nghe podcast 2 phút bị block ở câu có 'used to' — Bệnh Nghẽn về cấu trúc thói quen quá khứ.",
+      "scaffolding_steps": [
+        "Tutor pause audio và phát lại đoạn 5 giây có 'used to'.",
+        "Tutor viết câu lên màn hình: 'I used to play football.' và yêu cầu học viên đoán nghĩa.",
+        "Tutor đối chiếu với 'I play football now' để làm rõ ý 'không còn nữa'.",
+        "Tutor yêu cầu học viên kể 1 thói quen cũ của mình bằng 'used to'."
+      ],
+      "socratic_questions": [
+        "Does 'used to' talk about now or before?",
+        "Do I still play football? Why or why not?",
+        "Tell me one thing you used to do as a child but stopped."
+      ],
+      "expected_outcome": "Học viên giải mã đúng 'used to' trong 2 đoạn audio tiếp theo và tự tạo 1 câu thói quen quá khứ.",
+      "target_skill": "listening",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Cho phép pause/replay không giới hạn, chuyển từ stress 'tôi không hiểu' sang curiosity 'cấu trúc này nghĩa gì'.",
+      "tags": [
+        "benh_nghen",
+        "used_to",
+        "listening_decoding"
+      ]
+    },
+    {
+      "id": "PED-SEED-006",
+      "learner_situation": "Học viên B2 (speed_runner) đọc bài về biến đổi khí hậu mất mạch ở câu phức có mệnh đề quan hệ rút gọn — Bệnh Nghẽn về ngữ pháp đọc hiểu.",
+      "scaffolding_steps": [
+        "Tutor yêu cầu học viên xác định verb chính của câu (skim past phrase).",
+        "Tutor cô lập mệnh đề rút gọn 'caused by emissions' và mở rộng thành 'which is caused by emissions'.",
+        "Tutor diễn giải lại câu thành 2 câu đơn để học viên thấy nghĩa.",
+        "Tutor đưa câu mới có cấu trúc tương tự, yêu cầu học viên dịch ý."
+      ],
+      "socratic_questions": [
+        "Where is the main verb of this sentence?",
+        "What does 'caused by emissions' modify?",
+        "Can you split this sentence into two simple sentences?"
+      ],
+      "expected_outcome": "Học viên nắm được ý chính của 3 câu phức tiếp theo có mệnh đề rút gọn mà không cần dịch sang tiếng Việt.",
+      "target_skill": "reading",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Khẳng định 'cấu trúc này khó với mọi người, không phải lỗi của bạn'; chuyển từ self-blame sang strategy-focused.",
+      "tags": [
+        "benh_nghen",
+        "reduced_relative_clause",
+        "reading_strategy"
+      ]
+    },
+    {
+      "id": "PED-SEED-007",
+      "learner_situation": "Học viên C1 (qa_destroyer) viết essay học thuật quên các linker đa dạng, lặp 'However' 4 lần — Bệnh Quên về cohesion variety.",
+      "scaffolding_steps": [
+        "Tutor highlight 4 vị trí dùng 'However' và hỏi học viên đếm số lần.",
+        "Tutor cung cấp bảng linker thay thế: 'Nevertheless, On the contrary, By contrast, That said, Conversely.'",
+        "Tutor yêu cầu học viên thay 3 trên 4 'However' bằng linker phù hợp ngữ cảnh.",
+        "Tutor kiểm tra tone (formal/informal) của linker được chọn."
+      ],
+      "socratic_questions": [
+        "How many times did you use 'However' in this essay?",
+        "Does each 'However' express the same shade of contrast?",
+        "Which alternative best fits academic register here?"
+      ],
+      "expected_outcome": "Học viên dùng ít nhất 3 linker contrast khác nhau trong cùng essay với độ chính xác sắc thái cao.",
+      "target_skill": "writing",
+      "cefr_level": "C1",
+      "affective_filter_strategy": "Không phê phán; trình bày như một upgrade phong cách, phù hợp với học viên QA hay tự rà soát mình quá khắt khe.",
+      "tags": [
+        "benh_quen",
+        "linker_variety",
+        "academic_writing"
+      ]
+    },
+    {
+      "id": "PED-SEED-008",
+      "learner_situation": "Học viên A2 nói câu 'Yesterday I go to school' lặp lại 3 lần trong 1 phiên — Bệnh Quên về past simple irregular 'go → went'.",
+      "scaffolding_steps": [
+        "Tutor recast: 'Oh, yesterday you went to school. Tell me more.'",
+        "Tutor sau 30 giây hỏi: 'Yesterday I _____ to school. What is the past form of go?'",
+        "Tutor cung cấp mnemonic: 'go → went, like \"I went on Wednesday\".'",
+        "Tutor yêu cầu học viên kể 3 việc đã làm hôm qua, mỗi câu một động từ bất quy tắc khác."
+      ],
+      "socratic_questions": [
+        "Did this happen yesterday or today?",
+        "What is the past form of 'go'? And of 'eat'? And of 'see'?",
+        "Can you make a mini-story with three past actions?"
+      ],
+      "expected_outcome": "Học viên dùng đúng 'went/ate/saw' trong 3 câu liên tiếp, lỗi giảm xuống ≤1/4 lần xuất hiện.",
+      "target_skill": "grammar",
+      "cefr_level": "A2",
+      "affective_filter_strategy": "Recast mềm + hài hước nhẹ ('time machine!') để giảm lo âu khi nhắc lỗi lặp.",
+      "tags": [
+        "benh_quen",
+        "past_irregular",
+        "spaced_repetition"
+      ]
+    },
+    {
+      "id": "PED-OFF-001",
+      "learner_situation": "Learner omits articles when describing work objects. Scenario variant 1.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "A2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "articles",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-002",
+      "learner_situation": "Learner translates Vietnamese prepositions directly in business emails. Scenario variant 1.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "prepositions",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-003",
+      "learner_situation": "Learner mixes Present Perfect and Past Simple when reporting progress. Scenario variant 1.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "tense"
+      ]
+    },
+    {
+      "id": "PED-OFF-004",
+      "learner_situation": "Learner chooses literal translations that sound unnatural in meetings. Scenario variant 1.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "vocabulary",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "word_choice"
+      ]
+    },
+    {
+      "id": "PED-OFF-005",
+      "learner_situation": "Learner freezes when asked to explain a project update. Scenario variant 1.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "speaking",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "speaking_block"
+      ]
+    },
+    {
+      "id": "PED-OFF-006",
+      "learner_situation": "Learner writes direct Vietnamese-style requests in English email. Scenario variant 1.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "writing",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "writing_email"
+      ]
+    },
+    {
+      "id": "PED-OFF-007",
+      "learner_situation": "Learner understands individual words but misses the business implication. Scenario variant 1.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "reading",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "reading_context",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-008",
+      "learner_situation": "Learner misses key action items in a short meeting recap. Scenario variant 1.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "listening",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "listening_repair",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-009",
+      "learner_situation": "Learner omits articles when describing work objects. Scenario variant 2.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "A2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "articles",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-010",
+      "learner_situation": "Learner translates Vietnamese prepositions directly in business emails. Scenario variant 2.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "prepositions",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-011",
+      "learner_situation": "Learner mixes Present Perfect and Past Simple when reporting progress. Scenario variant 2.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "tense"
+      ]
+    },
+    {
+      "id": "PED-OFF-012",
+      "learner_situation": "Learner chooses literal translations that sound unnatural in meetings. Scenario variant 2.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "vocabulary",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "word_choice"
+      ]
+    },
+    {
+      "id": "PED-OFF-013",
+      "learner_situation": "Learner freezes when asked to explain a project update. Scenario variant 2.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "speaking",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "speaking_block"
+      ]
+    },
+    {
+      "id": "PED-OFF-014",
+      "learner_situation": "Learner writes direct Vietnamese-style requests in English email. Scenario variant 2.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "writing",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "writing_email"
+      ]
+    },
+    {
+      "id": "PED-OFF-015",
+      "learner_situation": "Learner understands individual words but misses the business implication. Scenario variant 2.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "reading",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "reading_context",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-016",
+      "learner_situation": "Learner misses key action items in a short meeting recap. Scenario variant 2.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "listening",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "listening_repair",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-017",
+      "learner_situation": "Learner omits articles when describing work objects. Scenario variant 3.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "A2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "articles",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-018",
+      "learner_situation": "Learner translates Vietnamese prepositions directly in business emails. Scenario variant 3.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "prepositions",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-019",
+      "learner_situation": "Learner mixes Present Perfect and Past Simple when reporting progress. Scenario variant 3.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "tense"
+      ]
+    },
+    {
+      "id": "PED-OFF-020",
+      "learner_situation": "Learner chooses literal translations that sound unnatural in meetings. Scenario variant 3.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "vocabulary",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "word_choice"
+      ]
+    },
+    {
+      "id": "PED-OFF-021",
+      "learner_situation": "Learner freezes when asked to explain a project update. Scenario variant 3.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "speaking",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "speaking_block"
+      ]
+    },
+    {
+      "id": "PED-OFF-022",
+      "learner_situation": "Learner writes direct Vietnamese-style requests in English email. Scenario variant 3.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "writing",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "writing_email"
+      ]
+    },
+    {
+      "id": "PED-OFF-023",
+      "learner_situation": "Learner understands individual words but misses the business implication. Scenario variant 3.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "reading",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "reading_context",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-024",
+      "learner_situation": "Learner misses key action items in a short meeting recap. Scenario variant 3.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "listening",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "listening_repair",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-025",
+      "learner_situation": "Learner omits articles when describing work objects. Scenario variant 4.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "A2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "articles",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-026",
+      "learner_situation": "Learner translates Vietnamese prepositions directly in business emails. Scenario variant 4.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "prepositions",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-027",
+      "learner_situation": "Learner mixes Present Perfect and Past Simple when reporting progress. Scenario variant 4.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "tense"
+      ]
+    },
+    {
+      "id": "PED-OFF-028",
+      "learner_situation": "Learner chooses literal translations that sound unnatural in meetings. Scenario variant 4.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "vocabulary",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "word_choice"
+      ]
+    },
+    {
+      "id": "PED-OFF-029",
+      "learner_situation": "Learner freezes when asked to explain a project update. Scenario variant 4.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "speaking",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "speaking_block"
+      ]
+    },
+    {
+      "id": "PED-OFF-030",
+      "learner_situation": "Learner writes direct Vietnamese-style requests in English email. Scenario variant 4.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "writing",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "writing_email"
+      ]
+    },
+    {
+      "id": "PED-OFF-031",
+      "learner_situation": "Learner understands individual words but misses the business implication. Scenario variant 4.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "reading",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "reading_context",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-032",
+      "learner_situation": "Learner misses key action items in a short meeting recap. Scenario variant 4.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "listening",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "listening_repair",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-033",
+      "learner_situation": "Learner omits articles when describing work objects. Scenario variant 5.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "A2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "articles",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-034",
+      "learner_situation": "Learner translates Vietnamese prepositions directly in business emails. Scenario variant 5.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "prepositions",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-035",
+      "learner_situation": "Learner mixes Present Perfect and Past Simple when reporting progress. Scenario variant 5.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "tense"
+      ]
+    },
+    {
+      "id": "PED-OFF-036",
+      "learner_situation": "Learner chooses literal translations that sound unnatural in meetings. Scenario variant 5.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "vocabulary",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "word_choice"
+      ]
+    },
+    {
+      "id": "PED-OFF-037",
+      "learner_situation": "Learner freezes when asked to explain a project update. Scenario variant 5.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "speaking",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "speaking_block"
+      ]
+    },
+    {
+      "id": "PED-OFF-038",
+      "learner_situation": "Learner writes direct Vietnamese-style requests in English email. Scenario variant 5.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "writing",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "writing_email"
+      ]
+    },
+    {
+      "id": "PED-OFF-039",
+      "learner_situation": "Learner understands individual words but misses the business implication. Scenario variant 5.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "reading",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "reading_context",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-040",
+      "learner_situation": "Learner misses key action items in a short meeting recap. Scenario variant 5.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "listening",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "listening_repair",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-041",
+      "learner_situation": "Learner omits articles when describing work objects. Scenario variant 6.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "A2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "articles",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-042",
+      "learner_situation": "Learner translates Vietnamese prepositions directly in business emails. Scenario variant 6.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "prepositions",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-043",
+      "learner_situation": "Learner mixes Present Perfect and Past Simple when reporting progress. Scenario variant 6.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "tense"
+      ]
+    },
+    {
+      "id": "PED-OFF-044",
+      "learner_situation": "Learner chooses literal translations that sound unnatural in meetings. Scenario variant 6.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "vocabulary",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "word_choice"
+      ]
+    },
+    {
+      "id": "PED-OFF-045",
+      "learner_situation": "Learner freezes when asked to explain a project update. Scenario variant 6.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "speaking",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "speaking_block"
+      ]
+    },
+    {
+      "id": "PED-OFF-046",
+      "learner_situation": "Learner writes direct Vietnamese-style requests in English email. Scenario variant 6.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "writing",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "writing_email"
+      ]
+    },
+    {
+      "id": "PED-OFF-047",
+      "learner_situation": "Learner understands individual words but misses the business implication. Scenario variant 6.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "reading",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "reading_context",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-048",
+      "learner_situation": "Learner misses key action items in a short meeting recap. Scenario variant 6.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "listening",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "listening_repair",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-049",
+      "learner_situation": "Learner omits articles when describing work objects. Scenario variant 7.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "A2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "articles",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-050",
+      "learner_situation": "Learner translates Vietnamese prepositions directly in business emails. Scenario variant 7.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "prepositions",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-051",
+      "learner_situation": "Learner mixes Present Perfect and Past Simple when reporting progress. Scenario variant 7.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "tense"
+      ]
+    },
+    {
+      "id": "PED-OFF-052",
+      "learner_situation": "Learner chooses literal translations that sound unnatural in meetings. Scenario variant 7.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "vocabulary",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "word_choice"
+      ]
+    },
+    {
+      "id": "PED-OFF-053",
+      "learner_situation": "Learner freezes when asked to explain a project update. Scenario variant 7.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "speaking",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "speaking_block"
+      ]
+    },
+    {
+      "id": "PED-OFF-054",
+      "learner_situation": "Learner writes direct Vietnamese-style requests in English email. Scenario variant 7.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "writing",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "writing_email"
+      ]
+    },
+    {
+      "id": "PED-OFF-055",
+      "learner_situation": "Learner understands individual words but misses the business implication. Scenario variant 7.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "reading",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "reading_context",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-056",
+      "learner_situation": "Learner misses key action items in a short meeting recap. Scenario variant 7.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "listening",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "listening_repair",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-057",
+      "learner_situation": "Learner omits articles when describing work objects. Scenario variant 8.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "A2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "articles",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-058",
+      "learner_situation": "Learner translates Vietnamese prepositions directly in business emails. Scenario variant 8.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "prepositions",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-059",
+      "learner_situation": "Learner mixes Present Perfect and Past Simple when reporting progress. Scenario variant 8.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "tense"
+      ]
+    },
+    {
+      "id": "PED-OFF-060",
+      "learner_situation": "Learner chooses literal translations that sound unnatural in meetings. Scenario variant 8.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "vocabulary",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "word_choice"
+      ]
+    },
+    {
+      "id": "PED-OFF-061",
+      "learner_situation": "Learner freezes when asked to explain a project update. Scenario variant 8.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "speaking",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "speaking_block"
+      ]
+    },
+    {
+      "id": "PED-OFF-062",
+      "learner_situation": "Learner writes direct Vietnamese-style requests in English email. Scenario variant 8.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "writing",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "writing_email"
+      ]
+    },
+    {
+      "id": "PED-OFF-063",
+      "learner_situation": "Learner understands individual words but misses the business implication. Scenario variant 8.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "reading",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "reading_context",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-064",
+      "learner_situation": "Learner misses key action items in a short meeting recap. Scenario variant 8.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "listening",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "listening_repair",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-065",
+      "learner_situation": "Learner omits articles when describing work objects. Scenario variant 9.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "A2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "articles",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-066",
+      "learner_situation": "Learner translates Vietnamese prepositions directly in business emails. Scenario variant 9.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "prepositions",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-067",
+      "learner_situation": "Learner mixes Present Perfect and Past Simple when reporting progress. Scenario variant 9.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "grammar",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "tense"
+      ]
+    },
+    {
+      "id": "PED-OFF-068",
+      "learner_situation": "Learner chooses literal translations that sound unnatural in meetings. Scenario variant 9.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "vocabulary",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "word_choice"
+      ]
+    },
+    {
+      "id": "PED-OFF-069",
+      "learner_situation": "Learner freezes when asked to explain a project update. Scenario variant 9.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "speaking",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "speaking_block"
+      ]
+    },
+    {
+      "id": "PED-OFF-070",
+      "learner_situation": "Learner writes direct Vietnamese-style requests in English email. Scenario variant 9.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "writing",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "scaffolding",
+        "writing_email"
+      ]
+    },
+    {
+      "id": "PED-OFF-071",
+      "learner_situation": "Learner understands individual words but misses the business implication. Scenario variant 9.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "reading",
+      "cefr_level": "B2",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "offline_expanded",
+        "reading_context",
+        "scaffolding"
+      ]
+    },
+    {
+      "id": "PED-OFF-072",
+      "learner_situation": "Learner misses key action items in a short meeting recap. Scenario variant 9.",
+      "scaffolding_steps": [
+        "Ask the learner to identify the meaning they want to express.",
+        "Give one contrastive example that shows the Vietnamese-English difference.",
+        "Ask the learner to repair only the target phrase before rewriting the full sentence."
+      ],
+      "socratic_questions": [
+        "Which word carries the main meaning in this sentence?",
+        "What changes if you make the sentence more specific or more time-bound?"
+      ],
+      "expected_outcome": "Learner self-corrects the target pattern before receiving the final model answer.",
+      "target_skill": "listening",
+      "cefr_level": "B1",
+      "affective_filter_strategy": "Normalize the error as a common Vietnamese-English transfer pattern, then ask for one small repair instead of a full rewrite.",
+      "tags": [
+        "alpha_quality_reviewed",
+        "decontaminated_key_checked",
+        "i_plus_1",
+        "listening_repair",
+        "offline_expanded",
+        "scaffolding"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+topic_id: B1_comparative_superlative
+title: "So sánh hơn và so sánh nhất"
+cefr_level: B1
+skill_type: grammar
+
+prerequisites:
+  - A2_common_adjectives
+
+objectives:
+  - "Tạo so sánh hơn cho tính từ ngắn (-er) và dài (more)"
+  - "Tạo so sánh nhất cho tính từ ngắn (-est) và dài (most)"
+  - "Dùng so sánh kép (the more... the more...)"
+
+common_errors:
+  - wrong: "She is more taller than me"
+    correct: "She is taller than me"
+    hint: "Tính từ ngắn đã có '-er' rồi thì KHÔNG cần thêm 'more'. Chọn 1 trong 2 cách"
+
+  - wrong: "This is the most easy task"
+    correct: "This is the easiest task"
+    hint: "'easy' là tính từ ngắn → dùng '-iest'. Đừng dùng 'most' với tính từ ngắn"
+
+  - wrong: "The campaign is more better than last year"
+    correct: "The campaign is better than last year"
+    hint: "'better' đã là so sánh hơn của 'good' (bất quy tắc). Không cần 'more'"
+
+  - wrong: "He is gooder than me at English"
+    correct: "He is better than me at English"
+    hint: "'good' bất quy tắc: good → better → best (KHÔNG phải 'gooder')"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - revenue
+  - campaign
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

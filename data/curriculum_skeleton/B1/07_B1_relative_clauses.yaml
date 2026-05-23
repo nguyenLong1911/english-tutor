@@ -1,0 +1,43 @@
+topic_id: B1_relative_clauses
+title: "Mệnh đề quan hệ (who, which, that)"
+cefr_level: B1
+skill_type: grammar
+
+prerequisites:
+  - A2_basic_pronouns
+
+objectives:
+  - "Phân biệt 'who' (người), 'which' (vật), 'that' (cả hai)"
+  - "Tạo mệnh đề quan hệ xác định và không xác định (defining vs non-defining)"
+  - "Dùng dấu phẩy đúng cho mệnh đề non-defining"
+
+common_errors:
+  - wrong: "The man which called you is my boss"
+    correct: "The man who called you is my boss"
+    hint: "'which' dùng cho VẬT. Người dùng 'who' (hoặc 'that')"
+
+  - wrong: "The product, that we launched last month, is selling well"
+    correct: "The product that we launched last month is selling well"
+    hint: "Mệnh đề defining (xác định): KHÔNG dùng dấu phẩy và có thể dùng 'that'"
+
+  - wrong: "My boss who is from Singapore he speaks 4 languages"
+    correct: "My boss, who is from Singapore, speaks 4 languages"
+    hint: "Đã có 'who' làm chủ ngữ rồi thì KHÔNG lặp lại 'he'. Đây là lỗi double subject"
+
+  - wrong: "The campaign which it failed cost us $50,000"
+    correct: "The campaign which failed cost us $50,000"
+    hint: "Đừng lặp đại từ 'it' sau khi đã có 'which/that'"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - campaign
+  - launch
+  - stakeholder
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

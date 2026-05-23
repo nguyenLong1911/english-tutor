@@ -1,0 +1,42 @@
+topic_id: A2_basic_pronouns
+title: "Đại từ cơ bản (Subject, Object, Possessive)"
+cefr_level: A2
+skill_type: grammar
+
+prerequisites:
+  - A2_present_simple_be
+
+objectives:
+  - "Phân biệt đại từ chủ ngữ (I/he/she...) và đại từ tân ngữ (me/him/her...)"
+  - "Dùng đúng đại từ sở hữu (my/his/her/its/our/their)"
+  - "Phân biệt 'its' (sở hữu) và 'it's' (it is)"
+
+common_errors:
+  - wrong: "Me and him are friends"
+    correct: "He and I are friends"
+    hint: "Khi làm chủ ngữ phải dùng 'I' và 'he', không dùng 'me' và 'him'"
+
+  - wrong: "This is she book"
+    correct: "This is her book"
+    hint: "Trước danh từ phải dùng đại từ sở hữu 'her', không phải chủ ngữ 'she'"
+
+  - wrong: "The company changed it's name"
+    correct: "The company changed its name"
+    hint: "'its' (không có dấu nháy) là sở hữu. 'it's' = it is"
+
+  - wrong: "Its a good idea"
+    correct: "It's a good idea"
+    hint: "'it's' = 'it is'. Khi muốn nói 'đó là', phải có dấu nháy"
+
+mastery:
+  min_exercises: 5
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - its
+  - it's
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - matching

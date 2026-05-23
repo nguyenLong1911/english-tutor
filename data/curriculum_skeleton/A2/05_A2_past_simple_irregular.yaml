@@ -1,0 +1,40 @@
+topic_id: A2_past_simple_irregular
+title: "Quá khứ đơn — Động từ bất quy tắc"
+cefr_level: A2
+skill_type: grammar
+
+prerequisites:
+  - A2_past_simple_regular
+
+objectives:
+  - "Nhớ 30 động từ bất quy tắc thông dụng nhất (go-went, see-saw, take-took...)"
+  - "Phân biệt khi nào dùng dạng quá khứ vs quá khứ phân từ"
+  - "Kể lại sự kiện quá khứ dùng cả động từ có quy tắc và bất quy tắc"
+
+common_errors:
+  - wrong: "I goed to the office"
+    correct: "I went to the office"
+    hint: "'go' là động từ bất quy tắc: go → went (quá khứ) → gone (phân từ 2)"
+
+  - wrong: "She taked my pen"
+    correct: "She took my pen"
+    hint: "'take' là bất quy tắc: take → took → taken"
+
+  - wrong: "We seeed the report"
+    correct: "We saw the report"
+    hint: "'see' là bất quy tắc: see → saw → seen"
+
+  - wrong: "He buyed a new laptop"
+    correct: "He bought a new laptop"
+    hint: "'buy' là bất quy tắc: buy → bought → bought"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab: []
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - error_correction

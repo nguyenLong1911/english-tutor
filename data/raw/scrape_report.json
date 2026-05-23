@@ -1,0 +1,62 @@
+{
+  "wikipedia": {
+    "IT": {
+      "pages": [
+        "Glossary of computer science"
+      ],
+      "count": 178,
+      "path": "data\\raw\\wikipedia\\glossaries\\it.json"
+    },
+    "Finance": {
+      "pages": [
+        "Glossary of economics"
+      ],
+      "count": 629,
+      "path": "data\\raw\\wikipedia\\glossaries\\finance.json"
+    },
+    "Marketing": {
+      "pages": [
+        "Outline of marketing",
+        "Marketing communications"
+      ],
+      "count": 26,
+      "path": "data\\raw\\wikipedia\\glossaries\\marketing.json"
+    },
+    "Sales": {
+      "pages": [
+        "Outline of business management",
+        "Glossary of project management"
+      ],
+      "count": 136,
+      "path": "data\\raw\\wikipedia\\glossaries\\sales.json"
+    },
+    "Education": {
+      "pages": [
+        "Glossary of education terms (A–C)"
+      ],
+      "count": 70,
+      "path": "data\\raw\\wikipedia\\glossaries\\education.json"
+    },
+    "Healthcare": {
+      "pages": [
+        "Glossary of medicine"
+      ],
+      "count": 233,
+      "path": "data\\raw\\wikipedia\\glossaries\\healthcare.json"
+    }
+  },
+  "huggingface": {
+    "jfleg": {
+      "dev": {
+        "count": 754,
+        "with_corrections": 719,
+        "path": "data\\raw\\huggingface\\jfleg\\jfleg_dev.jsonl"
+      },
+      "test": {
+        "count": 747,
+        "with_corrections": 715,
+        "path": "data\\raw\\huggingface\\jfleg\\jfleg_test.jsonl"
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+topic_id: B1_passive_voice
+title: "Câu bị động (Passive Voice) cơ bản"
+cefr_level: B1
+skill_type: grammar
+
+prerequisites:
+  - A2_past_simple_irregular
+  - B1_present_perfect_vs_past_simple
+
+objectives:
+  - "Chuyển câu chủ động sang bị động ở 3 thì cơ bản (present, past, present perfect)"
+  - "Hiểu khi nào nên dùng bị động (đối tượng quan trọng hơn chủ thể)"
+  - "Áp dụng bị động trong báo cáo, mô tả quy trình"
+
+common_errors:
+  - wrong: "The report is wrote by the team"
+    correct: "The report is written by the team"
+    hint: "Bị động dùng PHÂN TỪ 2 (V3): write → written, không phải 'wrote'"
+
+  - wrong: "The campaign was launch last week"
+    correct: "The campaign was launched last week"
+    hint: "Sau 'was/were' phải dùng PHÂN TỪ 2: launched (động từ có quy tắc thêm -ed)"
+
+  - wrong: "The meeting will held tomorrow"
+    correct: "The meeting will be held tomorrow"
+    hint: "Bị động ở thì tương lai: 'will BE + V3'. Đừng quên 'be'"
+
+  - wrong: "The product has been launch by us"
+    correct: "The product has been launched by us"
+    hint: "Bị động Present Perfect: has/have been + V3"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - launch
+  - campaign
+  - deploy
+  - feedback
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

@@ -1,0 +1,46 @@
+topic_id: C1_discourse_cohesion
+title: "Discourse Markers và Cohesion nâng cao"
+cefr_level: C1
+skill_type: grammar
+
+prerequisites:
+  - B2_inversion_emphasis
+  - B1_relative_clauses
+
+objectives:
+  - "Dùng linking adverbials để thể hiện logic rõ ràng (consequently, nonetheless, by contrast, in that)"
+  - "Tạo cohesion bằng lexical substitution và reference chains (it, this, such, the former/the latter)"
+  - "Kiểm soát register bằng cách lựa chọn discourse markers phù hợp formal vs informal"
+  - "Tổ chức lập luận trong văn bản dài theo cấu trúc rhetorical (concession-counter-argument)"
+
+common_errors:
+  - wrong: "However, but we should consider the risks"
+    correct: "However, we should consider the risks"
+    hint: "'However' và 'but' đều là contrasting connectors — không dùng cùng lúc trong 1 câu"
+
+  - wrong: "In addition, also the budget was exceeded"
+    correct: "In addition, the budget was exceeded / The budget was also exceeded"
+    hint: "'In addition' và 'also' trùng chức năng. Chỉ dùng một trong hai"
+
+  - wrong: "Due to the project was delayed, we missed the deadline"
+    correct: "Due to the project delay, we missed the deadline"
+    hint: "'Due to' là giới từ, theo sau là noun phrase, không phải mệnh đề. Dùng 'because the project was delayed' nếu muốn dùng mệnh đề"
+
+  - wrong: "The team finished the report. This was impressive"
+    correct: "The team finished the report ahead of schedule, which was impressive"
+    hint: "Tránh dùng 'this' chỉ chung chung cả mệnh đề. Dùng relative clause 'which' hoặc nominalization để liên kết chặt hơn"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - campaign
+  - stakeholder
+  - revenue
+  - feedback
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

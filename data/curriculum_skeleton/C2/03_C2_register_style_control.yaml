@@ -1,0 +1,46 @@
+topic_id: C2_register_style_control
+title: "Kiểm soát Register và Style trong văn bản"
+cefr_level: C2
+skill_type: grammar
+
+prerequisites:
+  - C1_discourse_cohesion
+  - C1_academic_writing_vocab
+
+objectives:
+  - "Chuyển đổi linh hoạt giữa formal, semi-formal và informal register theo mục đích giao tiếp"
+  - "Dùng passive voice và nominalization để nâng cấp register của báo cáo"
+  - "Kiểm soát sentence length và rhythm để tạo coherent, reader-friendly text"
+  - "Nhận diện và loại bỏ tone condescending hoặc overly hedged trong văn viết chuyên nghiệp"
+
+common_errors:
+  - wrong: "I am writing to tell you about some issues with the delivery"
+    correct: "I am writing to bring to your attention several concerns regarding the delivery schedule"
+    hint: "Register nâng cấp: 'tell' → 'bring to your attention', 'issues' → 'concerns', 'some' → 'several'. Mỗi từ đóng góp vào formal tone"
+
+  - wrong: "As per my last email, the deadline was yesterday"
+    correct: "As outlined in my previous correspondence, the deadline was set for [date]"
+    hint: "'As per my last email' thường bị hiểu là passive-aggressive. 'As outlined in my previous correspondence' neutral và professional hơn"
+
+  - wrong: "This report will show that our strategy is good and working"
+    correct: "This report demonstrates the effectiveness of our current strategic approach"
+    hint: "Nominalization + formal verb: 'show' → 'demonstrate', 'good and working' → 'effectiveness of'. Tránh dùng 2 adjective vague cùng lúc"
+
+  - wrong: "We kindly ask you to please reconsider your decision regarding the above matter"
+    correct: "We respectfully request that you reconsider the decision outlined above"
+    hint: "'Kindly' và 'please' cùng lúc = over-hedged, nghe thiếu tự tin. Một cụm lịch sự đã đủ"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.85
+
+recommended_vocab:
+  - feedback
+  - stakeholder
+  - deliverable
+  - negotiate
+
+exercise_types:
+  - error_correction
+  - sentence_production
+  - context_usage

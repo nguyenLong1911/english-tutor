@@ -1,0 +1,942 @@
+{
+  "industry": "Healthcare",
+  "source_pages": [
+    "Glossary of medicine"
+  ],
+  "fetched_at": "2026-05-12T11:33:29Z",
+  "license": "CC BY-SA 4.0 (Wikipedia)",
+  "terms": [
+    {
+      "term": "Aarskog–Scott syndrome",
+      "definition_en": "(AAS) A rare, inherited (X-linked) disease characterized by short stature, facial abnormalities, skeletal and genital anomalies."
+    },
+    {
+      "term": "Abdomen",
+      "definition_en": "The part of the body between the chest and pelvis, which contains most of the tubelike organs of the digestive tract, as well as several solid organs."
+    },
+    {
+      "term": "Abdominal external oblique muscle",
+      "definition_en": "The largest, and outermost, of the three flat muscles of the lateral anterior abdominal wall."
+    },
+    {
+      "term": "Abdominal internal oblique muscle",
+      "definition_en": "A muscle of the abdominal wall, which lies below the external oblique and just above the transverse abdominal muscles."
+    },
+    {
+      "term": "Abductor pollicis brevis muscle",
+      "definition_en": "A muscle in the hand that abducts (straightens) the thumb."
+    },
+    {
+      "term": "Abductor pollicis longus muscle",
+      "definition_en": "One of the extrinsic muscles of the hand. Its major function is to abduct the thumb at the wrist."
+    },
+    {
+      "term": "Accommodation (eye)",
+      "definition_en": "the process by which the eye focuses on an object."
+    },
+    {
+      "term": "Accommodation reflex",
+      "definition_en": "a reflex action of the eye, measured as a response to focusing on a near object, then looking at a distant object (and vice versa)."
+    },
+    {
+      "term": "Achilles tendon",
+      "definition_en": "a tendon of the back of the leg, and the thickest in the human body. It attaches the plantaris, gastrocnemius (calf) and soleus muscles to the calcaneus (heel) bone."
+    },
+    {
+      "term": "Acupressure",
+      "definition_en": "an alternative medicine technique where pressure is applied to acupuncture points. Pressure may be applied by hand, by elbow, or with various devices."
+    },
+    {
+      "term": "Adam's apple",
+      "definition_en": "the lump or protrusion that is formed by the angle of the thyroid cartilage surrounding the larynx seen especially in males."
+    },
+    {
+      "term": "Adaptive immune system",
+      "definition_en": "also known as the acquired immune system or, more rarely, as the specific immune system, is a subsystem of the overall immune system that is composed of highly specialized, systemic cells and processes that eliminate pathogens or prevent their growth."
+    },
+    {
+      "term": "Adenoma",
+      "definition_en": "(plural adenomas or adenomata) is a benign tumor of epithelial tissue with glandular origin, glandular characteristics, or both."
+    },
+    {
+      "term": "ADHD",
+      "definition_en": "Attention deficit hyperactivity disorder."
+    },
+    {
+      "term": "Anatomy",
+      "definition_en": "is the branch of biology concerned with the study of the structure of organisms and their parts. Anatomy is a branch of natural science which deals with the structural organization of living things."
+    },
+    {
+      "term": "Angiology",
+      "definition_en": "is the medical specialty which studies the diseases of the circulatory system and of the lymphatic system, i.e., arteries, veins and lymphatic vessels, and its diseases."
+    },
+    {
+      "term": "Anterior tibial artery",
+      "definition_en": "The anterior tibial artery of the leg carries blood to the anterior compartment of the leg and dorsal surface of the foot, from the popliteal artery."
+    },
+    {
+      "term": "Auscultation",
+      "definition_en": "is listening to the internal sounds of the body, usually using a stethoscope. Auscultation is performed for the purposes of examining the circulatory and respiratory systems (heart and breath sounds), as well as the gastrointestinal system."
+    },
+    {
+      "term": "Axilla",
+      "definition_en": "(also, armpit, underarm or oxter) is the area on the human body directly under the joint where the arm connects to the shoulder. It also provides the under-arm sweat gland."
+    },
+    {
+      "term": "Axillary artery",
+      "definition_en": "is a large blood vessel that conveys oxygenated blood to the lateral aspect of the thorax, the axilla (armpit) and the upper limb. Its origin is at the lateral margin of the first rib, before which it is called the subclavian artery."
+    },
+    {
+      "term": "Barotrauma",
+      "definition_en": "is injury caused by a pressure difference between tissues and a gas filled space."
+    },
+    {
+      "term": "Bile duct",
+      "definition_en": "is any of a number of long tube-like structures that carry bile. Bile, required for the digestion of food, is secreted by the liver into passages that carry bile toward the hepatic duct, which joins with the cystic duct (carrying bile to and from the gallbladder) to form the common bile duct, which opens into the intestine."
+    },
+    {
+      "term": "Biochemistry",
+      "definition_en": "sometimes called biological chemistry, is the study of chemical processes within and relating to living organisms."
+    },
+    {
+      "term": "Bioinformatics",
+      "definition_en": "is an interdisciplinary field that develops methods and software tools for understanding biological data. As an interdisciplinary field of science, bioinformatics combines biology, computer science, information engineering, mathematics and statistics to analyze and interpret biological data."
+    },
+    {
+      "term": "Biopsy",
+      "definition_en": "is a medical test commonly performed by a surgeon, interventional radiologist, or an interventional cardiologist involving extraction of sample cells or tissues for examination to determine the presence or extent of a disease."
+    },
+    {
+      "term": "Brachioradialis",
+      "definition_en": "is a muscle of the forearm that flexes the forearm at the elbow. It is also capable of both pronation and supination, depending on the position of the forearm. It is attached to the distal styloid process of the radius by way of the brachioradialis tendon, and to the lateral supracondylar ridge of the humerus."
+    },
+    {
+      "term": "Bruit",
+      "definition_en": "also called vascular murmur, is the abnormal sound generated by turbulent flow of blood in an artery due to either an area of partial obstruction or a localized high rate of blood flow through an unobstructed artery."
+    },
+    {
+      "term": "Buttocks",
+      "definition_en": "are two rounded portions of the anatomy, located on the posterior of the pelvic region and comprise a layer of fat superimposed on the gluteus maximus and gluteus medius muscles. Physiologically, the buttocks enable weight to be taken off the feet while sitting."
+    },
+    {
+      "term": "Calf (leg)",
+      "definition_en": "is the back portion of the lower leg in human anatomy. The muscles within the calf correspond to the posterior compartment of the leg. The two largest muscles within this compartment are known together as the calf muscle and attach to the heel via the Achilles tendon. Several other, smaller muscles attach to the knee, the ankle, and via long tendons to the toes."
+    },
+    {
+      "term": "Capillary",
+      "definition_en": "is a small blood vessel from 5 to 10 micrometres (μm) in diameter, and having a wall one endothelial cell thick. They are the smallest blood vessels in the body: they convey blood between the arterioles and venules. These microvessels are the site of exchange of many substances with the interstitial fluid surrounding them."
+    },
+    {
+      "term": "Carcinogen",
+      "definition_en": "is any substance, radionuclide, or radiation that promotes carcinogenesis, the formation of cancer. This may be due to the ability to damage the genome or to the disruption of cellular metabolic processes."
+    },
+    {
+      "term": "Carcinogenesis",
+      "definition_en": "also called oncogenesis or tumorigenesis, is the formation of a cancer, whereby normal cells are transformed into cancer cells."
+    },
+    {
+      "term": "Cardiac catheterization",
+      "definition_en": "(heart cath or just cath), is the insertion of a catheter into a chamber or vessel of the heart. This is done both for diagnostic and interventional purposes."
+    },
+    {
+      "term": "Cardiology",
+      "definition_en": "is a branch of medicine dealing with disorders of the heart as well as parts of the circulatory system."
+    },
+    {
+      "term": "Cardiothoracic surgery",
+      "definition_en": "(also known as thoracic surgery) is the field of medicine involved in surgical treatment of organs inside the thorax (the chest)—generally treatment of conditions of the heart (heart disease) and lungs (lung disease)."
+    },
+    {
+      "term": "Carotid artery, external",
+      "definition_en": "The external carotid artery is a major artery of the head and neck. It arises from the common carotid artery when it splits into the external and internal carotid artery. It supplies blood to the face and neck."
+    },
+    {
+      "term": "Carotid artery stenosis",
+      "definition_en": "is a narrowing or constriction of any part of the carotid arteries, usually caused by atherosclerosis."
+    },
+    {
+      "term": "#Coeliac disease",
+      "definition_en": "another way of spelling coeliac disease"
+    },
+    {
+      "term": "Central nervous system",
+      "definition_en": "(CNS), is the part of the nervous system consisting of the brain and spinal cord."
+    },
+    {
+      "term": "Clinic",
+      "definition_en": "(or outpatient clinic or ambulatory care clinic) is a healthcare facility that is primarily focused on the care of outpatients. Clinics can be privately operated or publicly managed and funded."
+    },
+    {
+      "term": "Colorectal surgery",
+      "definition_en": "is a field in medicine dealing with disorders of the rectum, anus, and colon."
+    },
+    {
+      "term": "Common carotid artery",
+      "definition_en": "In anatomy, the left and right common carotid arteries (carotids) <ref name=\"auto4\"/><ref name=\"auto5\"/>) are arteries that supply the head and neck with oxygenated blood; they divide in the neck to form the external and internal carotid arteries.<ref name=\"pmid17370446\"/><ref name=\"iopscience\"/>"
+    },
+    {
+      "term": "Common iliac artery",
+      "definition_en": "The common iliac arteries are two large arteries that originate from the aortic bifurcation at the level of the fourth lumbar vertebra. They end in front of the sacroiliac joint, one on either side, and each bifurcates into the external and internal iliac arteries."
+    },
+    {
+      "term": "Common iliac vein",
+      "definition_en": "The common iliac veins are formed by the external iliac veins and internal iliac veins. The left and right common iliac veins come together in the abdomen at the level of the fifth lumbar vertebra,<ref name=Henry1918>{{Citation"
+    },
+    {
+      "term": "Cure",
+      "definition_en": "is a substance or procedure that ends a medical condition, such as a medication, a surgical operation, a change in lifestyle or even a philosophical mindset that helps end a person's sufferings; or the state of being healed, or cured."
+    },
+    {
+      "term": "Decompression sickness",
+      "definition_en": "is a condition caused by inert gas bubbles forming in supersaturated tissues after a reduction in ambient pressure, and either obstructing perfusion or causing local damage."
+    },
+    {
+      "term": "Deep circumflex iliac vein",
+      "definition_en": "is formed by the union of the venae comitantes of the deep iliac circumflex artery, and joins the external iliac vein about 2&nbsp;cm. above the inguinal ligament. It also receives small tributary branches from the thoracoepigastric vein"
+    },
+    {
+      "term": "Deep temporal arteries",
+      "definition_en": "The deep temporal arteries, two in number, anterior and posterior, ascend between the temporalis and the pericranium. They supply the muscle, and anastomose with the middle temporal artery. The anterior communicates with the lacrimal artery by means of small branches which perforate the zygomatic bone and great wing of the sphenoid."
+    },
+    {
+      "term": "Definitive treatment",
+      "definition_en": "Medical treatment generally accepted as most appropriate for the condition."
+    },
+    {
+      "term": "Differential diagnosis",
+      "definition_en": "is the distinguishing of a particular disease or condition from others that present similar clinical features."
+    },
+    {
+      "term": "Digestive system",
+      "definition_en": "The human digestive system consists of the gastrointestinal tract plus the accessory organs of digestion (the tongue, salivary glands, pancreas, liver, and gallbladder). Digestion involves the breakdown of food into smaller and smaller components, until they can be absorbed and assimilated into the body."
+    },
+    {
+      "term": "Disease",
+      "definition_en": "is an abnormal condition in an organism, or part of it, that negatively affects structure or function. Disease can be caused by external factors, or internal dysfunctions, such as abnormal immune responses."
+    },
+    {
+      "term": "Ear infection",
+      "definition_en": "Otitis is a general term for inflammation or infection of the ear, in both humans and other animals. It is subdivided into the following:"
+    },
+    {
+      "term": "Erector spinae muscles",
+      "definition_en": "The erector spinae or spinal erectors is a set of muscles that straighten and rotate the back."
+    },
+    {
+      "term": "Extensor pollicis brevis muscle",
+      "definition_en": "In human anatomy, the extensor pollicis brevis is a skeletal muscle on the dorsal side of the forearm. It lies on the medial side of, and is closely connected with, the abductor pollicis longus."
+    },
+    {
+      "term": "Extensor pollicis longus muscle",
+      "definition_en": "In human anatomy, the extensor pollicis longus muscle (EPL) is a skeletal muscle located dorsally on the forearm. It is much larger than the extensor pollicis brevis, the origin of which it partly covers and acts to stretch the thumb together with this muscle."
+    },
+    {
+      "term": "External carotid artery",
+      "definition_en": "is a major artery of the head and neck. It arises from the common carotid artery when it splits into the external and internal carotid artery. External carotid artery supplies blood to the face and neck.<ref name=\"Carotid artery\"/>"
+    },
+    {
+      "term": "External iliac artery",
+      "definition_en": "The external iliac arteries are two major arteries which bifurcate off the common iliac arteries anterior to the sacroiliac joint of the pelvis."
+    },
+    {
+      "term": "External iliac vein",
+      "definition_en": "The external iliac veins are large veins that connect the femoral veins to the common iliac veins. Their origin is at the inferior margin of the inguinal ligaments and they terminate when they join the internal iliac veins (to form the common iliac veins). Both external iliac veins are accompanied along their course by external iliac arteries."
+    },
+    {
+      "term": "External jugular vein",
+      "definition_en": "receives the greater part of the blood from the exterior of the cranium and the deep parts of the face, being formed by the junction of the posterior division of the retromandibular vein with the posterior auricular vein."
+    },
+    {
+      "term": "Femoral artery",
+      "definition_en": "is a large artery in the thigh and the main arterial supply to the thigh and leg. It enters the thigh from behind the inguinal ligament as the continuation of the external iliac artery."
+    },
+    {
+      "term": "Femoral nerve",
+      "definition_en": "is a nerve in the thigh that supplies skin on the upper thigh and inner leg, and the muscles that extend the knee."
+    },
+    {
+      "term": "Finger",
+      "definition_en": "is one of the digits located on the hand of a human or animal, typically used for gripping, touching, or manipulating objects. Each finger consists of three little bones known as phalanges, which confer structure and strength. These bones are interconnected by joints encased in muscles, tendons, and ligaments, facilitating smooth movement."
+    },
+    {
+      "term": "Gastroenterology",
+      "definition_en": "Gastroenterology is the branch of medicine focused on the digestive system and its disorders. Diseases affecting the gastrointestinal tract, which include the organs from mouth into anus, along the alimentary canal, are the focus of this speciality."
+    },
+    {
+      "term": "Gracilis muscle",
+      "definition_en": "is the most superficial muscle on the medial side of the thigh. It is thin and flattened, broad above, narrow and tapering below."
+    },
+    {
+      "term": "Great saphenous vein",
+      "definition_en": "(GSV, alternately \"long saphenous vein\"; ) is a large, subcutaneous, superficial vein of the leg. It is the longest vein in the body, running along the length of the lower limb, returning blood from the foot, leg and thigh to the deep femoral vein at the femoral triangle."
+    },
+    {
+      "term": "Heel",
+      "definition_en": "*Hematemesis-"
+    },
+    {
+      "term": "Hematology",
+      "definition_en": "*Hematoma-"
+    },
+    {
+      "term": "Hematuria",
+      "definition_en": "*Hemodialysis-"
+    },
+    {
+      "term": "Hemolysis",
+      "definition_en": "*Hemopathy-"
+    },
+    {
+      "term": "Hemoperfusion",
+      "definition_en": "*Hemophilia-"
+    },
+    {
+      "term": "Hemoptysis",
+      "definition_en": "*Hemorrhoid-"
+    },
+    {
+      "term": "Hyperhydrosis",
+      "definition_en": "*High blood pressure –"
+    },
+    {
+      "term": "Hyperkalemia",
+      "definition_en": "*Hip bone –"
+    },
+    {
+      "term": "Histology",
+      "definition_en": "*Homeostasis –"
+    },
+    {
+      "term": "Hormone",
+      "definition_en": "*Hospice –"
+    },
+    {
+      "term": "Hospital",
+      "definition_en": "*Hospital medicine –"
+    },
+    {
+      "term": "Human back",
+      "definition_en": "*Human body –"
+    },
+    {
+      "term": "Human brain",
+      "definition_en": "*Human digestive system –"
+    },
+    {
+      "term": "Human eye",
+      "definition_en": "*Human head –"
+    },
+    {
+      "term": "Human mouth",
+      "definition_en": "*Human musculoskeletal system –"
+    },
+    {
+      "term": "Human nose",
+      "definition_en": "*Human reproductive system –"
+    },
+    {
+      "term": "Human skeleton",
+      "definition_en": "*Humerus –"
+    },
+    {
+      "term": "Hydrocele",
+      "definition_en": "*Hypersalivation –"
+    },
+    {
+      "term": "Ilium (bone)",
+      "definition_en": "(plural ilia), is the uppermost and largest part of the hip bone, and appears in most vertebrates including mammals and birds, but not bony fish. All reptiles have an ilium except snakes, although some snake species have a tiny bone which is considered to be an ilium.<ref name=reptiles_disease_book>"
+    },
+    {
+      "term": "Internal iliac vein",
+      "definition_en": "*Index finger –"
+    },
+    {
+      "term": "Infectious diseases (medical specialty)",
+      "definition_en": "*Inferior oblique muscle –"
+    },
+    {
+      "term": "Inferior thyroid artery",
+      "definition_en": "*Inferior vena cava –"
+    },
+    {
+      "term": "Influenza",
+      "definition_en": "*Inspection (medicine) –"
+    },
+    {
+      "term": "Integumentary system",
+      "definition_en": "*Intensive care medicine –"
+    },
+    {
+      "term": "Internal carotid artery",
+      "definition_en": "*Internal iliac vein –"
+    },
+    {
+      "term": "Internal jugular vein",
+      "definition_en": "*Internal medicine –"
+    },
+    {
+      "term": "Internship (medicine)",
+      "definition_en": "*Interventional cardiology –"
+    },
+    {
+      "term": "Interventional radiology",
+      "definition_en": "*Ischium –"
+    },
+    {
+      "term": "Jaw",
+      "definition_en": "The jaw is any opposable articulated structure at the entrance of the mouth, typically used for grasping and manipulating food. The term jaws is also broadly applied to the whole of the structures constituting the vault of the mouth and serving to open and close it and is part of the body plan of humans and most animals."
+    },
+    {
+      "term": "Jejunum",
+      "definition_en": "is the second part of the small intestine in humans and most higher vertebrates, including mammals, reptiles, and birds. Its lining is specialised for the absorption by enterocytes of small nutrient molecules which have been previously digested by enzymes in the duodenum."
+    },
+    {
+      "term": "Jugular vein",
+      "definition_en": "The jugular veins are veins that take deoxygenated blood from the head back to the heart via the superior vena cava."
+    },
+    {
+      "term": "Keratogenesis",
+      "definition_en": "The production of horny cells in the epidermis."
+    },
+    {
+      "term": "Laryngeal prominence",
+      "definition_en": "The Adam's apple, or laryngeal prominence, colloquially known as the neck triangle, is the lump or protrusion in the human neck formed by the angle of the thyroid cartilage surrounding the larynx seen especially in males."
+    },
+    {
+      "term": "Laryngospasm",
+      "definition_en": "*Ligament – is the fibrous connective tissue that connects bones to other bones."
+    },
+    {
+      "term": "Little finger",
+      "definition_en": "or pinky finger, also known as the fifth digit, or pinkie, is the most ulnar and smallest finger of the human hand, opposite the thumb, and next to the ring finger."
+    },
+    {
+      "term": "Long bone",
+      "definition_en": "*Lumbar vertebrae –"
+    },
+    {
+      "term": "Lung",
+      "definition_en": "*Lung cancer –"
+    },
+    {
+      "term": "Lymphatic system",
+      "definition_en": "*Lymphatic vessel –"
+    },
+    {
+      "term": "Lymph node",
+      "definition_en": "*Lymphocyte –"
+    },
+    {
+      "term": "Lymphoma",
+      "definition_en": "Cancer of the lymphatic system."
+    },
+    {
+      "term": "Male reproductive system",
+      "definition_en": "*Mammary gland –"
+    },
+    {
+      "term": "Maternal-fetal medicine",
+      "definition_en": "(MFM), also known as perinatology, is a branch of medicine that focuses on managing health concerns of the mother and fetus prior to, during, and shortly after pregnancy."
+    },
+    {
+      "term": "MCAT",
+      "definition_en": "Medical College Admission Test."
+    },
+    {
+      "term": "Medical biology",
+      "definition_en": "*Medical classification – A medical classification is a list of standardized codes used in the process of medical coding and medical billing."
+    },
+    {
+      "term": "Clinical coder",
+      "definition_en": "The practice of assigning statistical codes to medical statements, such as those made during a hospital stay. Closely related to medical billing."
+    },
+    {
+      "term": "Medical ethics",
+      "definition_en": "*Medical history –"
+    },
+    {
+      "term": "Medical imaging",
+      "definition_en": "*Medical laboratory –"
+    },
+    {
+      "term": "Medical research",
+      "definition_en": "*Medical school –"
+    },
+    {
+      "term": "Medical sign",
+      "definition_en": "*Medical speciality –"
+    },
+    {
+      "term": "Medication",
+      "definition_en": "*Medulla oblongata –"
+    },
+    {
+      "term": "Metacarpal bones",
+      "definition_en": "*Metatarsal bones –"
+    },
+    {
+      "term": "Microbiology",
+      "definition_en": "*Middle finger –"
+    },
+    {
+      "term": "Middle temporal artery",
+      "definition_en": "*Molecular biology –"
+    },
+    {
+      "term": "Muscular system",
+      "definition_en": "*Musculoskeletal system –"
+    },
+    {
+      "term": "Nephrology",
+      "definition_en": "is a specialty of medicine that concerns with study of the kidneys, specifically normal kidney function and kidney disease, the preservation of kidney health, and the treatment of kidney disease, from diet and medication to renal replacement therapy (dialysis and kidney transplantation)."
+    },
+    {
+      "term": "Obstetrics",
+      "definition_en": "is the field of study concentrated on pregnancy, childbirth and the postpartum period. As a medical specialty, obstetrics is combined with gynecology under the discipline known as obstetrics and gynecology (OB/GYN), which is a surgical field.<ref>{{cite web|title=Obstetrics and Gynecology Specialty Description"
+    },
+    {
+      "term": "Oncology",
+      "definition_en": "is a branch of medicine that deals with the prevention, diagnosis, and treatment of cancer. A medical professional who practices oncology is an oncologist."
+    },
+    {
+      "term": "Optometry",
+      "definition_en": "is a health care profession that involves examining the eyes and applicable visual systems for defects or abnormalities as well as prescribing the correction of refractive error with glasses or contact lenses and the treatment of eye diseases."
+    },
+    {
+      "term": "Organ (anatomy)",
+      "definition_en": "is a group of tissues with similar functions. Plant life and animal life rely on many organs that co-exist in organ systems.<ref>{{cite book"
+    },
+    {
+      "term": "Oral and maxillofacial surgery",
+      "definition_en": "is a surgical specialty focusing on reconstructive surgery of the face, facial trauma surgery, the oral cavity, head and neck, mouth, and jaws, as well as facial cosmetic surgery."
+    },
+    {
+      "term": "Orbicularis oculi muscle",
+      "definition_en": "*Orbicularis oris muscle –"
+    },
+    {
+      "term": "Orthopedic surgery",
+      "definition_en": "*Ossicles –"
+    },
+    {
+      "term": "Otitis",
+      "definition_en": "*Otorhinolaryngology –"
+    },
+    {
+      "term": "Palate",
+      "definition_en": "is the roof of the mouth in humans and other mammals. It separates the oral cavity from the nasal cavity.<ref name=\"Wingerd166\">"
+    },
+    {
+      "term": "Palpation",
+      "definition_en": "is the process of using one's hands to check the body, especially while perceiving/diagnosing a disease or illness."
+    },
+    {
+      "term": "Parkinson's disease",
+      "definition_en": "*Patella –"
+    },
+    {
+      "term": "Pathology",
+      "definition_en": "*Pectineus muscle –"
+    },
+    {
+      "term": "Pectoralis major muscle",
+      "definition_en": "*Pectoralis minor muscle –"
+    },
+    {
+      "term": "Pediatrics",
+      "definition_en": "*Pelvis –"
+    },
+    {
+      "term": "Human penis",
+      "definition_en": "*Percussion (medicine) –"
+    },
+    {
+      "term": "Peripheral nervous system",
+      "definition_en": "*Peripheral vision –"
+    },
+    {
+      "term": "Phalanx bone",
+      "definition_en": "*Pharmacology –"
+    },
+    {
+      "term": "Pharynx",
+      "definition_en": "*Physician –"
+    },
+    {
+      "term": "Physical examination",
+      "definition_en": "*Physiology –"
+    },
+    {
+      "term": "Pineal gland",
+      "definition_en": "*Pituitary gland –"
+    },
+    {
+      "term": "Placenta",
+      "definition_en": "*Plastic surgery –"
+    },
+    {
+      "term": "Plexus",
+      "definition_en": "A branching network of vessels or nerves."
+    },
+    {
+      "term": "Pons",
+      "definition_en": "*Posterior tibial artery –"
+    },
+    {
+      "term": "Preventive healthcare",
+      "definition_en": "*Prognosis –"
+    },
+    {
+      "term": "Prostate",
+      "definition_en": "*Psychiatry –"
+    },
+    {
+      "term": "Pubis (bone)",
+      "definition_en": "*Pulmonary artery –"
+    },
+    {
+      "term": "Pulmonary circulation",
+      "definition_en": "*Pulmonary vein –"
+    },
+    {
+      "term": "Quadriplegia",
+      "definition_en": "Tetraplegia, also known as quadriplegia, is paralysis caused by illness or injury that results in the partial or total loss of use of all four limbs and torso; paraplegia is similar but does not affect the arms. The loss is usually sensory and motor, which means that both sensation and control are lost. The paralysis may be flaccid or spastic."
+    },
+    {
+      "term": "Radial artery",
+      "definition_en": "In human anatomy, the radial artery is the main artery of the lateral aspect of the forearm."
+    },
+    {
+      "term": "Radiology",
+      "definition_en": "is the medical discipline that uses medical imaging to diagnose and treat diseases within the body."
+    },
+    {
+      "term": "Red blood cell",
+      "definition_en": "The most common type of blood cell and the vertebrate's principal means of delivering oxygen to the body tissues — via blood flow through the circulatory system. Red blood cells take up oxygen in the lungs and release it into tissues while squeezing through the body's capillaries."
+    },
+    {
+      "term": "Renal artery",
+      "definition_en": "*Renal vein –"
+    },
+    {
+      "term": "Human reproductive system",
+      "definition_en": "*Residency (medicine) –"
+    },
+    {
+      "term": "Respiratory system",
+      "definition_en": "*Rheumatology –"
+    },
+    {
+      "term": "Rib cage",
+      "definition_en": "*Ring finger –"
+    },
+    {
+      "term": "Sacrum",
+      "definition_en": "The sacrum (plural: sacra or sacrums<ref>[https://web.archive.org/web/20140126225723/http://www.oxforddictionaries.com/us/definition/american_english/sacrum Oxford Dictionaries] and [http://www.yourdictionary.com/sacrum Webster's New College Dictionary] (2010) admit the plural sacrums alongside sacra;"
+    },
+    {
+      "term": "Saphenous nerve",
+      "definition_en": "(long or internal saphenous nerve) is the largest cutaneous branch of the femoral nerve. It is a strictly sensory nerve, and has no motor function."
+    },
+    {
+      "term": "Scapula",
+      "definition_en": "*Sciatic nerve –"
+    },
+    {
+      "term": "Scrotum",
+      "definition_en": "*Sebaceous gland –"
+    },
+    {
+      "term": "Seminal vesicle",
+      "definition_en": "*Sensory nervous system –"
+    },
+    {
+      "term": "Sensory processing",
+      "definition_en": "*Serratus anterior muscle –"
+    },
+    {
+      "term": "Serratus posterior inferior muscle",
+      "definition_en": "*Serratus posterior superior muscle –"
+    },
+    {
+      "term": "Skull",
+      "definition_en": "*Small intestine –"
+    },
+    {
+      "term": "Small saphenous vein",
+      "definition_en": "*Smooth muscle tissue –"
+    },
+    {
+      "term": "Special senses",
+      "definition_en": "*Specialty (medicine) –"
+    },
+    {
+      "term": "Spinal cord",
+      "definition_en": "*Spinal nerve –"
+    },
+    {
+      "term": "Sole (foot)",
+      "definition_en": "*Soleus muscle –"
+    },
+    {
+      "term": "Spleen",
+      "definition_en": "*Sports medicine –"
+    },
+    {
+      "term": "Sternohyoid muscle",
+      "definition_en": "*Sternum –"
+    },
+    {
+      "term": "Stomach",
+      "definition_en": "*Striated muscle tissue –"
+    },
+    {
+      "term": "Subclavian artery",
+      "definition_en": "*Subcutaneous tissue –"
+    },
+    {
+      "term": "Superficial temporal artery",
+      "definition_en": "*Superior oblique muscle –"
+    },
+    {
+      "term": "Superior thyroid artery",
+      "definition_en": "*Superior vena cava –"
+    },
+    {
+      "term": "Surgery",
+      "definition_en": "*Sweat gland –"
+    },
+    {
+      "term": "Symptom",
+      "definition_en": "*Synovial bursa –"
+    },
+    {
+      "term": "Synovial joint",
+      "definition_en": "*Synovial membrane –"
+    },
+    {
+      "term": "Systemic lupus erythematosus",
+      "definition_en": "*Systems biology –"
+    },
+    {
+      "term": "Tarsus (skeleton)",
+      "definition_en": "In the human body, the tarsus is a cluster of seven articulating bones in each foot situated between the lower end of the tibia and the fibula of the lower leg and the metatarsus. It is made up of the midfoot (cuboid, medial, intermediate, and lateral cuneiform, and navicular) and hindfoot (talus and calcaneus)."
+    },
+    {
+      "term": "Human tooth",
+      "definition_en": "*Temple –"
+    },
+    {
+      "term": "Tendon",
+      "definition_en": "*Tensor fasciae latae muscle –"
+    },
+    {
+      "term": "Thoracic diaphragm",
+      "definition_en": "*Thorax –"
+    },
+    {
+      "term": "Thymus",
+      "definition_en": "*Thyroid –"
+    },
+    {
+      "term": "Tibialis anterior muscle",
+      "definition_en": "*Tibialis posterior muscle –"
+    },
+    {
+      "term": "Toll-like receptor",
+      "definition_en": "*Tongue –"
+    },
+    {
+      "term": "Toxicology",
+      "definition_en": "*Trachea –"
+    },
+    {
+      "term": "Trapezius muscle",
+      "definition_en": "*Triceps brachii muscle –"
+    },
+    {
+      "term": "Ulnar artery",
+      "definition_en": "is the main blood vessel, with oxygenated blood, of the medial aspects of the forearm. It arises from the brachial artery and terminates in the superficial palmar arch, which joins with the superficial branch of the radial artery. It is palpable on the anterior and medial aspect of the wrist."
+    },
+    {
+      "term": "Vas deferens",
+      "definition_en": "also called ductus deferens, is part of the male reproductive system of many vertebrates; these ducts transport sperm from the epididymis to the ejaculatory ducts in anticipation of ejaculation. It is a partially coiled tube which exits the abdominal cavity through the inguinal canal."
+    },
+    {
+      "term": "Vastus intermedius muscle",
+      "definition_en": "arises from the front and lateral surfaces of the body of the femur in its upper two-thirds, sitting under the rectus femoris muscle and from the lower part of the lateral intermuscular septum. Its fibers end in a superficial aponeurosis, which forms the deep part of the quadriceps femoris tendon."
+    },
+    {
+      "term": "Vastus lateralis muscle",
+      "definition_en": "*Vastus medialis –"
+    },
+    {
+      "term": "Vein",
+      "definition_en": "*Vena cava, inferior –"
+    },
+    {
+      "term": "Vena cava, superior",
+      "definition_en": "*Ventricle –"
+    },
+    {
+      "term": "Ventricle system",
+      "definition_en": "*Venule –"
+    },
+    {
+      "term": "Visual perception",
+      "definition_en": "is the ability to interpret the surrounding environment using light in the visible spectrum reflected by the objects in the environment. This is different from visual acuity, which refers to how clearly a person sees (for example \"20/20 vision\"). A person can have problems with visual perceptual processing even if they have 20/20 vision."
+    },
+    {
+      "term": "Waist",
+      "definition_en": "is the part of the abdomen between the rib cage and hips. On people with slim bodies, the waist is the narrowest part of the torso. The waistline refers to the horizontal line where the waist is narrowest, or to the general appearance of the waist."
+    },
+    {
+      "term": "Wernicke–Korsakoff syndrome",
+      "definition_en": "(WKS) is the combined presence of Wernicke encephalopathy (WE) and alcoholic Korsakoff syndrome. Due to the close relationship between these two disorders, people with either are usually diagnosed with WKS as a single syndrome. It mainly causes vision changes, ataxia and impaired memory."
+    },
+    {
+      "term": "Accommodation",
+      "definition_en": "the process by which the eye focuses on an object."
+    },
+    {
+      "term": "Basal",
+      "definition_en": "**Anatomy: In the direction of the base. Antonym apical."
+    },
+    {
+      "term": "Calf",
+      "definition_en": "is the back portion of the lower leg in human anatomy. The muscles within the calf correspond to the posterior compartment of the leg. The two largest muscles within this compartment are known together as the calf muscle and attach to the heel via the Achilles tendon. Several other, smaller muscles attach to the knee, the ankle, and via long tendons to the toes."
+    },
+    {
+      "term": "Celiac disease",
+      "definition_en": "another way of spelling coeliac disease"
+    },
+    {
+      "term": "Cytokines",
+      "definition_en": "are a broad and loose category of small proteins (~5–20 kDa) that are important in cell signaling. Cytokines are peptides, and cannot cross the lipid bilayer of cells to enter the cytoplasm."
+    },
+    {
+      "term": "Iliac artery, common",
+      "definition_en": "The common iliac arteries are two large arteries that originate from the aortic bifurcation at the level of the fourth lumbar vertebra. They end in front of the sacroiliac joint, one on either side, and each bifurcates into the external and internal iliac arteries."
+    },
+    {
+      "term": "Ilium",
+      "definition_en": "(plural ilia), is the uppermost and largest part of the hip bone, and appears in most vertebrates including mammals and birds, but not bony fish. All reptiles have an ilium except snakes, although some snake species have a tiny bone which is considered to be an ilium.<ref name=reptiles_disease_book>"
+    },
+    {
+      "term": "Iliac vein, common",
+      "definition_en": "In human anatomy, the common iliac veins are formed by the external iliac veins and internal iliac veins. The left and right common iliac veins come together in the abdomen at the level of the fifth lumbar vertebra,<ref>{{Citation"
+    },
+    {
+      "term": "Iliac vein, deep circumflex",
+      "definition_en": "*Iliac vein, external –"
+    },
+    {
+      "term": "Iliac vein, internal",
+      "definition_en": "*Index finger –"
+    },
+    {
+      "term": "Lips",
+      "definition_en": "are a visible body part at the mouth of many animals, including humans. Lips are soft, movable, and serve as the opening for food intake and in the articulation of sound and speech. Human lips are a tactile sensory organ, and can be an erogenous zone when used in kissing and other acts of intimacy."
+    },
+    {
+      "term": "Medical coding",
+      "definition_en": "The practice of assigning statistical codes to medical statements, such as those made during a hospital stay. Closely related to medical billing."
+    },
+    {
+      "term": "Mouth",
+      "definition_en": "*Muscle –"
+    },
+    {
+      "term": "Organ",
+      "definition_en": "is a group of tissues with similar functions. Plant life and animal life rely on many organs that co-exist in organ systems.<ref>{{cite book"
+    },
+    {
+      "term": "Papillary",
+      "definition_en": "In oncology, papillary refers to neoplasms with projections (\"papillae\", from Latin, 'nipple') that have fibrovascular cores."
+    },
+    {
+      "term": "Parathyroid glands",
+      "definition_en": "are small endocrine glands in the neck of humans and other tetrapods. Humans usually have four parathyroid glands, located on the back of the thyroid gland in variable locations. The parathyroid gland produces and secretes parathyroid hormone in response to a low blood calcium, which plays a key role in regulating the amount of calcium in the blood and within the bones."
+    },
+    {
+      "term": "Patella",
+      "definition_en": "*Pathology –"
+    },
+    {
+      "term": "Pectineus muscle",
+      "definition_en": "*Pectoralis major muscle –"
+    },
+    {
+      "term": "Pectoralis minor muscle",
+      "definition_en": "*Pediatrics –"
+    },
+    {
+      "term": "Percussion (medicine)",
+      "definition_en": "*Peripheral nervous system –"
+    },
+    {
+      "term": "Peripheral vision",
+      "definition_en": "*Phalanx bone –"
+    },
+    {
+      "term": "Pharmacology",
+      "definition_en": "*Pharynx –"
+    },
+    {
+      "term": "Physician",
+      "definition_en": "*Physical examination –"
+    },
+    {
+      "term": "Physiology",
+      "definition_en": "*Pineal gland –"
+    },
+    {
+      "term": "Pituitary gland",
+      "definition_en": "*Placenta –"
+    },
+    {
+      "term": "Plastic surgery",
+      "definition_en": "*Plexus – A branching network of vessels or nerves."
+    },
+    {
+      "term": "Pubis",
+      "definition_en": "*Pulmonary artery –"
+    },
+    {
+      "term": "Reproductive system",
+      "definition_en": "*Residency (medicine) –"
+    },
+    {
+      "term": "Saphenous vein, great",
+      "definition_en": "*Saphenous vein, small –"
+    },
+    {
+      "term": "Sole",
+      "definition_en": "*Soleus muscle –"
+    },
+    {
+      "term": "Tarsus",
+      "definition_en": "In the human body, the tarsus is a cluster of seven articulating bones in each foot situated between the lower end of the tibia and the fibula of the lower leg and the metatarsus. It is made up of the midfoot (cuboid, medial, intermediate, and lateral cuneiform, and navicular) and hindfoot (talus and calcaneus)."
+    },
+    {
+      "term": "Teeth",
+      "definition_en": "*Temple –"
+    },
+    {
+      "term": "Temporal arteries, deep",
+      "definition_en": "*Temporal artery, middle –"
+    },
+    {
+      "term": "Temporal artery, superficial",
+      "definition_en": "*Temporal muscle –"
+    },
+    {
+      "term": "Thyroid artery, inferior",
+      "definition_en": "*Thyroid artery, superior –"
+    },
+    {
+      "term": "Zonular dialysis",
+      "definition_en": "Deficient support of the lenticular capsule of the eye by the Zonules of Zinn.<ref>{{cite journal |url=https://www.practiceupdate.com/content/characteristics-and-outcomes-of-patients-with-zonular-dialysis-who-underwent-cataract-surgery/147261 |journal=Canadian Journal of Ophthalmology |title=Zonular dialysis and cataract surgery: results from a UK tertiary eye care referral centre"
+    }
+  ]
+}

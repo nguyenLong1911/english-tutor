@@ -1,0 +1,47 @@
+topic_id: B1_gerunds_infinitives
+title: "Gerund (V-ing) và Infinitive (to V)"
+cefr_level: B1
+skill_type: grammar
+
+prerequisites:
+  - A2_present_continuous
+
+objectives:
+  - "Nhận biết động từ đi với V-ing (enjoy, avoid, suggest, finish...)"
+  - "Nhận biết động từ đi với to V (want, decide, plan, hope...)"
+  - "Phân biệt động từ đi được cả 2 (like, love, start) với khác biệt nghĩa nếu có"
+
+common_errors:
+  - wrong: "I enjoy to work with this team"
+    correct: "I enjoy working with this team"
+    hint: "Sau 'enjoy' luôn dùng V-ing, không bao giờ dùng to V"
+
+  - wrong: "She decided going home early"
+    correct: "She decided to go home early"
+    hint: "Sau 'decide' luôn dùng to V, không dùng V-ing"
+
+  - wrong: "I'm interested in to learn Japanese"
+    correct: "I'm interested in learning Japanese"
+    hint: "Sau giới từ (in/on/at/about) luôn dùng V-ing, không dùng to V"
+
+  - wrong: "We should avoid to make the same mistake"
+    correct: "We should avoid making the same mistake"
+    hint: "'avoid' luôn đi với V-ing"
+
+  - wrong: "I look forward to meet you"
+    correct: "I look forward to meeting you"
+    hint: "'look forward TO' — đây 'to' là giới từ → đi với V-ing, không phải to V"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - meeting
+  - feedback
+  - negotiate
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - matching

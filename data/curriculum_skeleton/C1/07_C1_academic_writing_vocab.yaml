@@ -1,0 +1,46 @@
+topic_id: C1_academic_writing_vocab
+title: "Từ vựng viết học thuật và báo cáo chuyên sâu"
+cefr_level: C1
+skill_type: vocabulary
+
+prerequisites:
+  - B2_financial_reporting_vocab
+  - B2_technical_specs_vocab
+
+objectives:
+  - "Dùng Academic Word List (AWL) tier-1 trong báo cáo và white paper"
+  - "Phân biệt và dùng đúng hedging language (may indicate, tends to, it is argued that)"
+  - "Trích dẫn và diễn giải dữ liệu bằng cụm từ học thuật (the data suggest, as evidenced by...)"
+  - "Tránh informal language và vague words trong văn bản chuyên nghiệp"
+
+common_errors:
+  - wrong: "The results show that our product is better"
+    correct: "The results indicate / suggest that our product outperforms competitors"
+    hint: "'Show' quá đơn giản và trực tiếp cho văn học thuật. Dùng 'indicate/suggest' (hedging) và cụm động từ cụ thể hơn 'better'"
+
+  - wrong: "A lot of researchers think that AI will change everything"
+    correct: "A significant body of research suggests that AI will fundamentally reshape industry practices"
+    hint: "'A lot of' và 'think' quá informal. AWL: 'a body of research', 'suggest', 'fundamentally reshape'"
+
+  - wrong: "It's obvious that the old method is wrong"
+    correct: "The evidence points to limitations in the conventional approach"
+    hint: "'It's obvious' = sweeping claim, tránh trong văn học thuật. Dùng hedged language dẫn bằng evidence"
+
+  - wrong: "We looked at the problem from different ways"
+    correct: "We examined the problem from multiple perspectives"
+    hint: "'look at' và 'ways' quá informal. AWL: 'examine/analyze', 'perspectives/dimensions'"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - feedback
+  - revenue
+  - deploy
+  - stakeholder
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - context_usage

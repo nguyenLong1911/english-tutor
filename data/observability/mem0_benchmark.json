@@ -1,0 +1,20 @@
+{
+  "user_id": "bench-08d0f217",
+  "using_stub": true,
+  "n_facts_seeded": 10,
+  "add_latency_ms": {
+    "p50": 0.0,
+    "p95": 2410.29,
+    "p99": 2410.29,
+    "mean": 752.18
+  },
+  "search_latency_ms": {
+    "p50": 0.0,
+    "p95": 0.0,
+    "p99": 0.01,
+    "mean": 0.0
+  },
+  "recall_at_3": 0.4,
+  "n_real_queries": 10,
+  "n_control_queries": 2
+}

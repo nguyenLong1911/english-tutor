@@ -1,0 +1,42 @@
+topic_id: B1_reported_speech_basics
+title: "Câu tường thuật cơ bản"
+cefr_level: B1
+skill_type: grammar
+
+prerequisites:
+  - B1_present_perfect_vs_past_simple
+
+objectives:
+  - "Lùi thì đúng khi chuyển từ direct sang reported speech"
+  - "Đổi đại từ và trạng từ chỉ thời gian (today → that day, now → then)"
+  - "Tường thuật câu hỏi và yêu cầu (asked if/whether, told to)"
+
+common_errors:
+  - wrong: "He said me he is busy"
+    correct: "He told me he was busy"
+    hint: "'said' không đi với tân ngữ trực tiếp. Dùng 'told me' hoặc 'said to me'"
+
+  - wrong: "She told that she will come"
+    correct: "She said that she would come"
+    hint: "'told' phải có tân ngữ (told ME). 'said' đi với 'that'. Lùi thì: will → would"
+
+  - wrong: "He asked me where do I live"
+    correct: "He asked me where I lived"
+    hint: "Câu hỏi gián tiếp dùng trật tự câu khẳng định (S+V), không đảo ngữ"
+
+  - wrong: "She asked if I will join the meeting"
+    correct: "She asked if I would join the meeting"
+    hint: "Lùi thì khi chuyển sang reported speech: will → would"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.80
+
+recommended_vocab:
+  - meeting
+  - feedback
+
+exercise_types:
+  - fill_in_blank
+  - error_correction
+  - sentence_production

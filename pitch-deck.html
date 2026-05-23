@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lingo·AI Pitch Deck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --cream-0: #fffaf7;
+        --cream-1: #fbf4ef;
+        --cream-2: #f8eadc;
+        --line: #e6cfb8;
+        --line-strong: #d5b895;
+        --ink: #241b16;
+        --muted: #6c5a4b;
+        --muted-soft: #8b7868;
+        --ochre: #9a6200;
+        --ochre-bright: #f5a000;
+        --ochre-soft: #fff2df;
+        --green: #5d7f5c;
+        --green-soft: #edf5e8;
+        --shadow-card: 0 24px 60px rgba(69, 45, 23, 0.12);
+        --radius-lg: 28px;
+        --radius-md: 18px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        font-family: "DM Sans", sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(245, 160, 0, 0.12), transparent 28%),
+          linear-gradient(180deg, var(--cream-0) 0%, var(--cream-1) 62%, #f5e6d5 100%);
+      }
+
+      .deck-shell {
+        position: relative;
+      }
+
+      .progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        width: 100%;
+        height: 5px;
+        background: rgba(154, 98, 0, 0.08);
+      }
+
+      .progress-bar {
+        width: 25%;
+        height: 100%;
+        background: linear-gradient(90deg, var(--ochre), var(--ochre-bright));
+        transition: width 220ms ease;
+      }
+
+      .nav-dots {
+        position: fixed;
+        top: 50%;
+        right: 24px;
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        transform: translateY(-50%);
+      }
+
+      .nav-dot {
+        width: 12px;
+        height: 12px;
+        border: 1px solid rgba(154, 98, 0, 0.32);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.72);
+        transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+      }
+
+      .nav-dot.active {
+        border-color: var(--ochre);
+        background: var(--ochre);
+        transform: scale(1.15);
+      }
+
+      .slide {
+        min-height: 100vh;
+        display: grid;
+        align-items: center;
+        padding: 72px 48px;
+      }
+
+      .slide-inner {
+        width: min(1280px, 100%);
+        margin: 0 auto;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 16px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.7);
+        color: var(--ochre);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-family: "Fraunces", serif;
+        letter-spacing: -0.05em;
+      }
+
+      h1 {
+        font-size: clamp(3.8rem, 8vw, 6.8rem);
+        line-height: 0.93;
+      }
+
+      h2 {
+        font-size: clamp(2.7rem, 5vw, 4.6rem);
+        line-height: 0.98;
+      }
+
+      h3 {
+        font-size: 1.45rem;
+        line-height: 1.15;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .lede {
+        font-size: clamp(1.2rem, 2vw, 1.6rem);
+        line-height: 1.6;
+        color: var(--muted);
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .accent {
+        color: var(--ochre);
+      }
+
+      .grid-hero {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: minmax(0, 1.05fr) minmax(380px, 0.95fr);
+      }
+
+      .stack {
+        display: grid;
+        gap: 18px;
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        background: rgba(255, 255, 255, 0.78);
+        box-shadow: var(--shadow-card);
+      }
+
+      .card.pad-lg {
+        padding: 28px;
+      }
+
+      .hero-statement {
+        max-width: 760px;
+      }
+
+      .hero-proof {
+        display: grid;
+        gap: 16px;
+      }
+
+      .image-card {
+        overflow: hidden;
+        min-height: 540px;
+      }
+
+      .image-card img,
+      .proof-frame img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      .signal-grid,
+      .proof-grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .signal {
+        padding: 22px;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      .signal .kicker {
+        margin-bottom: 10px;
+        color: var(--ochre);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .signal p {
+        color: var(--muted);
+        line-height: 1.65;
+        font-size: 1.02rem;
+      }
+
+      .problem-layout,
+      .solution-layout {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      }
+
+      .problem-points,
+      .solution-points {
+        display: grid;
+        gap: 16px;
+      }
+
+      .point {
+        padding: 22px;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      .point strong {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: var(--ink);
+        letter-spacing: 0.02em;
+      }
+
+      .point span {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .quote-box {
+        padding: 30px;
+        border-radius: var(--radius-lg);
+        background: linear-gradient(180deg, rgba(255, 242, 223, 0.92), rgba(255, 255, 255, 0.74));
+        border: 1px solid var(--line-strong);
+      }
+
+      .quote-box .quote {
+        font-family: "Fraunces", serif;
+        font-size: clamp(1.7rem, 2.8vw, 2.35rem);
+        line-height: 1.24;
+      }
+
+      .quote-box .tag {
+        margin-top: 16px;
+        display: inline-flex;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: var(--green-soft);
+        color: var(--green);
+        font-size: 0.92rem;
+        font-weight: 500;
+      }
+
+      .one-liner {
+        padding: 28px;
+        border-radius: var(--radius-lg);
+        background: linear-gradient(135deg, #fff3e3, #ffffff);
+        border: 1px solid var(--line-strong);
+        box-shadow: var(--shadow-card);
+        font-family: "Fraunces", serif;
+        font-size: clamp(1.85rem, 3.1vw, 2.7rem);
+        line-height: 1.18;
+      }
+
+      .aha {
+        padding: 24px;
+        border-radius: var(--radius-md);
+        background: #f9efe3;
+        border: 1px dashed rgba(154, 98, 0, 0.35);
+      }
+
+      .aha strong {
+        display: block;
+        margin-bottom: 10px;
+        color: var(--ochre);
+        font-size: 0.95rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .aha p {
+        color: var(--ink);
+        font-size: 1.15rem;
+        line-height: 1.6;
+      }
+
+      .proof-layout {
+        display: grid;
+        gap: 24px;
+      }
+
+      .proof-grid {
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+      }
+
+      .proof-frame {
+        overflow: hidden;
+        min-height: 400px;
+      }
+
+      .mini-proof-grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .metric {
+        padding: 20px;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      .metric .value {
+        font-family: "Fraunces", serif;
+        font-size: 2.2rem;
+        line-height: 1;
+        color: var(--ochre);
+      }
+
+      .metric .label {
+        margin-top: 8px;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .footer-note {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 20px;
+        color: var(--muted-soft);
+        font-size: 0.94rem;
+      }
+
+      @media (max-width: 1100px) {
+        .grid-hero,
+        .problem-layout,
+        .solution-layout,
+        .proof-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .signal-grid,
+        .mini-proof-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .slide {
+          min-height: auto;
+          padding: 88px 22px 44px;
+        }
+
+        .image-card {
+          min-height: 320px;
+        }
+
+        .nav-dots {
+          right: 12px;
+        }
+
+        .footer-note {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="deck-shell">
+      <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+      <div class="nav-dots" aria-label="Slide navigation">
+        <a class="nav-dot active" href="#slide-1" data-index="0" aria-label="Slide 1"></a>
+        <a class="nav-dot" href="#slide-2" data-index="1" aria-label="Slide 2"></a>
+        <a class="nav-dot" href="#slide-3" data-index="2" aria-label="Slide 3"></a>
+        <a class="nav-dot" href="#slide-4" data-index="3" aria-label="Slide 4"></a>
+      </div>
+
+      <section class="slide" id="slide-1">
+        <div class="slide-inner grid-hero">
+          <div class="stack hero-statement">
+            <div class="eyebrow">Shift Hook · Vấn đề có thật</div>
+            <h1>Nếu mỗi buổi học tiếng Anh đều <span class="accent">bắt đầu lại từ đầu</span>, người học đang thua ngay từ cách học.</h1>
+            <p class="lede">
+              Thị trường đã chuyển từ “học nội dung giống nhau” sang “học theo trí nhớ và ngữ cảnh cá nhân”.
+              Ai vẫn học bằng các công cụ rời rạc sẽ tiếp tục quên nhanh, dùng chậm, và không đưa tiếng Anh vào công việc thật.
+            </p>
+            <div class="signal-grid">
+              <div class="signal">
+                <div class="kicker">Hành vi cũ</div>
+                <p>Học bài ở một nơi, chat ở một nơi, lưu lỗi ở chỗ khác, rồi tự cố nhớ xem hôm qua mình sai gì.</p>
+              </div>
+              <div class="signal">
+                <div class="kicker">Điểm nghẽn</div>
+                <p>Mỗi buổi học gần như reset bối cảnh. Hệ thống không nhớ mục tiêu nghề nghiệp, từ vựng yếu hay lỗi lặp lại của từng người.</p>
+              </div>
+              <div class="signal">
+                <div class="kicker">Hậu quả</div>
+                <p>Người học có cảm giác “đã học khá nhiều” nhưng vẫn chậm khi viết email, họp, hoặc phản xạ trong tình huống thật.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-proof">
+            <div class="card image-card">
+              <img src="imgs/landingpage1.png" alt="Lingo AI landing page" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="slide-2">
+        <div class="slide-inner problem-layout">
+          <div class="stack">
+            <div class="eyebrow">Problem · Ai đau, đau ở đâu, hậu quả gì</div>
+            <h2>Người đi làm cần dùng tiếng Anh thật đang bị kẹt giữa <span class="accent">nội dung chung</span> và <span class="accent">thực tế riêng</span>.</h2>
+            <p class="lede">
+              Nhóm đau nhất là người học tiếng Anh để dùng trong công việc: email, meeting, thuyết trình, đọc tài liệu.
+              Họ không cần thêm một thư viện bài học chung. Họ cần một hệ thống nhớ được chính họ.
+            </p>
+            <div class="problem-points">
+              <div class="point">
+                <strong>Ai đau?</strong>
+                <span>Người học Việt Nam có mục tiêu rõ như công việc, giao tiếp chuyên ngành, hoặc thuyết trình, nhưng không có gia sư nào theo sát lịch sử học thực tế mỗi ngày.</span>
+              </div>
+              <div class="point">
+                <strong>Đau ở đâu?</strong>
+                <span>Họ đang phải đi qua quá nhiều bước rời nhau: học bài, hỏi chatbot, ghi chú lỗi, rồi tự ôn từ vựng và flashcard bằng tay.</span>
+              </div>
+              <div class="point">
+                <strong>Hậu quả là gì?</strong>
+                <span>Kiến thức không tích lũy theo vòng lặp. Người học lặp lại cùng một lỗi, ôn sai thời điểm, và rất khó chuyển từ “hiểu” sang “dùng được”.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stack">
+            <div class="quote-box">
+              <div class="quote">“Hôm qua quên <span class="accent">teach → taught</span>, hôm nay lại học tiếp như chưa từng có lỗi đó.”</div>
+              <div class="tag">Ví dụ pain rất thật từ chính logic sản phẩm hiện tại</div>
+            </div>
+            <div class="card pad-lg">
+              <h3>Một lát cắt rất cụ thể</h3>
+              <p class="muted" style="margin-top: 12px; line-height: 1.7;">
+                Một người học có thể hiểu bài trong lúc đọc, nhưng khi quay lại nhắn tin hoặc nói, họ vẫn mắc lại đúng lỗi cũ.
+                Vấn đề không phải thiếu nội dung. Vấn đề là không có hệ thống nào nối liền bài học, lỗi sai, ôn tập và ngữ cảnh cá nhân thành một trí nhớ chung.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="slide-3">
+        <div class="slide-inner solution-layout">
+          <div class="stack">
+            <div class="eyebrow">Solution · Outcome first</div>
+            <h2>Biến việc học tiếng Anh từ một chuỗi tác vụ rời rạc thành <span class="accent">một vòng lặp nhớ và phản hồi liên tục</span>.</h2>
+            <div class="one-liner">
+              Chúng tôi giúp <span class="accent">người Việt học tiếng Anh để dùng trong công việc và đời sống thật</span> đạt được <span class="accent">phản xạ bền hơn, cá nhân hơn</span> bằng <span class="accent">một gia sư AI nhớ hồ sơ, lỗi sai và thời điểm cần ôn</span>, thay vì <span class="accent">để người học tự vá ghép chat, ghi chú và flashcard rời rạc</span>.
+            </div>
+          </div>
+
+          <div class="stack">
+            <div class="solution-points">
+              <div class="point">
+                <strong>Giải đúng pain nào?</strong>
+                <span>Không để mỗi buổi học reset về số 0. Bài giảng, chat, lỗi sai, từ vựng và lịch ôn cùng nằm trong một dòng học tập liên tục.</span>
+              </div>
+              <div class="point">
+                <strong>Vì sao tốt hơn cách cũ?</strong>
+                <span>Thay vì đợi người học tự nhớ mình yếu ở đâu, hệ thống tự ghi nhận, gọi lại và đưa đúng nội dung vào đúng lúc cần thực hành lại.</span>
+              </div>
+            </div>
+            <div class="aha">
+              <strong>Aha Moment</strong>
+              <p>Bạn mắc lỗi trong chat hôm nay. Ngày mai lỗi đó trở thành bài ôn. Tuần sau nó xuất hiện lại đúng lúc bạn sắp quên. Hệ thống bắt đầu nhớ bạn như một gia sư thật.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="slide-4">
+        <div class="slide-inner proof-layout">
+          <div class="stack">
+            <div class="eyebrow">Product Proof · Na ná demo slide</div>
+            <h2>Sản phẩm hiện tại đã thể hiện rõ <span class="accent">3 lớp giá trị cốt lõi</span>.</h2>
+          </div>
+
+          <div class="proof-grid">
+            <div class="card proof-frame">
+              <img src="imgs/core_page.png" alt="Core learning experience" />
+            </div>
+
+            <div class="stack">
+              <div class="mini-proof-grid">
+                <div class="metric">
+                  <div class="value">1 luồng</div>
+                  <div class="label">Chat, bài giảng và vocabulary không còn tách rời. Người học vừa tương tác vừa học trong cùng bối cảnh.</div>
+                </div>
+                <div class="metric">
+                  <div class="value">24+</div>
+                  <div class="label">UI hiện tại đã cho thấy memory và vocabulary được giữ lại theo thời gian, thay vì biến mất sau mỗi phiên.</div>
+                </div>
+                <div class="metric">
+                  <div class="value">30 ngày</div>
+                  <div class="label">Dashboard tiến bộ đã theo dõi accuracy trend, lỗi gần đây và nhịp ôn, giúp việc học có vòng phản hồi rõ ràng.</div>
+                </div>
+                <div class="metric">
+                  <div class="value">3 cơ chế</div>
+                  <div class="label">Lesson, practice và flashcard phục vụ ba giai đoạn: hiểu, dùng thử, rồi nhớ lâu.</div>
+                </div>
+              </div>
+              <div class="card pad-lg">
+                <h3>Thông điệp chốt</h3>
+                <p class="muted" style="margin-top: 12px; line-height: 1.72;">
+                  Đây không phải một chatbot dạy tiếng Anh. Đây là một hệ thống học tập biết nhớ,
+                  biết sửa, biết nhắc lại đúng lúc, để mỗi lần học sau đều thông minh hơn lần trước.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-note">
+            <span>Mở file này trực tiếp trong trình duyệt để trình bày hoặc chụp màn hình từng slide.</span>
+            <span>Dùng phím mũi tên lên/xuống hoặc click dot bên phải để điều hướng.</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const slides = Array.from(document.querySelectorAll(".slide"));
+      const dots = Array.from(document.querySelectorAll(".nav-dot"));
+      const progressBar = document.getElementById("progressBar");
+
+      function activateSlide(index) {
+        dots.forEach((dot, dotIndex) => {
+          dot.classList.toggle("active", dotIndex === index);
+        });
+        progressBar.style.width = `${((index + 1) / slides.length) * 100}%`;
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+          if (!visible) return;
+          const index = slides.indexOf(visible.target);
+          if (index >= 0) activateSlide(index);
+        },
+        { threshold: [0.35, 0.6, 0.8] }
+      );
+
+      slides.forEach((slide) => observer.observe(slide));
+
+      window.addEventListener("keydown", (event) => {
+        const current = dots.findIndex((dot) => dot.classList.contains("active"));
+        if (event.key === "ArrowDown" || event.key === "PageDown") {
+          event.preventDefault();
+          const next = Math.min(slides.length - 1, current + 1);
+          slides[next].scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+        if (event.key === "ArrowUp" || event.key === "PageUp") {
+          event.preventDefault();
+          const prev = Math.max(0, current - 1);
+          slides[prev].scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+topic_id: B1_marketing_campaign_vocab
+title: "Từ vựng chiến dịch marketing cơ bản"
+cefr_level: B1
+skill_type: vocabulary
+
+prerequisites:
+  - A2_basic_business_vocab
+
+objectives:
+  - "Hiểu và dùng được 8 từ cốt lõi về marketing campaign"
+  - "Đọc hiểu được email/brief marketing đơn giản"
+  - "Viết được email báo cáo kết quả campaign (50-80 từ)"
+
+common_errors:
+  - wrong: "do a campaign"
+    correct: "run a campaign"
+    hint: "Dùng 'run' hoặc 'launch' với campaign, không dùng 'do'"
+
+  - wrong: "the campaign's result is good"
+    correct: "the campaign performed well"
+    hint: "Báo cáo kết quả thường dùng 'performed well' thay vì 'result is good'"
+
+  - wrong: "make a decision about the budget fastly"
+    correct: "make a quick decision about the budget"
+    hint: "Không có từ 'fastly'. Dùng 'quick' (adj) trước decision"
+
+mastery:
+  min_exercises: 6
+  accuracy_threshold: 0.75
+
+recommended_vocab:
+  - campaign
+  - launch
+  - revenue
+  - stakeholder
+  - deliverable
+  - feedback
+  - A/B test
+  - make a decision
+
+exercise_types:
+  - fill_in_blank
+  - matching
+  - context_usage
