@@ -6,7 +6,7 @@ from collections.abc import Iterable
 from sqlalchemy import func, or_, select
 
 from app.core.database import SessionLocal
-from app.models.schemas import LearnerProfile, LessonVocabularyItem
+from app.models.processed_dataset_schemas import LearnerProfile, LessonVocabularyItem
 from app.models.vocabulary import Vocabulary
 from app.services.lesson_catalog import get_lesson
 

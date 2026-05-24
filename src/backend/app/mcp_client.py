@@ -12,7 +12,7 @@ class MCPClient:
 
     async def connect(self):
         # TODO: open an MCP session, e.g. via mcp.client.stdio.stdio_client
-        # and mcp.ClientSession — configure server command + args here.
+        # and mcp.clientSession — configure server command + args here.
         self.session = None
 
     async def disconnect(self):

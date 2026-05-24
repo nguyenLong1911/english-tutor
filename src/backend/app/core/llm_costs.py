@@ -1,6 +1,6 @@
 """Per-call LLM cost & latency tracer for the backend.
 
-Writes the same JSONL schema as ``data_pipeline.observability`` (so a single
+Writes the same JSONL schema as ``data_pipeline.llm_call_observability`` (so a single
 dashboard can aggregate calls coming from both the data-pipeline scripts and
 the FastAPI runtime). Path is configurable via ``A20_OBSERVABILITY_PATH``;
 defaults to ``/app/data/observability/llm_calls.jsonl`` which is mounted
@@ -27,7 +27,7 @@ from typing import Any
 logger = logging.getLogger(__name__)
 
 
-# Same price table as data_pipeline.observability; kept in sync manually.
+# Same price table as data_pipeline.llm_call_observability; kept in sync manually.
 PRICE_TABLE_USD_PER_M: dict[str, tuple[float, float]] = {
     "gemini-2.5-pro":         (1.25, 10.00),
     "gemini-2.5-flash":       (0.30,  2.50),

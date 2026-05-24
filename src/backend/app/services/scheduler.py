@@ -24,7 +24,7 @@ _scheduler: Any = None
 
 def _with_db(fn):
     def _wrapper():
-        from ..core.observability import capture_exception, set_tag
+        from ..core.llm_call_observability import capture_exception, set_tag
 
         db = SessionLocal()
         try:

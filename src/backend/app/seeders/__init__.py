@@ -1,9 +1,9 @@
-"""Runtime seeders that ingest ``data/processed/*`` into Postgres + Qdrant.
+"""Optional seeders that ingest ``data/processed/*`` into Postgres + Qdrant.
 
 The legacy ``app/scripts/seed_vocabulary.py`` (CSV-based) has been retired in
-favour of :mod:`app.seeders.seed_processed`, which is the single source of
-truth for hydrating the runtime data layer from the curated JSON files
-produced by ``src/data_pipeline``.
+favour of :mod:`app.seeders.seed_processed`. These commands hydrate demo,
+evaluation, and inspection stores from curated JSON files produced by
+``src/data_pipeline``; they are not required for the live chat hotpath.
 """
 
 

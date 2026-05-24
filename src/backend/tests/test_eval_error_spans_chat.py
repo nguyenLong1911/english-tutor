@@ -4,7 +4,7 @@ import asyncio
 from uuid import uuid4
 
 from app.services import eval_error_spans
-from app.models.schemas import ChatRequest
+from app.models.processed_dataset_schemas import ChatRequest
 
 
 def _run(coro):

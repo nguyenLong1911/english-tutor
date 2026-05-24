@@ -8,7 +8,7 @@ from sqlalchemy import and_, or_, not_, exists, select
 from sqlalchemy.orm import Session
 
 from ...core.database import get_db
-from ...models.schemas import VocabularyOut
+from ...models.processed_dataset_schemas import VocabularyOut
 from ...models.user import User
 from ...models.vocabulary import Vocabulary, UserVocabulary
 

@@ -1,7 +1,10 @@
-"""Seed all runtime stores from ``data/processed/``.
+"""Seed optional demo/evaluation stores from ``data/processed/``.
 
-This is the single entry point that integrates the curated artefacts produced
-by ``src/data_pipeline`` (Sprint 1) into the live application:
+This script integrates curated artefacts produced by ``src/data_pipeline`` into
+Postgres/Qdrant for demos, evaluation runs, and manual inspection. These static
+datasets are not required for the tutor to identify learner errors or provide
+scaffolding at runtime; the live chat path relies on the LLM system prompt,
+LangGraph, user profile/progress, and user-generated Mem0/Postgres facts.
 
 * Postgres ``vocabulary``           ← ``industry_vocab/industry_context_library.json``
                                        (+ optional ``wiki_auto_extracted.json``
@@ -12,11 +15,11 @@ by ``src/data_pipeline`` (Sprint 1) into the live application:
 * Postgres ``pedagogical_prompt``   ← ``pedagogical_prompts/pedagogical_prompts.json``
 * Postgres ``ielts_writing_sample`` ← ``ielts_writing/ielts_writing_task2.json``
 * Qdrant via Mem0                   ← ``mem0_facts/mem0_initial_facts.json``
-                                       (test-persona seed; skipped when Mem0 is
+                                       (test-persona eval seed; skipped when Mem0 is
                                        running on the in-memory stub, i.e. no
                                        embedding API key configured).
 
-The script is **idempotent**: each table uses ``ON CONFLICT … DO UPDATE`` keyed
+The script is **idempotent**: each table uses ``ON CONFLICT ... DO UPDATE`` keyed
 on the stable upstream ID (or ``(word, pos)`` for vocabulary), and Mem0 facts
 are tagged with ``seed=true`` + ``fact_id`` so repeat runs do not duplicate.
 

@@ -1,4 +1,4 @@
-"""Unit tests for corpus ingestion + retrieval plumbing.
+"""Unit tests for eval/demo corpus ingestion + retrieval plumbing.
 
 These tests avoid the real network entirely by swapping:
   * the embedder with a deterministic bag-of-words stub, and
@@ -12,7 +12,8 @@ What they protect
 3. ``build_corpus_embedder`` selection order respects the explicit
    ``prefer`` argument and the ``CORPUS_EMBEDDER`` env var.
 4. ``corpus_retrieval.search`` gracefully returns ``[]`` when the
-   collection or the embedder is missing (so chat never breaks).
+   collection or the embedder is missing. The live chat hotpath does not call
+   this static corpus.
 """
 from __future__ import annotations
 

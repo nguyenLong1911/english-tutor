@@ -99,7 +99,7 @@ def admin_memory_status(db: Session = Depends(get_db)):
             {
                 "id": str(row.id),
                 "user_id": str(row.user_id),
-                "retry_count": int(row.retry_count or 0),
+                "retry_count": int(row.retry_and_circuit_breaker_count or 0),
                 "last_error": row.last_error,
                 "updated_at": row.updated_at.isoformat() if row.updated_at else None,
             }

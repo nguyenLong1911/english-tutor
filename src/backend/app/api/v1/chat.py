@@ -21,7 +21,7 @@ from ...core.config import get_settings
 from ...core.database import get_db
 from ...core.mem0_client import get_memory
 from ...core.redis_client import SessionStore, get_session_store
-from ...models.schemas import ChatRequest, ChatResponse
+from ...models.processed_dataset_schemas import ChatRequest, ChatResponse
 from ...models.session_log import SessionLog
 from ...models.user import User
 from ...services.error_capture_service import capture_error_and_flashcard
@@ -481,7 +481,7 @@ async def _chat_impl(
         # Explicitly report to Sentry with pipeline context — logger.exception
         # already forwards via LoggingIntegration, this adds richer extras.
         try:
-            from ...core.observability import capture_exception
+            from ...core.llm_call_observability import capture_exception
             capture_exception(
                 e,
                 pipeline_stage="run_chat_pipeline",

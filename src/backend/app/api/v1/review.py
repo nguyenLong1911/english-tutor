@@ -8,7 +8,7 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from ...core.database import get_db
-from ...models.schemas import ReviewItem, ReviewSubmit, ReviewSubmitResult
+from ...models.processed_dataset_schemas import ReviewItem, ReviewSubmit, ReviewSubmitResult
 from ...models.personal_review import UserFlashcard, UserFlashcardReview
 from ...models.vocabulary import Vocabulary, UserVocabulary
 from ...services.error_capture_service import capture_error_and_flashcard

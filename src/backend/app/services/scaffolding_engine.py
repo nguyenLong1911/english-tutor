@@ -170,11 +170,6 @@ def _build_english_rag_prompt(state: dict[str, Any], user_input: str, progress_s
     )
     progress_context = _format_progress_context(progress_summary or {}, state) if progress_summary else "- unavailable"
     personal_context = "\n".join(f"- {item}" for item in _build_personal_context_items(state)) or "- none"
-    corpus_context = "\n".join(
-        f"- {str(item.get('content') or item.get('text') or '').strip()}"
-        for item in list(state.get("corpus_flat") or [])[:6]
-        if str(item.get("content") or item.get("text") or "").strip()
-    ) or "- none"
     try:
         from .personal_error_context import format_personal_errors_for_prompt
 
@@ -196,7 +191,6 @@ def _build_english_rag_prompt(state: dict[str, Any], user_input: str, progress_s
         f"Progress context:\n{progress_context}\n\n"
         f"Personal recurring errors:\n{recurring_errors}\n\n"
         f"Personal context:\n{personal_context}\n\n"
-        f"Reference corpus context:\n{corpus_context}\n\n"
         f"Learner question:\n{user_input}"
     )
     return build_messages_with_persona(user_prompt, turns=state.get("turns"))

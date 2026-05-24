@@ -6,6 +6,8 @@ import uuid
 import pytest
 
 from app.api.v1 import learning as learning_module
+from app.models.processed_dataset_schemas import LessonVocabularyItem
+from app.services import corpus_retrieval
 from app.services import langgraph_orchestrator as orch
 from app.services import scaffolding_engine as scaffolding_module
 
@@ -24,12 +26,35 @@ class _FakeLLM:
         return "Câu trả lời nhanh cho câu hỏi tiếng Anh của bạn."
 
 
+class _NoopMemory:
+    def search_memory(self, *args, **kwargs):
+        return []
+
+
+def _test_vocabulary(*args, **kwargs):
+    return [
+        LessonVocabularyItem(
+            word_id=f"test-word-{idx}",
+            word=word,
+            pos="noun",
+            definition_vi=f"nghia cua {word}",
+            example=f"We use {word} at work.",
+            source="test",
+        )
+        for idx, word in enumerate(("meeting", "deadline", "report", "client", "agenda"), start=1)
+    ]
+
+
 @pytest.fixture(autouse=True)
 def reset_learning_store_and_llm(monkeypatch):
     learning_module.learning_store = learning_module.InMemoryLearningStore()
     fake_llm = _FakeLLM()
     monkeypatch.setattr(orch, "get_llm_client", lambda: fake_llm)
+    monkeypatch.setattr(orch, "get_memory", lambda: _NoopMemory())
     monkeypatch.setattr(scaffolding_module, "get_llm_client", lambda: fake_llm)
+    monkeypatch.setattr(learning_module, "_load_due_error_cards_for_user", lambda user_id: [])
+    monkeypatch.setattr(learning_module, "_load_personal_errors_for_user", lambda user_id: [])
+    monkeypatch.setattr(learning_module, "get_lesson_vocabulary", _test_vocabulary)
     yield
 
 
@@ -133,8 +158,8 @@ def test_lesson_questions_passes_personal_errors_to_generator(monkeypatch):
 
     monkeypatch.setattr(
         learning_module,
-        "load_personal_error_context",
-        lambda db, *, user_id, limit=5: [{"error_pattern": "then -> than", "error_type": "grammar"}],
+        "_load_personal_errors_for_user",
+        lambda user_id: [{"error_pattern": "then -> than", "error_type": "grammar"}],
     )
     monkeypatch.setattr(learning_module, "create_lesson_questions", _capturing_generator)
 
@@ -153,8 +178,8 @@ def test_lesson_questions_passes_personal_errors_to_generator(monkeypatch):
 def test_lesson_flashcards_appends_due_personal_error_cards(monkeypatch):
     monkeypatch.setattr(
         learning_module,
-        "load_due_error_flashcards",
-        lambda db, *, user_id, limit=2: [
+        "_load_due_error_cards_for_user",
+        lambda user_id: [
             {
                 "card_kind": "error",
                 "card_id": "error-card-1",
@@ -256,6 +281,30 @@ def test_memory_retrieval_skips_mem0_when_profile_memory_degraded(monkeypatch):
     result = _run(orch.memory_retrieval(state))
 
     assert result["memory"] == []
+
+
+def test_memory_retrieval_does_not_call_static_corpus_on_hotpath(monkeypatch):
+    class _Memory:
+        def search_memory(self, *args, **kwargs):
+            return [{"content": "Learner confuses then and than."}]
+
+    def _explode(*args, **kwargs):  # pragma: no cover
+        raise AssertionError("static corpus retrieval must stay out of chat runtime")
+
+    monkeypatch.setenv("CORPUS_RETRIEVAL_ENABLED", "true")
+    monkeypatch.setattr(orch, "get_memory", lambda: _Memory())
+    monkeypatch.setattr(corpus_retrieval, "search_many", _explode)
+
+    state = _state(_user_id(), "Can you check this sentence?")
+    state["intent"] = "ENGLISH_RAG"
+    state["corpus_hits"] = {"error": [{"text": "stale"}]}
+    state["corpus_flat"] = [{"text": "stale"}]
+
+    result = _run(orch.memory_retrieval(state))
+
+    assert result["memory"] == [{"content": "Learner confuses then and than."}]
+    assert "corpus_hits" not in result
+    assert "corpus_flat" not in result
 
 
 def test_vietnamese_sentence_check_routes_to_practice_for_error_capture():

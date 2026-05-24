@@ -13,7 +13,7 @@ from sqlalchemy import select, update
 
 from ...core.database import SessionLocal
 from ...models.lesson_progress import LessonProgress
-from ...models.schemas import (
+from ...models.processed_dataset_schemas import (
     FlashcardBack,
     LearnerProfile,
     LearningState,

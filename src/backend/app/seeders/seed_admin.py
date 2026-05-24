@@ -14,7 +14,7 @@ from sqlalchemy.orm import Session
 from app.core.config import get_settings
 from app.core.database import SessionLocal
 from app.core.security import hash_password, verify_password
-from app.models.schemas import RegisterRequest
+from app.models.processed_dataset_schemas import RegisterRequest
 from app.models.user import User
 
 logger = logging.getLogger(__name__)

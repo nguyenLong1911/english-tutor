@@ -6,7 +6,7 @@ from dataclasses import dataclass, field
 from typing import Any, Iterable
 
 from ..core.mem0_client import get_memory
-from ..models.schemas import LearnerProfile
+from ..models.processed_dataset_schemas import LearnerProfile
 from .memory_outbox import enqueue_memory_facts
 
 logger = logging.getLogger(__name__)

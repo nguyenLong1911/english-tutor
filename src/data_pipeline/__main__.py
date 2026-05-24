@@ -1,4 +1,4 @@
-from .cli import main
+from .command_line_interface import main
 import sys
 
 if __name__ == "__main__":

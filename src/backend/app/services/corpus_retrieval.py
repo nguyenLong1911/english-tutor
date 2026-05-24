@@ -1,13 +1,12 @@
-"""Retrieval layer over the static ``corpus`` Qdrant collection.
+"""Retrieval layer over the static eval/demo ``corpus`` Qdrant collection.
 
 Semantic search over vocabulary, common errors, pedagogical prompts, and
 IELTS samples — ingested by ``app.seeders.ingest_corpus_to_qdrant``.
 
-The LangGraph chat pipeline uses this as a *supplement* to Mem0: Mem0
-stores the user's personal facts (what they struggle with, what they've
-studied), while corpus retrieval surfaces the *content* that can answer
-their current turn (vocab definitions, error patterns to flag, scaffolds
-to imitate).
+This module is retained for manual evaluation, demos, and retrieval
+experiments. The live LangGraph chat pipeline does not depend on this static
+corpus; Mem0/Postgres user facts remain the runtime source of truth for
+personalization.
 
 Design notes
 ------------
@@ -204,7 +203,7 @@ def search_many(
 
 
 def is_enabled() -> bool:
-    """Feature flag. Off by default until operators run ingestion + opt in.
+    """Manual eval/demo feature flag, unused by the live chat hotpath.
 
     Env: ``CORPUS_RETRIEVAL_ENABLED=true``.
     """

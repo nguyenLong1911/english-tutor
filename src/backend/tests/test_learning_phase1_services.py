@@ -5,7 +5,7 @@ from pathlib import Path
 import pytest
 from pydantic import ValidationError
 
-from app.models.schemas import LessonQuestion, LearningState, UIDirective
+from app.models.processed_dataset_schemas import LessonQuestion, LearningState, UIDirective
 from app.services import lesson_catalog
 from app.services import lesson_vocabulary_provider as lesson_vocab_module
 from app.services.learner_profile_provider import get_learner_profile

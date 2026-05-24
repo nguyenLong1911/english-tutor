@@ -10,7 +10,7 @@ from ...core.database import get_db
 from ...core.redis_client import get_redis
 from ...core.mem0_client import get_memory
 from ...models.user import User
-from ...models.schemas import UserOut
+from ...models.processed_dataset_schemas import UserOut
 from ...models.vocabulary import UserVocabulary
 
 router = APIRouter(tags=["user"])

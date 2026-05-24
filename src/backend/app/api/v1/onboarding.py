@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from ...core.config import get_settings
 from ...core.database import get_db
 from ...core.security import create_session_token
-from ...models.schemas import OnboardingCreate, UserOut
+from ...models.processed_dataset_schemas import OnboardingCreate, UserOut
 from ...models.user import User
 from ...services.personalization import seed_onboarding_memory
 

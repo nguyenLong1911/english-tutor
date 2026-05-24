@@ -157,7 +157,7 @@ def flush_memory_outbox(db: Session, *, batch_size: int | None = None) -> dict[s
         .where(
             MemoryFactOutbox.status == "pending",
             MemoryFactOutbox.scheduled_at <= now,
-            MemoryFactOutbox.retry_count < settings.MEMORY_OUTBOX_MAX_RETRIES,
+            MemoryFactOutbox.retry_and_circuit_breaker_count < settings.MEMORY_OUTBOX_MAX_RETRIES,
         )
         .order_by(MemoryFactOutbox.created_at.asc())
         .limit(limit)
@@ -180,16 +180,16 @@ def flush_memory_outbox(db: Session, *, batch_size: int | None = None) -> dict[s
             row.last_error = None
             flushed += 1
         except Exception as exc:  # noqa: BLE001 - durable queue owns retry policy
-            row.retry_count = int(row.retry_count or 0) + 1
+            row.retry_and_circuit_breaker_count = int(row.retry_and_circuit_breaker_count or 0) + 1
             row.updated_at = datetime.utcnow()
             row.last_error = str(exc)[:1000]
-            if row.retry_count >= settings.MEMORY_OUTBOX_MAX_RETRIES:
+            if row.retry_and_circuit_breaker_count >= settings.MEMORY_OUTBOX_MAX_RETRIES:
                 row.status = "failed"
             else:
-                backoff_seconds = min(3600, settings.MEMORY_CIRCUIT_BREAKER_SECONDS * (2 ** min(row.retry_count - 1, 5)))
+                backoff_seconds = min(3600, settings.MEMORY_CIRCUIT_BREAKER_SECONDS * (2 ** min(row.retry_and_circuit_breaker_count - 1, 5)))
                 row.scheduled_at = datetime.utcnow() + timedelta(seconds=backoff_seconds)
             failed += 1
-            logger.warning("memory_outbox.flush_failed row_id=%s retry=%s error=%s", row.id, row.retry_count, exc)
+            logger.warning("memory_outbox.flush_failed row_id=%s retry=%s error=%s", row.id, row.retry_and_circuit_breaker_count, exc)
             if getattr(memory, "is_degraded", False):
                 break
     db.commit()

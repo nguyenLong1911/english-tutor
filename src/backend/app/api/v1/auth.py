@@ -21,7 +21,7 @@ from ...core.security import (
     verify_password,
 )
 from ...models.email_outbox import EmailOutbox
-from ...models.schemas import LoginRequest, RegisterRequest, UserOut
+from ...models.processed_dataset_schemas import LoginRequest, RegisterRequest, UserOut
 from ...models.user import User
 
 

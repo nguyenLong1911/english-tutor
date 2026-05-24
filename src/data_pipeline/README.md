@@ -1,133 +1,130 @@
 # `src/data_pipeline`
 
-Production-grade data pipeline for the **A20 Agentic Language Tutor** project.
-Implements the architecture from
-[`docs/Hướng dẫn AI Agent thu thập dữ liệu.md`](../../docs/Hướng%20dẫn%20AI%20Agent%20thu%20thập%20dữ%20liệu.md).
+This package prepares **static evaluation, benchmark, and demo seed data** for
+Agentic Language Tutor.
 
-## Install as a standalone module
+It intentionally does **not** own production learner memory. Per
+[`PRD_v2.md`](../../docs/project%20requirements/PRD_v2.md) and
+[`data_planning.md`](../../docs/data%20layer/scraping/data_planning.md),
+runtime personalization comes from real user profile/session/error/mood/SM-2
+data. The files here only prepare the static datasets used to test, benchmark,
+regress, and demo that runtime system.
 
-```bash
-pip install -e .            # editable install, exposes `import data_pipeline`
-a20-pipeline info           # console-script entry point
-python -m data_pipeline scrape --sources wikipedia huggingface ielts
-python -m data_pipeline process-existing
-python -m data_pipeline quality-process
-python -m data_pipeline validate
-python -m data_pipeline audit
-```
-
-The package is configured via the project-root `pyproject.toml`. Sources for
-keyless collection live under `src/data_pipeline/sources/`:
-
-| Source | Key required? | Output |
-|---|---|---|
-| `sources.wikipedia` | No (MediaWiki public API) | `data/raw/wikipedia/glossaries/<industry>.json` |
-| `sources.huggingface` | No (GitHub raw for JFLEG; opt-in `--use-hf` for `datasets` lib) | `data/raw/huggingface/jfleg/*.jsonl` |
-| `sources.ielts_public` | No (TargetedScraper, robots.txt aware) | `data/raw/ielts/*.txt` + `manifest.json` |
-
-`data/raw/` is gitignored to keep third-party content out of the repository.
-
-## Architecture
-
-The package is organized as a small pipeline stack. Shared infrastructure is
-kept separate from collection, extraction, generation, local processing, and
-verification, so command modules do not each redefine paths, JSON helpers, or
-env loading.
-
-| Layer | Files | Responsibility |
-|---|---|---|
-| Contracts | `schemas.py` | Pydantic models used as constrained-decoding and validation contracts. |
-| Shared infrastructure | `paths.py`, `json_io.py`, `env.py`, `retry.py`, `checkpoint.py`, `observability.py` | Canonical paths, UTF-8 JSON/JSONL I/O, env loading, retries, resumability, and LLM call tracing. |
-| Collection | `scraper.py`, `sources/*.py` | Targeted, robots-aware raw collection into `data/raw`. |
-| Rule extraction | `extractors/*.py` | Local raw-to-processed extraction that does not call an LLM. |
-| LLM generation | `llm_client.py`, `synthetic.py`, `generate.py`, `pii_filter.py`, `mem0_extractor.py` | Structured LLM calls, synthetic-data engineering, PII scrubbing, and Mem0 fact extraction. |
-| Local processing | `offline_process.py`, `quality_process.py` | Cleanup, deterministic expansion, and final alpha quality gate over existing `data/processed`. |
-| Verification | `validate.py`, `audit.py` | Schema validation and PRD/data-doc readiness checks. |
-
-## Module Map
+## Read The Code In This Order
 
 ```text
 data_pipeline/
-  cli.py                  # command router only
-  paths.py                # one source of truth for data paths
-  json_io.py              # JSON + JSONL helpers
-  env.py                  # .env loading for repo root and src/.env
-  schemas.py              # all dataset contracts
-  sources/                # raw collectors
-  extractors/             # rule-based raw -> processed conversion
-  generate.py             # LLM-backed synthetic generation tasks
-  offline_process.py      # local-only cleanup and deterministic expansion
-  quality_process.py      # final quality gate + bounded LLM certification
-  validate.py             # schema validation
-  audit.py                # PRD/data-doc readiness audit
+  command_line_interface.py
+    The only entry point. Maps CLI commands to the phase files below.
+
+  reference_data_collection/
+    Optional, small reference collection into data/raw/.
+    Use this only when a dataset needs public reference material with provenance.
+
+    sources/
+      wikipedia.py       -> industry glossary references
+      huggingface.py     -> JFLEG rows for error-bank extraction
+      ielts_public.py    -> opt-in, robots-aware IELTS page references
+
+    robots_aware_scraper.py
+      Shared helper for respectful web collection.
+
+  evaluation_seed_preparation/
+    Builds processed static datasets under data/processed/.
+
+    raw_to_processed_extractors/
+      jfleg_to_errors.py           -> Common Errors / Error Bank candidates
+      wiki_to_industry_vocab.py    -> Industry Context Library candidates
+
+    generate_synthetic_seed_datasets.py
+      LLM generation for static seed/eval datasets when local seeds are not
+      enough.
+
+    process_existing_seed_data.py
+      Local-only cleanup and deterministic expansion. No scraping, no LLM.
+
+    run_alpha_quality_gate.py
+      Final review pass over processed datasets, with optional aggregate LLM
+      certification.
+
+    scrub_pii.py
+      PII scrubber before anything becomes seed/eval data.
+
+    synthetic_generation_workflow.py
+      Shared seed -> expand -> judge -> decontaminate workflow.
+
+  evaluation_readiness_checks/
+    Confirms processed datasets are usable for alpha evaluation.
+
+    validate_processed_dataset_schemas.py
+      Pydantic validation for every processed JSON dataset.
+
+    audit_prd_eval_corpus_readiness.py
+      PRD/data-planning readiness checks and warnings.
+
+  shared_pipeline_support/
+    Cross-cutting support code. Nothing here is a product feature or data phase.
+
+    data_file_paths.py
+      Canonical data/raw and data/processed paths.
+
+    processed_dataset_schemas.py
+      Pydantic contracts for Common Errors, Industry Vocab, IELTS,
+      Pedagogical Prompts, Mood Patterns, Mem0 Initial Facts, and learner
+      profiles.
+
+    json_dataset_file_io.py
+      UTF-8 JSON/JSONL helpers.
+
+    load_pipeline_environment.py
+      Loads `.env` files for LLM-backed commands.
+
+    structured_llm_client.py
+      Structured-output Gemini/Groq client used by synthetic generation and
+      aggregate quality certification.
+
+    retry_and_circuit_breaker.py
+      Retry/backoff policy for external calls.
+
+    llm_call_observability.py
+      JSONL tracing for LLM latency, token usage, and estimated cost.
 ```
 
-## How a generation run flows
-
-```text
-seed dataset (JSON)
-        │
-        ▼
-   sample seeds  ─────►  StructuredLLM.parse(schema=Batch)  ◄─── retry/backoff
-        │                          │
-        │                          ▼
-        │                 Pydantic validation
-        │                          │     (failure → repair loop)
-        │                          ▼
-        ▼                  decontamination (key-hash)
-   LLM-as-a-Judge (rubric)   ─►   accept ≥ threshold
-        │
-        ▼
-   PIISentinel.scrub  ──►  persist JSON  ──►  validate_data.py (CI gate)
-```
-
-## CLI orchestrator
+## CLI
 
 ```bash
-python -m data_pipeline generate --task all
-python -m data_pipeline generate --task ielts --count 60
+python -m data_pipeline info
+python -m data_pipeline scrape --sources wikipedia huggingface
+python -m data_pipeline extract
 python -m data_pipeline process-existing
-python -m data_pipeline quality-process
+python -m data_pipeline quality-process --no-llm
 python -m data_pipeline validate
 python -m data_pipeline audit
 ```
 
-## Current local-only workflow
-
-When no more external collection is desired, run:
+Use the local-only path when you do not want network or LLM calls:
 
 ```bash
 python -m data_pipeline process-existing
-python -m data_pipeline quality-process
+python -m data_pipeline quality-process --no-llm
 python -m data_pipeline validate
 python -m data_pipeline audit
 ```
 
-`process-existing` does not scrape websites and does not call LLM APIs. It:
+## Dataset Mapping
 
-* cleans raw Wikipedia markup already present in processed vocabulary files;
-* promotes rule-filtered JFLEG candidates into the canonical error bank until
-  the local target is met, while retaining `needs_teacher_review`;
-* expands IELTS, pedagogical, mood, and Mem0 seed datasets deterministically
-  from existing local seeds.
+| `data_planning.md` output | Code that prepares/checks it |
+|---|---|
+| V-English Error Bank | `raw_to_processed_extractors/jfleg_to_errors.py`, `generate_synthetic_seed_datasets.py`, `process_existing_seed_data.py`, `run_alpha_quality_gate.py` |
+| Industry Context Library | `sources/wikipedia.py`, `raw_to_processed_extractors/wiki_to_industry_vocab.py`, `process_existing_seed_data.py`, `run_alpha_quality_gate.py` |
+| IELTS Writing Samples | `generate_synthetic_seed_datasets.py`, `process_existing_seed_data.py`, `run_alpha_quality_gate.py` |
+| Pedagogical Prompt Samples | `generate_synthetic_seed_datasets.py`, `process_existing_seed_data.py`, `run_alpha_quality_gate.py` |
+| Mood Pattern Samples | `generate_synthetic_seed_datasets.py`, `process_existing_seed_data.py`, `run_alpha_quality_gate.py` |
+| Mem0 Initial Facts | `generate_synthetic_seed_datasets.py`, `process_existing_seed_data.py`, `run_alpha_quality_gate.py` |
 
-`quality-process` is the final local readiness gate after offline or LLM
-generation. It does not collect raw data. By default it also performs one
-bounded aggregate LLM certification call, without sending raw corpus rows; use
-`--no-llm` to skip that call. It:
+## What This Package Does Not Do
 
-* clears promoted JFLEG `needs_teacher_review` only after the alpha quality
-  gate records review metadata;
-* fills missing industry `definition_vi`, `example_sentence`, and `usage_note`
-  fields;
-* expands IELTS Task 2 essays to the 250-word minimum and fixes placeholders;
-* marks pedagogical, mood, and Mem0 records as decontamination-checked.
-
-## Extending
-
-* **New dataset:** add a Pydantic batch schema in `schemas.py`, register a task
-  function in `generate_data.py`, drop a seed JSON under `data/processed/<name>/`.
-* **New PII strategy:** subclass `PIISentinel` and override `_scrub_*` passes.
-* **Replace LLM-as-a-judge with embeddings:** swap
-  `SyntheticPipeline.decontaminate` to use `text-embedding-3-small` cosine
-  similarity (target Sprint 2).
+It does not run the production tutor, write live learner memories, schedule
+SM-2 reviews, aggregate real Error DNA, or power runtime Context Injection.
+Those belong to backend runtime services. This package only creates and checks
+static data used to evaluate those systems.

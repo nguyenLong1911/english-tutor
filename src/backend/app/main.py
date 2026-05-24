@@ -32,7 +32,7 @@ from .api.v1 import (
 from .core.config import get_settings
 from .core.database import SessionLocal
 from .core.mem0_client import get_memory
-from .core.observability import init_observability
+from .core.llm_call_observability import init_observability
 from .core.redis_client import get_redis
 from .core.middleware import RateLimitMiddleware
 from .services.memory_outbox import memory_outbox_counts

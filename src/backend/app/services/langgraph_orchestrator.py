@@ -597,30 +597,11 @@ async def memory_retrieval(state: ChatState) -> ChatState:
     memory = get_memory()
     state["memory"] = memory.search_memory(state["user_id"], state["user_input"], limit=limit) if limit else []
 
-    # Optional corpus (vocab / error / prompt / ielts) retrieval. Feature-
-    # flagged off by default so nothing changes until ops has run the
-    # ``ingest_corpus_to_qdrant`` seeder and set
-    # ``CORPUS_RETRIEVAL_ENABLED=true``. Kept inside a best-effort block
-    # because semantic retrieval must never break the chat turn — if the
-    # corpus collection is missing or the embedder key is bad, the chat
-    # keeps running with Mem0 + SQL fallbacks.
-    try:
-        from . import corpus_retrieval as _cr
-        if _cr.is_enabled() and limit:
-            kinds = ("vocab", "prompt", "error", "ielts")
-            corpus_hits = _cr.search_many(
-                query=state["user_input"],
-                kinds=kinds,
-                top_k_per_kind=3,
-            )
-            # Attach flat + grouped forms; downstream prompt builder
-            # picks whichever is cheaper to format.
-            state["corpus_hits"] = corpus_hits
-            state["corpus_flat"] = [
-                h for arr in corpus_hits.values() for h in arr
-            ]
-    except Exception:  # noqa: BLE001 — retrieval must never break chat
-        logger.exception("corpus retrieval failed (non-fatal)")
+    # Static corpora are eval/seed assets, not runtime dependencies. The chat
+    # hotpath intentionally uses only personal memory, profile, progress, and
+    # the LLM system prompt so the tutor can run without pre-ingested datasets.
+    state.pop("corpus_hits", None)
+    state.pop("corpus_flat", None)
 
     return state
 

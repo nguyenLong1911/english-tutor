@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 from typing import Any
 
-from app.models.schemas import LessonContent, LessonSummary
+from app.models.processed_dataset_schemas import LessonContent, LessonSummary
 
 try:  # pragma: no cover - exercised only in environments without PyYAML
     import yaml

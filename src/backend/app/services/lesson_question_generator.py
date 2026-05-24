@@ -7,7 +7,7 @@ from collections import Counter
 from dataclasses import dataclass
 from typing import Any, Callable, Iterable, Mapping, Sequence
 
-from app.models.schemas import (
+from app.models.processed_dataset_schemas import (
     LearnerProfile,
     LessonContent,
     LessonPracticeSet,

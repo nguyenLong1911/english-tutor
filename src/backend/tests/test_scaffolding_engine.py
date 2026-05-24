@@ -171,6 +171,7 @@ def test_english_rag_prompt_includes_personal_error_context():
     assert "Personal recurring errors" in user_message
     assert "then -> than" in user_message
     assert "Giải thích giúp mình" in user_message
+    assert "Reference corpus context" not in user_message
 
 
 def test_english_rag_prompt_treats_learner_memory_question_as_in_scope():

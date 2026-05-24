@@ -7,7 +7,7 @@ import time
 import uuid
 from typing import Any
 
-from ..models.schemas import ChatRequest, ChatResponse
+from ..models.processed_dataset_schemas import ChatRequest, ChatResponse
 from ..utils.llm import get_llm_client, start_usage_tracking
 
 

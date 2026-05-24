@@ -7,7 +7,7 @@ from collections import Counter
 import pytest
 from pydantic import ValidationError
 
-from app.models.schemas import (
+from app.models.processed_dataset_schemas import (
     LearnerProfile,
     LessonContent,
     LessonPracticeSet,

@@ -1,7 +1,7 @@
 """Models package: re-export model classes for easy imports.
 
 This package provides the modules expected by the application code
-(`app.models.user`, `app.models.vocabulary`, `app.models.schemas`).
+(`app.models.user`, `app.models.vocabulary`, `app.models.processed_dataset_schemas`).
 """
 
 from .user import User

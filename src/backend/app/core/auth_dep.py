@@ -9,7 +9,7 @@ from sqlalchemy.orm import Session
 
 from .config import get_settings
 from .database import get_db
-from .observability import set_tag, set_user
+from .llm_call_observability import set_tag, set_user
 from .security import decode_session_token
 from app.models.user import User
 

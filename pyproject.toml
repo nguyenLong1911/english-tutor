@@ -32,7 +32,7 @@ all = [
 ]
 
 [project.scripts]
-a20-pipeline = "data_pipeline.cli:main"
+a20-pipeline = "data_pipeline.command_line_interface:main"
 
 [tool.setuptools]
 package-dir = { "" = "src" }

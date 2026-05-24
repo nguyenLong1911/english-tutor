@@ -1,11 +1,12 @@
-"""Ingest the curated content corpus into Qdrant as dense vectors.
+"""Ingest the curated eval/demo content corpus into Qdrant as dense vectors.
 
 Scope
 -----
-Sprint 1 produced the JSON corpus under ``data/processed/`` and Sprint 2A
-seeded it into Postgres via ``app.seeders.seed_processed``. This script
-closes Sprint 2B: embedding the same corpus into Qdrant so the chat
-pipeline can do semantic retrieval instead of SQL keyword lookup.
+The JSON corpus under ``data/processed/`` is now treated as static
+evaluation/benchmark/seed data. This script embeds the same corpus into Qdrant
+for manual retrieval experiments, demos, and regression checks. It is not part
+of the live chat hotpath; the tutor runtime relies on LLM orchestration plus
+user-generated profile/progress/Mem0 facts.
 
 Kinds handled (83 records total at the time of writing):
 

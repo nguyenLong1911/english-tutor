@@ -29,7 +29,7 @@ from sqlalchemy.orm import Session
 from ...core.config import get_settings
 from ...core.database import get_db
 from ...core.security import create_session_token
-from ...models.schemas import UserOut
+from ...models.processed_dataset_schemas import UserOut
 from ...models.user import User
 
 

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from app.models.schemas import LearnerProfile
+from app.models.processed_dataset_schemas import LearnerProfile
 from app.services import personalization
 
 
